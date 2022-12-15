@@ -5,12 +5,14 @@ import dynamic from "next/dynamic";
 const Layout = dynamic(import("../components/Layout"), {ssr: false});
 const MostSearchCards = dynamic(import("../components/MostSearchCards"), {ssr: false});
 const BannerSection = dynamic(import("../components/BannerSection"), {ssr: false});
+const OurServices = dynamic(import("../components/OurServices"), {ssr: false});
 
 const Home: FunctionComponent = () => {
     return(
         <Layout hiddenFooter>
             <BannerSection />
            <MostSearchCards />
+           <OurServices />
         </Layout>
     )
 }
