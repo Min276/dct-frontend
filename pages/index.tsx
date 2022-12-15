@@ -6,6 +6,7 @@ const Layout = dynamic(import("../components/Layout"), {ssr: false});
 const MostSearchCards = dynamic(import("../components/MostSearchCards"), {ssr: false});
 const BannerSection = dynamic(import("../components/BannerSection"), {ssr: false});
 const OurServices = dynamic(import("../components/OurServices"), {ssr: false});
+const DCTSection = dynamic(import("../components/DCTSection"), {ssr: false});
 
 const Home: FunctionComponent = () => {
     return(
@@ -13,6 +14,7 @@ const Home: FunctionComponent = () => {
             <BannerSection />
            <MostSearchCards />
            <OurServices />
+           <DCTSection />
         </Layout>
     )
 }
