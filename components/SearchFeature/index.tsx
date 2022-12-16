@@ -6,7 +6,7 @@ import Link from "next/link";
 const SearchFeature: FunctionComponent = () => {
   return (
     <Box
-      className="flex justify-between items-center absolute bg-white w-3/5 bottom-0 p-5 py-3 rounded-md shadow-md px-6"
+      className="flex justify-between items-center absolute bg-white md:w-3/5 bottom-0 p-5 py-3 rounded-md shadow-md px-6"
       sx={{ bottom: "-2rem" }}
     >
       <Box className="w-full flex items-center">

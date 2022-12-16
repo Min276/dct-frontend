@@ -28,7 +28,7 @@ const CardComponent: FunctionComponent<CardProps> = ({
 }) => {
   const router = useRouter();
   return (
-    <Box className="border-l-8 px-10 py-14 rounded-md cursor-pointer" sx={{ backgroundColor: backgroundColor, borderColor: sideColor,boxShadow: "0px 1px 10px rgba(0, 0, 0, 0.25);"}} onClick={()=> router.push(`${directory}`)}>
+    <Box className="w-72 border-l-8 px-10 py-14 rounded-md cursor-pointer" sx={{ backgroundColor: backgroundColor, borderColor: sideColor,boxShadow: "0px 1px 10px rgba(0, 0, 0, 0.25);"}} onClick={()=> router.push(`${directory}`)}>
       <Box className="flex flex-col justify-center items-center">
       <Image 
       src={icon} 
