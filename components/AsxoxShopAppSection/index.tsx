@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const AsxoxShopAppSection: FunctionComponent = () => {
   return (
-    <Box className="px-24 pt-14 py-20 bg-[#0C2E5C]">
+    <Box className="px-32 pt-14 py-20 bg-[#0C2E5C]">
       <Typography className="!text-2xl !font-semibold text-white text-center py-8 pb-12">
         About our Asxox Shop & App
       </Typography>

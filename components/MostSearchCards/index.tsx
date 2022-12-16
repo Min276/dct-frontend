@@ -7,9 +7,9 @@ const CardComponent = dynamic(import("./CardComponent"), { ssr: false} );
 
 const MostSearchCards:FunctionComponent = () => {
     return(
-        <Box className="px-24 py-20">
+        <Box className="px-24 py-20 bg-white">
             <Typography className="!text-2xl !font-semibold text-[#0C2E5C] text-center py-8">Most Search Categories</Typography>
-            <Box className="flex justify-evenly gap-x-8">
+            <Box className="flex justify-evenly gap-x-8 mt-2">
             { mostSearchCardData.map((data, index:number) => (
             <CardComponent
               key={index}

@@ -5,7 +5,7 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 
 const DCTSection: FunctionComponent = () => {
   return (
-    <Box className="px-24 pt-14 py-20">
+    <Box className="px-24 pt-14 py-20 bg-white">
       <Typography className="!text-2xl !font-semibold text-[#0C2E5C] text-center py-8 pb-12">
         Let&apos;s take a glance at DCT
       </Typography>
@@ -27,7 +27,7 @@ const DCTSection: FunctionComponent = () => {
                 Our Location
               </Typography>
             </Box>
-            <Typography className="pt-2 pb-6 text-[#1E1D1D pl-7">
+            <Typography className="pt-2 pb-6 text-[#1E1D1D] pl-7">
               Time City, Office Tower -3, (16) Floor, No-1602 ,<br /> Kamayut
               Township, Yangon, Myanmar.
             </Typography>
@@ -38,8 +38,8 @@ const DCTSection: FunctionComponent = () => {
         </Box>
         <Box className="w-1/2 flex justify-end">
           <Image
-            width={450}
-            height={450}
+            width={500}
+            height={500}
             src="/assets/dctImage.svg"
             alt="logo"
           />
