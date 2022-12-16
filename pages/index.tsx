@@ -18,6 +18,7 @@ const AsxoxShopAppSection = dynamic(
   { ssr: false }
 );
 const EventLotterySection = dynamic(import("../components/EventLotterySection"), {ssr: false});
+const DCTAppSection = dynamic(import("../components/DCTAppSection"), {ssr: false});
 
 const Home: FunctionComponent = () => {
   return (
@@ -28,6 +29,7 @@ const Home: FunctionComponent = () => {
       <DCTSection />
       <AsxoxShopAppSection />
       <EventLotterySection />
+      <DCTAppSection />
     </Layout>
   );
 };

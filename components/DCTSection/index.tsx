@@ -9,7 +9,7 @@ const DCTSection: FunctionComponent = () => {
       <Typography className="!text-2xl !font-semibold text-[#0C2E5C] text-center py-8 pb-12">
         Let&apos;s take a glance at DCT
       </Typography>
-      <Box className="flex">
+      <Box className="flex items-center">
         <Box className="w-1/2">
           <Typography className="!text-xl !font-semibold text-[#0C2E5C]">
             Digital Cloud Technology

@@ -8,7 +8,7 @@ const EventLotterySection: FunctionComponent = () => {
       <Typography className="!text-2xl !font-semibold text-[#0C2E5C] text-center py-8 pb-12">
         DCT Event Lottery
       </Typography>
-      <Box className="flex">
+      <Box className="flex items-center">
         <Box className="w-1/2">
           <Typography className="!text-xl !font-semibold text-[#0C2E5C]">
             How our lottery system works
