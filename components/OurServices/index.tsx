@@ -19,6 +19,7 @@ const OurServices:FunctionComponent = () => {
               backgroundColor={data.backgroundColor}
               iconWidth={data.iconWidth}
               iconHeight={data.iconHeight}
+              directory={data.directory}
             />
             )
            )}

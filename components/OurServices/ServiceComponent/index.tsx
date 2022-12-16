@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import { FunctionComponent } from "react";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 interface ServiceProps {
   title: string;
@@ -10,6 +11,7 @@ interface ServiceProps {
   iconColor?: string;
   iconWidth?: number;
   iconHeight?: number;
+  directory?: any;
 }
 
 const ServiceComponent: FunctionComponent<ServiceProps> = ({
@@ -20,10 +22,12 @@ const ServiceComponent: FunctionComponent<ServiceProps> = ({
   iconColor,
   iconWidth,
   iconHeight,
+  directory,
 }) => {
+  const router = useRouter();
   return (
-    <Box className="w-1/5 flex flex-col justify-center items-center">
-    <Box className="w-24 h-24 flex flex-col justify-center items-center rounded-full" sx={{ backgroundColor: backgroundColor, boxShadow: "0px 1px 10px rgba(0, 0, 0, 0.25);"}}>
+    <Box className="w-1/5 flex flex-col justify-center items-center" onClick={()=> router.push(`${directory}`)}>
+    <Box className="cursor-pointer w-24 h-24 flex flex-col justify-center items-center rounded-full hover:ring-4 ring-[#94B8EA]" sx={{ backgroundColor: backgroundColor, boxShadow: "0px 1px 10px rgba(0, 0, 0, 0.25);"}}>
       <Image 
       src={icon} 
       alt="icons" 

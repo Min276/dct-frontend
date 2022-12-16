@@ -44,9 +44,9 @@ const Footer: FunctionComponent = () => {
             Follow us
           </Typography>
           <Box className="flex flex-col gap-y-4">
-            <Link href="#">Facebook</Link>
-            <Link href="#">Tiktok</Link>
-            <Link href="#">Youtube</Link>
+            <Link href="https://www.facebook.com/DataCloudTechnologyCoLtd/">Facebook</Link>
+            <Link href="https://www.tiktok.com/@asxoxecommerce">Tiktok</Link>
+            <Link href="https://www.youtube.com/channel/UCnXbJ5K2pmBIh_HJaUuh9kg">Youtube</Link>
           </Box>
         </Box>
       </Box>

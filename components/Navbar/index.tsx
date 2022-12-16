@@ -17,16 +17,16 @@ const Navbar:FunctionComponent = () => {
             />
             </Link>
             <Box className="flex gap-x-8 items-center">
-              <Link href='#'>
+              <Link href='https://www.facebook.com/DataCloudTechnologyCoLtd/'>
                  <FaFacebook className="text-2xl text-white"/>
               </Link>
-              <Link href='#'>
+              <Link href='viber://chat?number=959961558491/'>
                  <FaViber className="text-2xl text-white"/>
               </Link>
-              <Link href='#'>
+              <Link href='https://www.tiktok.com/@asxoxecommerce'>
                   <FaTiktok className="text-2xl text-white"/>
               </Link>
-              <Link href='#'>
+              <Link href='https://www.youtube.com/channel/UCnXbJ5K2pmBIh_HJaUuh9kg'>
                  <FaYoutube className="text-3xl text-white"/>
               </Link>
             </Box>

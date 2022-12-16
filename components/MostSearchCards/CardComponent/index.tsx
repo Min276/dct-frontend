@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import { FunctionComponent } from "react";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 interface CardProps {
   title: string;
@@ -11,6 +12,7 @@ interface CardProps {
   sideColor?: string;
   iconWidth?: number;
   iconHeight?: number;
+  directory?: any;
 }
 
 const CardComponent: FunctionComponent<CardProps> = ({
@@ -22,9 +24,11 @@ const CardComponent: FunctionComponent<CardProps> = ({
   sideColor,
   iconWidth,
   iconHeight,
+  directory,
 }) => {
+  const router = useRouter();
   return (
-    <Box className="border-l-8 px-10 py-14 rounded-md" sx={{ backgroundColor: backgroundColor, borderColor: sideColor,boxShadow: "0px 1px 10px rgba(0, 0, 0, 0.25);"}}>
+    <Box className="border-l-8 px-10 py-14 rounded-md cursor-pointer" sx={{ backgroundColor: backgroundColor, borderColor: sideColor,boxShadow: "0px 1px 10px rgba(0, 0, 0, 0.25);"}} onClick={()=> router.push(`${directory}`)}>
       <Box className="flex flex-col justify-center items-center">
       <Image 
       src={icon} 
