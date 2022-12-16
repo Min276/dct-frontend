@@ -20,6 +20,7 @@ const MostSearchCards:FunctionComponent = () => {
               sideColor={data.sideColor}
               iconWidth={data.iconWidth}
               iconHeight={data.iconHeight}
+              directory={data.directory}
             />
             )
            )}

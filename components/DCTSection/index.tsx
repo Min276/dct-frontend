@@ -2,6 +2,7 @@ import { Box, Typography } from "@mui/material";
 import { FunctionComponent } from "react";
 import Image from "next/image";
 import { FaMapMarkerAlt } from "react-icons/fa";
+import Link from "next/link";
 
 const DCTSection: FunctionComponent = () => {
   return (
@@ -27,14 +28,18 @@ const DCTSection: FunctionComponent = () => {
                 Our Location
               </Typography>
             </Box>
-            <Typography className="pt-2 pb-6 text-[#1E1D1D] pl-7">
+            <Typography className="pt-2 pb-8 text-[#1E1D1D] pl-7">
               Time City, Office Tower -3, (16) Floor, No-1602 ,<br /> Kamayut
               Township, Yangon, Myanmar.
             </Typography>
           </Box>
-          <Box className="px-5 py-3 w-fit rounded-md text-white bg-[#0C2E5C] cursor-pointer !font-semibold">
-            Call an action
-          </Box>
+          <Link
+            target="_blank"
+            className="px-5 py-3 w-fit rounded-md text-white bg-[#0C2E5C] cursor-pointer !font-semibold"
+            href="https://goo.gl/maps/WxThXFRDcAw1rKqBA"
+          >
+            View in Google Map
+          </Link>
         </Box>
         <Box className="w-1/2 flex justify-end">
           <Image

@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import { FunctionComponent } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const EventLotterySection: FunctionComponent = () => {
   return (
@@ -13,15 +14,18 @@ const EventLotterySection: FunctionComponent = () => {
           <Typography className="!text-xl !font-semibold text-[#0C2E5C]">
             How our lottery system works
           </Typography>
-          <Typography className="text-[#0C2E5C] !font-medium py-4 !leading-7">
+          <Typography className="text-[#0C2E5C] !font-medium py-4 pb-8 !leading-7">
             Lorem ipsum dolor sit amet consectetur. Posuere ipsum donec
             porttitor euismod ultrices tristique. Mauris tortor consequat lectus
             consequat mi. Facilisi tortor in fringilla risus pellentesque ac
             lectus.
           </Typography>
-          <Box className="px-5 py-3 mt-4 w-fit rounded-md text-white bg-[#0C2E5C] cursor-pointer !font-semibold">
-            Call an action
-          </Box>
+          <Link
+            href="#"
+            className="px-5 py-3 mt-4 w-fit rounded-md text-white bg-[#0C2E5C] cursor-pointer !font-semibold"
+          >
+            Explore DCT App
+          </Link>
         </Box>
         <Box className="w-1/2 flex justify-end">
           <Image

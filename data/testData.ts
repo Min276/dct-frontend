@@ -7,6 +7,7 @@ export const mostSearchCardData = [
         backgroundColor: "white",
         iconWidth: 50,
         iconHeight: 50,
+        directory: "#",
     },
     {
         title: "Hotels & Hostels",
@@ -16,6 +17,7 @@ export const mostSearchCardData = [
         backgroundColor: "white",
         iconWidth: 50,
         iconHeight: 50,
+        directory: "#",
     },
     {
         title: "Gifts & Shopping",
@@ -25,6 +27,7 @@ export const mostSearchCardData = [
         backgroundColor: "white",
         iconWidth: 40,
         iconHeight: 40,
+        directory: "#",
     },
     {
         title: "Company Locations",
@@ -34,6 +37,7 @@ export const mostSearchCardData = [
         backgroundColor: "white",
         iconWidth: 50,
         iconHeight: 50,
+        directory: "#",
     }
 ];
 
@@ -45,6 +49,7 @@ export const servicesData = [
         textColor: "white",
         iconWidth: 30,
         iconHeight: 30,
+        directory: "https://asxox.com.mm",
     },
     {
         title: "Asxox App",
@@ -53,14 +58,16 @@ export const servicesData = [
         textColor: "white",
         iconWidth: 40,
         iconHeight: 40,
+        directory: "https://play.google.com/store/apps/details?id=com.asxox.mkza&hl=en&gl=US",
     },
     {
-        title: "Customer Service",
+        title: "Digital Marketing",
         icon: "/assets/servicesIcons/icon3.svg",
         backgroundColor: "white",
         textColor: "white",
         iconWidth: 45,
         iconHeight: 45,
+        directory: "#",
     },
     {
         title: "Warehouse Logistics",
@@ -69,6 +76,7 @@ export const servicesData = [
         textColor: "white",
         iconWidth: 40,
         iconHeight: 40,
+        directory: "#",
     },
     {
         title: "Software Development",
@@ -77,6 +85,7 @@ export const servicesData = [
         textColor: "white",
         iconWidth: 37,
         iconHeight: 37,
+        directory: "#",
     },
     {
         title: "SY Real Estate Agency",
@@ -85,6 +94,7 @@ export const servicesData = [
         textColor: "white",
         iconWidth: 40,
         iconHeight: 40,
+        directory: "#",
     },
     {
         title: "DCT Event Lottery",
@@ -93,5 +103,6 @@ export const servicesData = [
         textColor: "white",
         iconWidth: 40,
         iconHeight: 40,
+        directory: "#",
     },
 ]
