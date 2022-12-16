@@ -26,7 +26,7 @@ const ServiceComponent: FunctionComponent<ServiceProps> = ({
 }) => {
   const router = useRouter();
   return (
-    <Box className="w-1/5 flex flex-col justify-center items-center" onClick={()=> router.push(`${directory}`)}>
+    <Box className="w-2/5 md:w-1/5 flex flex-col justify-center items-center" onClick={()=> router.push(`${directory}`)}>
     <Box className="cursor-pointer w-24 h-24 flex flex-col justify-center items-center rounded-full hover:ring-4 ring-[#94B8EA]" sx={{ backgroundColor: backgroundColor, boxShadow: "0px 1px 10px rgba(0, 0, 0, 0.25);"}}>
       <Image 
       src={icon} 
@@ -35,7 +35,7 @@ const ServiceComponent: FunctionComponent<ServiceProps> = ({
       height={iconHeight} 
       />
       </Box>
-      <Typography className="!text-lg !font-semibold pt-4" sx={{ color: textColor }}>{title}</Typography>
+      <Typography className="!text-lg !font-semibold pt-4 text-center" sx={{ color: textColor }}>{title}</Typography>
       </Box>
   );
 };

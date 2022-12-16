@@ -6,12 +6,12 @@ import Link from "next/link";
 
 const DCTSection: FunctionComponent = () => {
   return (
-    <Box className="px-24 pt-14 py-20 bg-white">
+    <Box className="px-6 pt-10 pb-18 md:px-24 md:pt-14 md:py-20 bg-white">
       <Typography className="!text-2xl !font-semibold text-[#0C2E5C] text-center py-8 pb-12">
         Let&apos;s take a glance at DCT
       </Typography>
-      <Box className="flex items-center">
-        <Box className="w-1/2">
+      <Box className="flex flex-col md:flex-row items-center">
+        <Box className="w-full md:w-1/2">
           <Typography className="!text-xl !font-semibold text-[#0C2E5C]">
             Digital Cloud Technology
           </Typography>
@@ -41,7 +41,7 @@ const DCTSection: FunctionComponent = () => {
             View in Google Map
           </Link>
         </Box>
-        <Box className="w-1/2 flex justify-end">
+        <Box className="w-full md:w-1/2 flex justify-end py-12 md:py-0">
           <Image
             width={500}
             height={500}

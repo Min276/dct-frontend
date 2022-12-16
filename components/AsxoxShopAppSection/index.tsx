@@ -5,12 +5,12 @@ import Link from "next/link";
 
 const AsxoxShopAppSection: FunctionComponent = () => {
   return (
-    <Box className="px-32 pt-14 py-20 bg-[#0C2E5C]">
+    <Box className="px-6 pt-10 pb-14 md:px-32 md:pt-14 md:py-20 bg-[#0C2E5C]">
       <Typography className="!text-2xl !font-semibold text-white text-center py-8 pb-12">
         About our Asxox Shop & App
       </Typography>
-      <Box className="flex items-center">
-        <Box className="w-1/2">
+      <Box className="flex flex-col md:flex-row items-center">
+        <Box className="w-full md:w-1/2">
           <Image
             width={380}
             height={380}
@@ -18,7 +18,7 @@ const AsxoxShopAppSection: FunctionComponent = () => {
             alt="logo"
           />
         </Box>
-        <Box className="w-1/2 flex flex-col justify-end">
+        <Box className="w-full md:w-1/2 flex flex-col justify-end mt-8 md:mt-0">
           <Typography className="!text-xl !font-semibold text-white">
             Asxox Shop and App Feature
           </Typography>
