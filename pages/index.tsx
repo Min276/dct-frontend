@@ -22,7 +22,7 @@ const DCTAppSection = dynamic(import("../components/DCTAppSection"), {ssr: false
 
 const Home: FunctionComponent = () => {
   return (
-    <Layout hiddenFooter>
+    <Layout>
       <BannerSection />
       <MostSearchCards />
       <OurServices />
