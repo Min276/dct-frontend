@@ -5,16 +5,16 @@ import Link from "next/link";
 
 const EventLotterySection: FunctionComponent = () => {
   return (
-    <Box className="px-6 pt-10 pb-14 md:px-24 md:pt-14 md:py-20 bg-[#EDECEC]">
-      <Typography className="!text-xl md:!text-2xl !font-semibold text-[#0C2E5C] text-center py-8 md:pb-12">
+    <Box className="px-6 pt-10 pb-14 md:px-24 md:pt-14 md:py-20 bg-[#0C2E5C]">
+      <Typography className="!text-xl md:!text-2xl !font-semibold text-white text-center py-8 md:pb-12">
         DCT Event Lottery
       </Typography>
       <Box className="flex flex-col md:flex-row items-center">
         <Box className="w-full md:w-1/2">
-          <Typography className="!text-lg md:!text-xl !font-semibold text-[#0C2E5C]">
+          <Typography className="!text-lg md:!text-xl !font-semibold text-white">
             How our lottery system works
           </Typography>
-          <Typography className="text-[#0C2E5C] !font-medium py-4 pb-8 !leading-7">
+          <Typography className="text-white !font-medium py-4 pb-10 !leading-7">
             Lorem ipsum dolor sit amet consectetur. Posuere ipsum donec
             porttitor euismod ultrices tristique. Mauris tortor consequat lectus
             consequat mi. Facilisi tortor in fringilla risus pellentesque ac
@@ -22,12 +22,12 @@ const EventLotterySection: FunctionComponent = () => {
           </Typography>
           <Link
             href="#"
-            className="px-5 py-3 mt-4 w-fit rounded-md text-white bg-[#0C2E5C] cursor-pointer !font-semibold"
+            className="px-5 py-3 w-fit rounded-md text-[#0C2E5C] bg-white cursor-pointer !font-semibold"
           >
             Explore DCT App
           </Link>
         </Box>
-        <Box className="w-full md:w-1/2 flex justify-end mt-12 md:mt-0">
+        <Box className="w-full md:w-1/2 flex justify-center md:justify-end mt-16 md:mt-0">
           <Image
             width={450}
             height={450}

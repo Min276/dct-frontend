@@ -51,7 +51,7 @@ const DCTAppSection: FunctionComponent = () => {
             </Box>
           </Box>
         </Box>
-        <Box className="w-full md:w-1/2 flex justify-end">
+        <Box className="w-full md:w-1/2 flex justify-center md:justify-end">
           <Image
             width={500}
             height={500}
