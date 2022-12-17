@@ -35,7 +35,7 @@ const ServiceComponent: FunctionComponent<ServiceProps> = ({
       height={iconHeight} 
       />
       </Box>
-      <Typography className="!text-lg !font-semibold pt-4 text-center" sx={{ color: textColor }}>{title}</Typography>
+      <Typography className="!text-[1.1rem] !text-lg !font-semibold pt-4 text-center" sx={{ color: textColor }}>{title}</Typography>
       </Box>
   );
 };

@@ -5,12 +5,12 @@ import Image from "next/image";
 const DCTAppSection: FunctionComponent = () => {
   return (
     <Box className="px-6 pt-10 pb-14 md:px-24 md:pt-14 md:py-20 bg-white">
-      <Typography className="!text-2xl !font-semibold text-[#0C2E5C] text-center py-8 pb-14">
+      <Typography className="!text-xl md:!text-2xl !font-semibold text-[#0C2E5C] text-center py-8 md:pb-14">
         Easy scan & buy with DCT App
       </Typography>
       <Box className="flex flex-col md:flex-row items-center">
         <Box className="w-full md:w-1/2">
-          <Typography className="!text-xl !font-semibold text-[#0C2E5C] pb-4">
+          <Typography className="!text-lg md:!text-xl !font-semibold text-[#0C2E5C] pb-4">
             Our app features include these:
           </Typography>
           <ul className="list-disc pl-4 pb-8 text-[#1E1D1D] !leading-10">
@@ -27,7 +27,7 @@ const DCTAppSection: FunctionComponent = () => {
               consectetur
             </li>
           </ul>
-          <Box className="flex flex-col md:flex-row justify-center items-center">
+          <Box className="flex flex-col md:flex-row justify-center md:justify-start items-center">
             <Image
               width={100}
               height={100}

@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Navbar:FunctionComponent = () => {
     return(
-       <Box className="flex px-6 py-4 md:px-24 md:py-4 bg-[#0C2E5C] w-full justify-between items-center">
+       <Box className="flex px-6 py-2 md:px-24 md:py-0 bg-[#0C2E5C] w-full justify-between items-center">
           <Link href='#'>
           <Image 
            width={100}

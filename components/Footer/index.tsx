@@ -32,7 +32,7 @@ const Footer: FunctionComponent = () => {
               <FiSend className="text-xl" /> &nbsp;Submit
             </Box>
           </Box>
-          <Typography>
+          <Typography className="text-white">
             {" "}
             Reach out to us via this:{" "}
             <Link href="tel:+959968358888">+95 9968358888</Link>{" "}
@@ -42,7 +42,7 @@ const Footer: FunctionComponent = () => {
           <Typography className="!text-lg text-white !font-semibold pb-4">
             Follow us
           </Typography>
-          <Box className="flex flex-col gap-y-4">
+          <Box className="flex flex-col gap-y-4 text-white">
             <Link href="https://www.facebook.com/DataCloudTechnologyCoLtd/">Facebook</Link>
             <Link href="https://www.tiktok.com/@asxoxecommerce">Tiktok</Link>
             <Link href="https://www.youtube.com/channel/UCnXbJ5K2pmBIh_HJaUuh9kg">Youtube</Link>

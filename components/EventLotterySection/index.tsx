@@ -6,12 +6,12 @@ import Link from "next/link";
 const EventLotterySection: FunctionComponent = () => {
   return (
     <Box className="px-6 pt-10 pb-14 md:px-24 md:pt-14 md:py-20 bg-[#EDECEC]">
-      <Typography className="!text-2xl !font-semibold text-[#0C2E5C] text-center py-8 pb-12">
+      <Typography className="!text-xl md:!text-2xl !font-semibold text-[#0C2E5C] text-center py-8 md:pb-12">
         DCT Event Lottery
       </Typography>
       <Box className="flex flex-col md:flex-row items-center">
         <Box className="w-full md:w-1/2">
-          <Typography className="!text-xl !font-semibold text-[#0C2E5C]">
+          <Typography className="!text-lg md:!text-xl !font-semibold text-[#0C2E5C]">
             How our lottery system works
           </Typography>
           <Typography className="text-[#0C2E5C] !font-medium py-4 pb-8 !leading-7">
