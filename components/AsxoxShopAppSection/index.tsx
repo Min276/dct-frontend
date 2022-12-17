@@ -10,7 +10,7 @@ const AsxoxShopAppSection: FunctionComponent = () => {
         About our Asxox Shop & App
       </Typography>
       <Box className="flex flex-col md:flex-row items-center">
-        <Box className="w-full md:w-1/2">
+        <Box className="w-full md:w-1/2 flex justify-center md:justify-start">
           <Image
             width={380}
             height={380}
@@ -42,7 +42,7 @@ const AsxoxShopAppSection: FunctionComponent = () => {
         </Box>
       </Box>
       <Box className="flex flex-col md:flex-row flex-wrap justify-center items-center md:justify-between gap-y-4 pt-12 md:pt-16">
-          <Link href="https://play.google.com/store/apps/details?id=com.asxox.mkza&pli=1">
+        <Link href="https://play.google.com/store/apps/details?id=com.asxox.mkza&pli=1">
           <Image
             width={240}
             height={240}
@@ -50,34 +50,34 @@ const AsxoxShopAppSection: FunctionComponent = () => {
             alt="appstore"
             className="w-56 md:w-60"
           />
-          </Link>
-          <Link href="https://apps.apple.com/us/app/asxox/id1590791745">
-           <Image
+        </Link>
+        <Link href="https://apps.apple.com/us/app/asxox/id1590791745">
+          <Image
             width={240}
             height={240}
             src="/assets/dctAppSection/playstore.svg"
             alt="playstore"
             className="w-56 md:w-60"
           />
-          </Link>
-          <Link href="https://appgallery.huawei.com/app/C105045159">
-           <Image
+        </Link>
+        <Link href="https://appgallery.huawei.com/app/C105045159">
+          <Image
             width={240}
             height={240}
             src="/assets/dctAppSection/appgallery.svg"
             alt="appgallery"
             className="w-56 md:w-60"
           />
-          </Link>
-          <Link href="https://www.mediafire.com/error.php?errno=320&origin=download">
-           <Image
+        </Link>
+        <Link href="https://www.mediafire.com/error.php?errno=320&origin=download">
+          <Image
             width={240}
             height={240}
             src="/assets/dctAppSection/directlink.svg"
             alt="directlink"
             className="w-56 md:w-60"
           />
-          </Link>
+        </Link>
       </Box>
     </Box>
   );

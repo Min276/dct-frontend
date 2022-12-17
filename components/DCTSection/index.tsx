@@ -29,8 +29,9 @@ const DCTSection: FunctionComponent = () => {
               </Typography>
             </Box>
             <Typography className="pt-2 pb-8 text-[#1E1D1D] pl-7">
-              Time City, Office Tower -3, (16) Floor, No-1602 ,<br className="hidden md:block" /> Kamayut
-              Township, Yangon, Myanmar.
+              Time City, Office Tower -3, (16) Floor, No-1602 ,
+              <br className="hidden md:block" /> Kamayut Township, Yangon,
+              Myanmar.
             </Typography>
           </Box>
           <Link
@@ -41,7 +42,7 @@ const DCTSection: FunctionComponent = () => {
             View in Google Map
           </Link>
         </Box>
-        <Box className="w-full md:w-1/2 flex justify-end py-12 md:py-0">
+        <Box className="w-full md:w-1/2 flex justify-center md:justify-end py-12 md:py-0">
           <Image
             width={500}
             height={500}
