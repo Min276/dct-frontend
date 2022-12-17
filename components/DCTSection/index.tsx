@@ -7,12 +7,12 @@ import Link from "next/link";
 const DCTSection: FunctionComponent = () => {
   return (
     <Box className="px-6 pt-10 pb-18 md:px-24 md:pt-14 md:py-20 bg-white">
-      <Typography className="!text-2xl !font-semibold text-[#0C2E5C] text-center py-8 pb-12">
+      <Typography className="!text-[1.35rem] md:!text-2xl !font-semibold text-[#0C2E5C] text-center py-8 md:pb-12">
         Let&apos;s take a glance at DCT
       </Typography>
       <Box className="flex flex-col md:flex-row items-center">
         <Box className="w-full md:w-1/2">
-          <Typography className="!text-xl !font-semibold text-[#0C2E5C]">
+          <Typography className="!text-lg md:!text-xl !font-semibold text-[#0C2E5C]">
             Digital Cloud Technology
           </Typography>
           <Typography className="text-[#0C2E5C] !font-medium py-4 !leading-7">
@@ -29,7 +29,7 @@ const DCTSection: FunctionComponent = () => {
               </Typography>
             </Box>
             <Typography className="pt-2 pb-8 text-[#1E1D1D] pl-7">
-              Time City, Office Tower -3, (16) Floor, No-1602 ,<br /> Kamayut
+              Time City, Office Tower -3, (16) Floor, No-1602 ,<br className="hidden md:block" /> Kamayut
               Township, Yangon, Myanmar.
             </Typography>
           </Box>
