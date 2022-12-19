@@ -2,21 +2,33 @@ import { Box, Typography } from "@mui/material";
 import { FunctionComponent } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 const SYRealEstateSection: FunctionComponent = () => {
   return (
     <Box className="px-6 pt-10 pb-14 md:px-32 md:pt-14 md:py-20 bg-white">
-      <Typography className="!text-[1.3rem] md:!text-2xl !font-semibold text-[#0C2E5C] text-center py-8 pb-12">
-        About SY Real Estate Agency
-      </Typography>
+      <motion.div
+        initial={{ scale: 0.8, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1, transition: { delay: 0.4 } }}
+      >
+        {" "}
+        <Typography className="!text-[1.3rem] md:!text-2xl !font-semibold text-[#0C2E5C] text-center py-8 pb-12">
+          About SY Real Estate Agency
+        </Typography>
+      </motion.div>
       <Box className="flex flex-col md:flex-row items-center">
         <Box className="w-full md:w-1/2 flex justify-center md:justify-start">
-          <Image
-            width={500}
-            height={500}
-            src="/assets/dctImage.svg"
-            alt="sy real estate company"
-          />
+          <motion.div
+            initial={{ scale: 0.8, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1, transition: { delay: 0.4 } }}
+          >
+            <Image
+              width={500}
+              height={500}
+              src="/assets/dctImage.svg"
+              alt="sy real estate company"
+            />
+          </motion.div>
         </Box>
         <Box className="w-full md:w-1/2 flex flex-col justify-end mt-8 md:mt-0">
           <Typography className="!text-lg md:!text-xl !font-semibold text-[#0C2E5C]">
@@ -33,12 +45,18 @@ const SYRealEstateSection: FunctionComponent = () => {
             <li>Lorem ipsum dolor sit amet consectetur sit amet </li>
             <li>Lorem ipsum dolor sit amet consectetur sit amet </li>
           </ul>
-          <Link
-            href="#"
-            className="px-4 py-2 w-fit rounded-md bg-[#0C2E5C] text-white cursor-pointer !font-semibold"
+          <motion.div
+            initial={{ scale: 0.8, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1, transition: { delay: 0.4 } }}
           >
-            Explore SY Agency
-          </Link>
+            <Link
+              target="_blank"
+              href="#"
+              className="px-4 py-3 w-fit rounded-md bg-[#0C2E5C] text-white cursor-pointer !font-semibold"
+            >
+              Explore SY Agency
+            </Link>
+          </motion.div>
         </Box>
       </Box>
     </Box>
