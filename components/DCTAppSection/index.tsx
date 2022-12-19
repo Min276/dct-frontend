@@ -1,13 +1,18 @@
 import { Box, Typography } from "@mui/material";
 import { FunctionComponent } from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const DCTAppSection: FunctionComponent = () => {
   return (
     <Box className="px-6 pt-10 pb-14 md:px-24 md:pt-14 md:py-20 bg-white">
-      <Typography className="!text-xl md:!text-2xl !font-semibold text-[#0C2E5C] text-center py-8 md:pb-14">
-        Easy scan & buy with DCT App
-      </Typography>
+<motion.div
+            initial={{ scale: 0.8, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1, transition: { delay: 0.4 } }}
+          >        <Typography className="!text-xl md:!text-2xl !font-semibold text-[#0C2E5C] text-center py-8 md:pb-14">
+          Easy scan & buy with DCT App
+        </Typography>
+      </motion.div>
       <Box className="flex flex-col md:flex-row items-center">
         <Box className="w-full md:w-1/2">
           <Typography className="!text-lg md:!text-xl !font-semibold text-[#0C2E5C] pb-4">
@@ -52,12 +57,17 @@ const DCTAppSection: FunctionComponent = () => {
           </Box>
         </Box>
         <Box className="w-full md:w-1/2 flex justify-center md:justify-end">
+        <motion.div
+            initial={{ scale: 0.8, opacity: 0 }}
+            whileInView={{ scale: 1, opacity: 1, transition: { delay: 0.4 } }}
+          >
           <Image
             width={500}
             height={500}
             src="/assets/dctAppSection/dctAppMockup.svg"
             alt="dct app mockup"
           />
+          </motion.div>
         </Box>
       </Box>
     </Box>
