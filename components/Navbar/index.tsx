@@ -1,10 +1,20 @@
 import { Box, Typography } from "@mui/material";
-import { FunctionComponent } from "react";
+import { FunctionComponent, useState, ChangeEvent } from "react";
 import Image from "next/image";
+import { useRouter } from "next/router";
 import { FaFacebook, FaViber, FaTiktok, FaYoutube } from "react-icons/fa";
 import Link from "next/link";
 
 const Navbar: FunctionComponent = () => {
+
+  const router = useRouter();
+  const [language, setLanguage] = useState<string>(router.locale || "en");
+  const changeLanguageHandler = (e: ChangeEvent<HTMLSelectElement>) => {
+    setLanguage(e.target.value);
+    router.push(router.pathname, router.pathname, {
+      locale: e.target.value,
+    });
+  };
   return (
     <Box className="flex px-6 py-2 md:px-24 md:py-0 bg-[#0C2E5C] w-full justify-between items-center">
       <Link href="#">
@@ -18,6 +28,15 @@ const Navbar: FunctionComponent = () => {
         />
       </Link>
       <Box className="flex gap-x-4 md:gap-x-8 items-center">
+        <select
+          className="select p-[5px] rounded-md"
+          value={language}
+          onChange={changeLanguageHandler}
+        >
+          <option value="en">English</option>
+          <option value="my">မြန်မာ</option>
+          <option value="zh">中文字</option>
+        </select>
         <Link
           target="_blank"
           href="https://www.facebook.com/DataCloudTechnologyCoLtd/"

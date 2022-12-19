@@ -1,11 +1,13 @@
 import { Box, Typography } from "@mui/material";
+import { useTranslation } from "next-i18next";
 import { FunctionComponent } from "react";
 import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 
 const SearchFeature = dynamic(import("../SearchFeature"), { ssr: false });
 
-const BannerSection: FunctionComponent = () => {
+const BannerSection: FunctionComponent= () => {
+  const {t} = useTranslation();
   return (
     <Box className="relative flex justify-center items-center w-full h-[60vh] bg-no-repeat bg-fixed bg-center bg-cover bg-blend-multiply bg-[url('/assets/banner.svg')]">
       <motion.div
@@ -13,7 +15,7 @@ const BannerSection: FunctionComponent = () => {
         whileInView={{ scale: 1, opacity: 1, transition: { delay: 0.4 , duration: 0.5 } }}
       >
         <Typography className="px-8 text-center text-white !text-2xl md:!text-4xl !font-semibold !leading-10">
-          Welcome to Digital Cloud Technology
+        {t("landing:title")}
         </Typography>
       </motion.div>
       <SearchFeature />

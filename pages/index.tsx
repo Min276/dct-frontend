@@ -1,7 +1,9 @@
+import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 import { FunctionComponent, useState, useEffect } from "react";
 import dynamic from "next/dynamic";
 import { Box, Skeleton } from "@mui/material";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 const Layout = dynamic(import("../components/Layout"), { ssr: false });
 const MostSearchCards = dynamic(import("../components/MostSearchCards"), {
@@ -69,6 +71,14 @@ const Home: FunctionComponent = () => {
       )}
     </>
   );
+};
+
+export const getStaticProps: GetStaticProps = async ({ locale }: any) => {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ["landing"])),
+    },
+  };
 };
 
 export default Home;
