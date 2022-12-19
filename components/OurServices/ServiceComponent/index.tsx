@@ -3,6 +3,7 @@ import { FunctionComponent } from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 interface ServiceProps {
   title: string;
@@ -27,9 +28,11 @@ const ServiceComponent: FunctionComponent<ServiceProps> = ({
 }) => {
   const router = useRouter();
   return (
-    <Box
+    <Link
       className="w-2/5 md:w-1/5 flex flex-col justify-center items-center"
-      onClick={() => router.push(`${directory}`)}
+      // onClick={() => router.push(`${directory}`)}
+      href={directory}
+      target="_blank"
     >
       <motion.div
         style={{
@@ -39,7 +42,7 @@ const ServiceComponent: FunctionComponent<ServiceProps> = ({
           alignItems: "center",
         }}
         initial={{ scale: 0.8, opacity: 0 }}
-        whileInView={{ scale: 1, opacity: 1, transition: { delay: 0.4 } }}
+        whileInView={{ scale: 1, opacity: 1, transition: { delay: 0.4, duration: 0.5 } }}
       >
         <Box
           className="cursor-pointer w-24 h-24 flex flex-col justify-center items-center rounded-full hover:ring-4 ring-[#94B8EA]"
@@ -57,7 +60,7 @@ const ServiceComponent: FunctionComponent<ServiceProps> = ({
           {title}
         </Typography>
       </motion.div>
-    </Box>
+    </Link>
   );
 };
 

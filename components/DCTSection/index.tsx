@@ -10,7 +10,7 @@ const DCTSection: FunctionComponent = () => {
     <Box className="px-6 pt-10 pb-18 md:px-24 md:pt-14 md:py-20 bg-white">
       <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
-        whileInView={{ scale: 1, opacity: 1, transition: { delay: 0.4 } }}
+        whileInView={{ scale: 1, opacity: 1, transition: { delay: 0.4, duration: 0.5 } }}
       >
         {" "}
         <Typography className="!text-[1.35rem] md:!text-2xl !font-semibold text-[#0C2E5C] text-center py-8 md:pb-12">
@@ -43,7 +43,7 @@ const DCTSection: FunctionComponent = () => {
           </Box>
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1, transition: { delay: 0.4 } }}
+            whileInView={{ scale: 1, opacity: 1, transition: { delay: 0.4, duration: 0.5 } }}
           >
             <Link
               target="_blank"
@@ -57,7 +57,7 @@ const DCTSection: FunctionComponent = () => {
         <Box className="w-full md:w-1/2 flex justify-center md:justify-end py-12 md:py-0">
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1, transition: { delay: 0.4 } }}
+            whileInView={{ scale: 1, opacity: 1, transition: { delay: 0.4, duration: 0.5 } }}
           >
             <Image
               width={500}

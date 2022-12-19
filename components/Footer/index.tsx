@@ -26,10 +26,10 @@ const Footer: FunctionComponent = () => {
               className="px-4 py-3 bg-white text-[#1E1D1D] rounded-l-md w-2/3"
             />
             <Box
-              className="cursor-pointer w-fit bg-white px-4 py-3 text-[#1E1D1D] rounded-r-md shadow-md flex items-center"
+              className="cursor-pointer w-fit bg-white px-4 py-3 text-[#0C2E5C] !font-medium rounded-r-md shadow-md flex items-center"
               sx={{ boxShadow: "0px 1px 4px rgba(0, 0, 0, 0.25)" }}
             >
-              <FiSend className="text-xl" /> &nbsp;Submit
+              <FiSend className="text-2xl" /> &nbsp;Submit
             </Box>
           </Box>
           <Typography className="text-white">

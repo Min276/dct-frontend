@@ -6,7 +6,7 @@ const SearchFeature: FunctionComponent = () => {
   return (
     <Box
       className="flex justify-between items-center absolute bg-white md:w-3/5 bottom-0 py-2 md:py-3 rounded-md shadow-md px-6"
-      sx={{ bottom: "-2rem", transition: "2s ease-in-out" }}
+      sx={{ bottom: "-2rem!important"}}
     >
       <Box className="w-full flex items-center">
         <FaSearch className="!text-2xl md:!text-[1.8rem] text-[#0C2E5C]" />
