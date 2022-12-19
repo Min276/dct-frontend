@@ -8,10 +8,10 @@ const CardComponent = dynamic(import("./CardComponent"), { ssr: false });
 
 const MostSearchCards: FunctionComponent = () => {
   return (
-    <Box className="px-6 py-10 md:px-24 md:py-20 bg-white">
+    <Box className="px-6 py-10 md:px-24 md:pt-14 md:pb-20 bg-white">
       <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
-        whileInView={{ scale: 1, opacity: 1, transition: { delay: 0.4 } }}
+        whileInView={{ scale: 1, opacity: 1, transition: { delay: 0.4, duration: 0.5 } }}
       >
         <Typography className="!text-[1.3rem] md:!text-2xl !font-semibold text-[#0C2E5C] text-center py-8">
           Most Search Categories

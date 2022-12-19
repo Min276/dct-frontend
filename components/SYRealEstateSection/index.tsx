@@ -9,7 +9,7 @@ const SYRealEstateSection: FunctionComponent = () => {
     <Box className="px-6 pt-10 pb-14 md:px-32 md:pt-14 md:py-20 bg-white">
       <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
-        whileInView={{ scale: 1, opacity: 1, transition: { delay: 0.4 } }}
+        whileInView={{ scale: 1, opacity: 1, transition: { delay: 0.4, duration: 0.5 } }}
       >
         {" "}
         <Typography className="!text-[1.3rem] md:!text-2xl !font-semibold text-[#0C2E5C] text-center py-8 pb-12">
@@ -20,7 +20,7 @@ const SYRealEstateSection: FunctionComponent = () => {
         <Box className="w-full md:w-1/2 flex justify-center md:justify-start">
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1, transition: { delay: 0.4 } }}
+            whileInView={{ scale: 1, opacity: 1, transition: { delay: 0.4, duration: 0.5 } }}
           >
             <Image
               width={500}
@@ -47,7 +47,7 @@ const SYRealEstateSection: FunctionComponent = () => {
           </ul>
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
-            whileInView={{ scale: 1, opacity: 1, transition: { delay: 0.4 } }}
+            whileInView={{ scale: 1, opacity: 1, transition: { delay: 0.4, duration: 0.5 } }}
           >
             <Link
               target="_blank"

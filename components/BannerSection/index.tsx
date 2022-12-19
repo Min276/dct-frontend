@@ -10,7 +10,7 @@ const BannerSection: FunctionComponent = () => {
     <Box className="relative flex justify-center items-center w-full h-[60vh] bg-no-repeat bg-fixed bg-center bg-cover bg-blend-multiply bg-[url('/assets/banner.svg')]">
       <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
-        whileInView={{ scale: 1, opacity: 1, transition: { delay: 0.4 } }}
+        whileInView={{ scale: 1, opacity: 1, transition: { delay: 0.4 , duration: 0.5 } }}
       >
         <Typography className="px-8 text-center text-white !text-2xl md:!text-4xl !font-semibold !leading-10">
           Welcome to Digital Cloud Technology

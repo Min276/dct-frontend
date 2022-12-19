@@ -31,7 +31,7 @@ const CardComponent: FunctionComponent<CardProps> = ({
   return (
     <motion.div
       initial={{ scale: 0.8, opacity: 0 }}
-      whileInView={{ scale: 1, opacity: 1, transition: { delay: 0.4 } }}
+      whileInView={{ scale: 1, opacity: 1, transition: { delay: 0.4, duration: 0.5 } }}
     >
       <Box
         className="w-72 border-l-8 px-10 py-14 rounded-md cursor-pointer"
