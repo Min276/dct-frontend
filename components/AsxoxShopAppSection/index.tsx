@@ -44,14 +44,11 @@ const AsxoxShopAppSection: FunctionComponent = () => {
             {t("landing:asxoxSection.subTitle")}
           </Typography>
           <Typography className="text-white !font-medium py-4 !leading-7">
-            Lorem ipsum dolor sit amet consectetur. Posuere ipsum donec
-            porttitor euismod ultrices tristique. Mauris tortor consequat lectus
-            consequat mi. Facilisi tortor in fringilla risus pellentesque ac
-            lectus.
+            {t("landing:asxoxSection.description")}
           </Typography>
           <ul className="list-disc pl-4 pb-8 text-white !leading-10">
-            <li>Lorem ipsum dolor sit amet consectetur sit amet </li>
-            <li>Lorem ipsum dolor sit amet consectetur sit amet </li>
+            <li>{t("landing:asxoxSection.list.listItemOne")}</li>
+            <li>{t("landing:asxoxSection.list.listItemTwo")}</li>
           </ul>
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}

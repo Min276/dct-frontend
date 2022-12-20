@@ -7,17 +7,29 @@
     "dctSection": {
         "title": "讓我們看一下DCT",
         "subTitle": "數字云技術",
+        "description": "我們是一家提供多種服務的公司集團，例如 Asxox Shop & App、數字營銷、倉儲物流、軟件開發、SY 房地產代理和 DCT 活動彩票。",
         "location": "我們的位置",
         "button": "在谷歌地圖中查看"
     },
     "asxoxSection": {
         "title": "關於我們的 Asxox 商店和應用程序",
         "subTitle": "Asxox 商店和應用功能",
+        "description": "我們是緬甸最好的在線購物平台之一，為我們的客戶提供最好的服務。我們提供 24/7 全天候客戶服務，以幫助和解決客戶的問題。",
+        "list": {
+            "listItemOne": "全面的質量控制和實惠的價格",
+            "listItemTwo": "快捷方便的送貨上門"
+        },
         "button": "探索 Asxox 應用"
     },
     "sySection": {
         "title": "關於盛業地產",
         "subTitle": "我們的機構背景和服務",
+        "description": "我們是緬甸最好的在線購物平台之一，為我們的客戶提供最好的服務。我們提供 24/7 全天候客戶服務，以幫助和解決客戶的問題。",
+        "list": {
+            "listItemOne": "全面的質量控制和實惠的價格",
+            "listItemTwo": "快捷方便的送貨上門",
+            "listItemThree": "快捷方便的送貨上門"
+        },
         "button": "探索 SY 機構"
     },
     "dctLotterySection": {

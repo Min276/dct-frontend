@@ -7,27 +7,45 @@
     "dctSection": {
         "title": "Let's take a glance at DCT",
         "subTitle": "Digital Cloud Technology",
+        "description": "We are a group of companies which is offering many services such as Asxox Shop & App, Digital Marketing, Warehouse Logistics, Software Development, SY Real Estate Agency, and DCT Event Lottery.",
         "location": "Our Location",
         "button": "View in Google Map"
     },
     "asxoxSection": {
         "title": "About our Asxox Shop & App",
         "subTitle": "Asxox Shop and App Feature",
+        "description": "We are one of the best online shopping platforms in Myanmar, which is offering our best service to our customers. We are serving 24/7 customer sevices to help and solve the problems of our customers.",
+        "list": {
+            "listItemOne": "Comprehensive quality control and affordable prices",
+            "listItemTwo": "Fast and convenient door to door delivery"
+        },
         "button": "Explore Asxox App"
     },
     "sySection": {
         "title": "About SY Real Estate Agency",
         "subTitle": "Our Agency Background & Services",
+        "description": "We are one of the best online shopping platforms in Myanmar, which is offering our best service to our customers. We are serving 24/7 customer sevices to help and solve the problems of our customers.",
+        "list": {
+            "listItemOne": "Comprehensive quality control and affordable prices",
+            "listItemTwo": "Fast and convenient door to door delivery",
+            "listItemThree": "Fast and convenient door to door delivery"
+        },
         "button": "Explore SY Agency"
     },
     "dctLotterySection": {
         "title": "DCT Event Lottery",
         "subTitle": "How our lottery system works",
+        "description": "Lorem ipsum dolor sit amet consectetur. Posuere ipsum donec porttitor euismod ultrices tristique. Mauris tortor consequat lectus consequat mi. Facilisi tortor in fringilla risus pellentesque ac lectus.",
         "button": "Explore DCT App"
     },
     "dctAppSection": {
         "title": "Easy scan & buy with DCT App",
         "subTitle": "Our app features include these:",
+        "list": {
+            "listItemOne": "Lorem ipsum dolor sit amet consectetur sit amet sit amet consectetur",
+            "listItemTwo": "Lorem ipsum dolor sit amet consectetur sit amet sit amet consectetur",
+            "listItemThree": "Lorem ipsum dolor sit amet consectetur sit amet sit amet consectetur"
+        },
         "downloadTitle": "To download our App",
         "scanQRTitle": "Scan QR code here:"
     }
