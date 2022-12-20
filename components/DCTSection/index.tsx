@@ -28,10 +28,7 @@ const DCTSection: FunctionComponent = () => {
             {t("landing:dctSection.subTitle")}
           </Typography>
           <Typography className="text-[#0C2E5C] !font-medium py-4 !leading-7">
-            Lorem ipsum dolor sit amet consectetur. Posuere ipsum donec
-            porttitor euismod ultrices tristique. Mauris tortor consequat lectus
-            consequat mi. Facilisi tortor in fringilla risus pellentesque ac
-            lectus.
+            {t("landing:dctSection.description")} 
           </Typography>
           <Box>
             <Box className="flex items-center">

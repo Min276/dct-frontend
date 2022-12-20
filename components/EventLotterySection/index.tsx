@@ -27,10 +27,7 @@ const EventLotterySection: FunctionComponent = () => {
             {t("landing:dctLotterySection.subTitle")}
           </Typography>
           <Typography className="text-white !font-medium py-4 pb-10 !leading-7">
-            Lorem ipsum dolor sit amet consectetur. Posuere ipsum donec
-            porttitor euismod ultrices tristique. Mauris tortor consequat lectus
-            consequat mi. Facilisi tortor in fringilla risus pellentesque ac
-            lectus.
+            {t("landing:dctLotterySection.description")}
           </Typography>
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
