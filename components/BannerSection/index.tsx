@@ -9,7 +9,7 @@ const SearchFeature = dynamic(import("../SearchFeature"), { ssr: false });
 const BannerSection: FunctionComponent= () => {
   const {t} = useTranslation();
   return (
-    <Box className="relative flex justify-center items-center w-full h-[60vh] bg-no-repeat bg-fixed bg-center bg-cover bg-blend-multiply bg-[url('/assets/banner.svg')]">
+    <Box className="relative flex justify-center items-center w-full h-[43vh] sm:h-[54vh] md:h-[60vh] bg-no-repeat bg-center bg-cover bg-blend-multiply bg-[url('/assets/banner.svg')]">
       <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1, transition: { delay: 0.4 , duration: 0.5 } }}
