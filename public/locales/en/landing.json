@@ -2,5 +2,33 @@
     "title": "Welcome to Digital Cloud Technology",
     "searchPlaceholder": "Search what you want here",
     "filterText": "Filter",
-    "mostSearchCategories": "Most Search Categories"
+    "mostSearchCategories" : "Most Search Categories",
+    "ourServicesTitle": "Services DCT is offering",
+    "dctSection": {
+        "title": "Let's take a glance at DCT",
+        "subTitle": "Digital Cloud Technology",
+        "location": "Our Location",
+        "button": "View in Google Map"
+    },
+    "asxoxSection": {
+        "title": "About our Asxox Shop & App",
+        "subTitle": "Asxox Shop and App Feature",
+        "button": "Explore Asxox App"
+    },
+    "sySection": {
+        "title": "About SY Real Estate Agency",
+        "subTitle": "Our Agency Background & Services",
+        "button": "Explore SY Agency"
+    },
+    "dctLotterySection": {
+        "title": "DCT Event Lottery",
+        "subTitle": "How our lottery system works",
+        "button": "Explore DCT App"
+    },
+    "dctAppSection": {
+        "title": "Easy scan & buy with DCT App",
+        "subTitle": "Our app features include these:",
+        "downloadTitle": "To download our App",
+        "scanQRTitle": "Scan QR code here:"
+    }
 }
