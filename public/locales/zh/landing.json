@@ -1,0 +1,34 @@
+{
+    "title": "歡迎來到數雲科技",
+    "searchPlaceholder": "在這裡搜索你想要的",
+    "filterText": "篩選",
+    "mostSearchCategories": "大多數搜索類別",
+    "ourServicesTitle": "DCT 提供的服務",
+    "dctSection": {
+        "title": "讓我們看一下DCT",
+        "subTitle": "數字云技術",
+        "location": "我們的位置",
+        "button": "在谷歌地圖中查看"
+    },
+    "asxoxSection": {
+        "title": "關於我們的 Asxox 商店和應用程序",
+        "subTitle": "Asxox 商店和應用功能",
+        "button": "探索 Asxox 應用"
+    },
+    "sySection": {
+        "title": "關於盛業地產",
+        "subTitle": "我們的機構背景和服務",
+        "button": "探索 SY 機構"
+    },
+    "dctLotterySection": {
+        "title": "DCT活動抽獎",
+        "subTitle": "我們的彩票系統如何運作",
+        "button": "探索 DCT 應用程序"
+    },
+    "dctAppSection": {
+        "title": "使用 DCT App 輕鬆掃描和購買",
+        "subTitle": "我們的應用程序功能包括：",
+        "downloadTitle": "下載我們的應用程序",
+        "scanQRTitle": "掃描此處二維碼："
+    }
+}

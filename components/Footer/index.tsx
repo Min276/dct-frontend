@@ -26,13 +26,13 @@ const Footer: FunctionComponent = () => {
               className="px-4 py-3 bg-white text-[#1E1D1D] rounded-l-md w-2/3"
             />
             <Box
-              className="cursor-pointer w-fit bg-white px-4 py-3 text-[#1E1D1D] rounded-r-md shadow-md flex items-center"
+              className="cursor-pointer w-fit bg-white px-4 py-3 text-[#0C2E5C] !font-medium rounded-r-md shadow-md flex items-center"
               sx={{ boxShadow: "0px 1px 4px rgba(0, 0, 0, 0.25)" }}
             >
-              <FiSend className="text-xl" /> &nbsp;Submit
+              <FiSend className="text-2xl" /> &nbsp;Submit
             </Box>
           </Box>
-          <Typography>
+          <Typography className="text-white">
             {" "}
             Reach out to us via this:{" "}
             <Link href="tel:+959968358888">+95 9968358888</Link>{" "}
@@ -42,7 +42,7 @@ const Footer: FunctionComponent = () => {
           <Typography className="!text-lg text-white !font-semibold pb-4">
             Follow us
           </Typography>
-          <Box className="flex flex-col gap-y-4">
+          <Box className="flex flex-col gap-y-4 text-white">
             <Link href="https://www.facebook.com/DataCloudTechnologyCoLtd/">Facebook</Link>
             <Link href="https://www.tiktok.com/@asxoxecommerce">Tiktok</Link>
             <Link href="https://www.youtube.com/channel/UCnXbJ5K2pmBIh_HJaUuh9kg">Youtube</Link>
