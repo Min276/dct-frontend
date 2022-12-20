@@ -4,7 +4,7 @@ import { FunctionComponent } from "react";
 import { FaSearch, FaFilter } from "react-icons/fa";
 
 const SearchFeature: FunctionComponent = () => {
-  const {t} = useTranslation();
+  const {t}:any = useTranslation();
   return (
     <Box
       className="flex justify-between items-center absolute bg-white md:w-3/5 bottom-0 py-2 md:py-3 rounded-md shadow-md px-6"
@@ -14,7 +14,7 @@ const SearchFeature: FunctionComponent = () => {
         <FaSearch className="!text-2xl md:!text-[1.8rem] text-[#0C2E5C]" />
         <input
           type="search"
-          placeholder={t("landing:searchPlaceholder")}
+          placeholder={ t("landing:searchPlaceholder") }
           className="!text-xl md:!text-[1.4rem] !font-medium w-full pl-3 p-2 outline-0	bg-white text-[#0C2E5C]"
         />
       </Box>
