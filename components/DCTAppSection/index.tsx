@@ -27,16 +27,13 @@ const DCTAppSection: FunctionComponent = () => {
           </Typography>
           <ul className="list-disc pl-4 pb-8 text-[#1E1D1D] !leading-10">
             <li>
-              Lorem ipsum dolor sit amet consectetur sit amet sit amet
-              consectetur
+              {t("landing:dctAppSection.list.listItemOne")}
             </li>
             <li>
-              Lorem ipsum dolor sit amet consectetur sit amet sit amet
-              consectetur
+             {t("landing:dctAppSection.list.listItemTwo")}
             </li>
             <li>
-              Lorem ipsum dolor sit amet consectetur sit amet sit amet
-              consectetur
+             {t("landing:dctAppSection.list.listItemThree")}
             </li>
           </ul>
           <Box className="flex flex-col md:flex-row justify-center md:justify-start items-center">

@@ -1,34 +1,67 @@
 {
-    "title": "Welcome to Digital Cloud Technology",
-    "searchPlaceholder": "Search what you want here",
-    "filterText": "Filter",
-    "mostSearchCategories" : "Most Search Categories",
-    "ourServicesTitle": "Services DCT is offering",
-    "dctSection": {
-        "title": "Let's take a glance at DCT",
-        "subTitle": "Digital Cloud Technology",
-        "location": "Our Location",
-        "button": "View in Google Map"
+  "title": "Welcome to Digital Cloud Technology",
+  "searchPlaceholder": "Search what you want here",
+  "filterText": "Filter",
+  "mostSearchCategories": "Most Search Categories",
+  "ourServicesTitle": "Services DCT is offering",
+  "dctSection": {
+    "title": "Let's take a glance at DCT",
+    "subTitle": "Digital Cloud Technology",
+    "description": "We are a group of companies which is offering many services such as Asxox Shop & App, Digital Marketing, Warehouse Logistics, Software Development, SY Real Estate Agency, and DCT Event Lottery.",
+    "location": "Our Location",
+    "button": "View in Google Map"
+  },
+  "asxoxSection": {
+    "title": "About our Asxox Shop & App",
+    "subTitle": "Asxox Shop and App Feature",
+    "description": "We are one of the best online shopping platforms in Myanmar, which is offering our best service to our customers. We are serving 24/7 customer sevices to help and solve the problems of our customers.",
+    "list": {
+      "listItemOne": "Comprehensive quality control and affordable prices",
+      "listItemTwo": "Fast and convenient door to door delivery"
     },
-    "asxoxSection": {
-        "title": "About our Asxox Shop & App",
-        "subTitle": "Asxox Shop and App Feature",
-        "button": "Explore Asxox App"
+    "button": "Explore Asxox App"
+  },
+  "sySection": {
+    "title": "About SY Real Estate Agency",
+    "subTitle": "Our Agency Background & Services",
+    "description": "We are one of the real estate agencies in Myanmar which is making people lives smooth and convenient with the most suitable and affordable housings, apartments, and etc. If you are to rent or buy a house or apartment, don't think twice, just contact us right away.",
+    "list": {
+      "listItemOne": "Convienent, smooth process and affordable prices",
+      "listItemTwo": "Good quality accomodations with fair prices",
+      "listItemThree": "Fast, reliable and 24/7 customer services"
     },
-    "sySection": {
-        "title": "About SY Real Estate Agency",
-        "subTitle": "Our Agency Background & Services",
-        "button": "Explore SY Agency"
+    "button": "Explore SY Agency"
+  },
+  "dctLotterySection": {
+    "title": "DCT Event Lottery",
+    "subTitle": "How our lottery system works",
+    "description": "Our lottery tickets are everywhere you go, and when you buy something from the shops in partnership with us, you will get a free ticket to win the lottery. The more ticket you collect, the higher chance to win the big prizes.",
+    "button": "Explore DCT App"
+  },
+  "dctAppSection": {
+    "title": "Easy scan & buy with DCT App",
+    "subTitle": "Our app features include these:",
+    "list": {
+      "listItemOne": "Fast, secure mobile application with easy scan and buy feature",
+      "listItemTwo": "Clean and user-centered design with easy accessiblity",
+      "listItemThree": "Amazing features to enhance your user experiences"
     },
-    "dctLotterySection": {
-        "title": "DCT Event Lottery",
-        "subTitle": "How our lottery system works",
-        "button": "Explore DCT App"
+    "downloadTitle": "To download our App",
+    "scanQRTitle": "Scan QR code here:"
+  },
+  "footer": {
+    "description": "DCT is a group of companies which include many functionalities and services to make people lives convenient and comfortable. We are always thriving to be one of the most famous group of companies in Myanmar, building up company profile.",
+    "email": {
+      "title": "Subscribe our email address",
+      "placeholder": "Enter your email address"
     },
-    "dctAppSection": {
-        "title": "Easy scan & buy with DCT App",
-        "subTitle": "Our app features include these:",
-        "downloadTitle": "To download our App",
-        "scanQRTitle": "Scan QR code here:"
+    "submit": "Submit",
+    "reachout": "Reach out to us via this:",
+    "followus": {
+      "title": "Follow us",
+      "facebook": "Facebook",
+      "tiktok": "Tiktok",
+      "youtube": "Youtube"
     }
+  }
 }

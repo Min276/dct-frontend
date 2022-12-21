@@ -5,9 +5,21 @@ import Image from "next/image";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import YouTube, { YouTubeProps } from "react-youtube";
 
 const DCTSection: FunctionComponent = () => {
   const { t } = useTranslation();
+  const onPlayerReady: YouTubeProps["onReady"] = (event) => {
+    // access to player in all event handlers via event.target
+    event.target.pauseVideo();
+  };
+
+  const opts: YouTubeProps["opts"] = {
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      autoplay: 1,
+    },
+  };
   return (
     <Box className="px-6 pt-10 pb-18 md:px-24 md:pt-14 md:py-20 bg-white">
       <motion.div
@@ -28,10 +40,7 @@ const DCTSection: FunctionComponent = () => {
             {t("landing:dctSection.subTitle")}
           </Typography>
           <Typography className="text-[#0C2E5C] !font-medium py-4 !leading-7">
-            Lorem ipsum dolor sit amet consectetur. Posuere ipsum donec
-            porttitor euismod ultrices tristique. Mauris tortor consequat lectus
-            consequat mi. Facilisi tortor in fringilla risus pellentesque ac
-            lectus.
+            {t("landing:dctSection.description")}
           </Typography>
           <Box>
             <Box className="flex items-center">
@@ -63,7 +72,7 @@ const DCTSection: FunctionComponent = () => {
             </Link>
           </motion.div>
         </Box>
-        <Box className="w-full md:w-1/2 flex justify-center md:justify-end py-12 md:py-0">
+        <Box className="w-full md:w-1/2 md:flex justify-center md:justify-end py-12 md:py-0">
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
             whileInView={{
@@ -72,11 +81,17 @@ const DCTSection: FunctionComponent = () => {
               transition: { delay: 0.4, duration: 0.5 },
             }}
           >
-            <Image
+            {/* <Image
               width={500}
               height={500}
               src="/assets/dctImage.svg"
               alt="logo"
+            /> */}
+            <YouTube
+              videoId="eYUTFblwdwA"
+              opts={opts}
+              onReady={onPlayerReady}
+              iframeClassName="w-full h-[300px] sm:h-[400px] md:w-[500px] rounded-md"
             />
           </motion.div>
         </Box>
