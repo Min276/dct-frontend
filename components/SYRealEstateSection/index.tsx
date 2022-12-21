@@ -34,8 +34,9 @@ const SYRealEstateSection: FunctionComponent = () => {
             <Image
               width={500}
               height={500}
-              src="/assets/dctImage.svg"
+              src="/assets/syImage.svg"
               alt="sy real estate company"
+              className="shadow-xl rounded-lg"
             />
           </motion.div>
         </Box>
@@ -44,15 +45,12 @@ const SYRealEstateSection: FunctionComponent = () => {
             {t("landing:sySection.subTitle")}
           </Typography>
           <Typography className="text-[#0C2E5C] !font-medium py-4 !leading-7">
-            Lorem ipsum dolor sit amet consectetur. Posuere ipsum donec
-            porttitor euismod ultrices tristique. Mauris tortor consequat lectus
-            consequat mi. Facilisi tortor in fringilla risus pellentesque ac
-            lectus.
+           {t("landing:sySection.description")}
           </Typography>
           <ul className="list-disc pl-4 pb-6 text-[#0C2E5C] !leading-10">
-            <li>Lorem ipsum dolor sit amet consectetur sit amet </li>
-            <li>Lorem ipsum dolor sit amet consectetur sit amet </li>
-            <li>Lorem ipsum dolor sit amet consectetur sit amet </li>
+            <li>{t("landing:sySection.list.listItemOne")}</li>
+            <li>{t("landing:sySection.list.listItemTwo")}</li>
+            <li>{t("landing:sySection.list.listItemThree")}</li>
           </ul>
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
