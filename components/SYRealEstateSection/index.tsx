@@ -34,7 +34,7 @@ const SYRealEstateSection: FunctionComponent = () => {
             <Image
               width={500}
               height={500}
-              src="/assets/dctImage.svg"
+              src="/assets/syImage.svg"
               alt="sy real estate company"
             />
           </motion.div>
