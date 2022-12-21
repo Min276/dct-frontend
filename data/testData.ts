@@ -105,4 +105,42 @@ export const servicesData = [
         iconHeight: 40,
         directory: "#",
     },
+];
+
+export const FacebookPackagesData = [
+    {
+        plan: "Standard",
+        pricing: "650K",
+        content : "8 facebook posts per month",
+        photo: "8 creative posts (photo retouch) photo does not support *",
+        promotion: "promotion idea (optional)",
+        message: "message reply/ comment within 9 am to 11 pm",
+        boost: "boosting fee $300 included",
+        textColor: "#0C2E5C",
+        backgroundColor: "white",
+    },
+    {
+        plan: "Premium",
+        pricing: "1100K",
+        content : "10 facebook posts per month",
+        photo: "10 creative posts (photo retouch) photo support *",
+        promotion: "promotion idea support",
+        message: "message reply/ comment within 9 am to 11 pm",
+        video: "1 creative video provided",
+        boost: "boosting fee $500 included",
+        textColor: "#0C2E5C",
+        backgroundColor: "white",
+    },
+    {
+        plan: "Premium +",
+        pricing: "1500K",
+        content : "12 facebook posts per month",
+        photo: "12 creative posts (photo retouch) photo support *",
+        promotion: "promotion idea support",
+        message: "message reply/ comment within 9 am to 11 pm",
+        video: "1 animated video provided",
+        boost: "boosting fee $700 included",
+        textColor: "#0C2E5C",
+        backgroundColor: "white",
+    }
 ]
