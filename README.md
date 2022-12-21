@@ -10,25 +10,46 @@ npm run dev
 yarn dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Server Deploy Digital Ocean
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+#(if you cloned the repo from somewhere else, make sure to npm install first
+npm install)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+#Build it
+npm run build
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+#Create NGINX config file and edit it
+cd /etc/nginx/sites-available
+touch name_of_app
+nano name_of_app
 
-## Learn More
+[SEE OTHER GIST FOR CONFIG FILE CONTENTS] 
+#https://gist.github.com/oelbaga/5019647715e68815c602ff05cff2416e#file-ubuntu-nextjs-nginx-config-file
 
-To learn more about Next.js, take a look at the following resources:
+#Option1 Syslink the file in sites-enabled
+sudo ln -s /etc/nginx/sites-available/name_of_app /etc/nginx/sites-enabled/name_of_app
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+#Option 2 No need to use sites-enabled
+nano /etc/nginx/nginx.conf  
+change  include /etc/nginx/sites-enabled/*; to  include /etc/nginx/sites-available/*;
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#make Sure NGINX file is good
+nginx -t
 
-## Deploy on Vercel
+#remove the default config files
+cd /etc/nginx/sites-available
+rm default
+cd /etc/nginx/sites-enabled
+rm default
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+#restart NGINX to reload config files
+systemctl restart nginx
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+#Go to site directory and launch it with pm2
+cd /var/www/name_of_app
+
+#launch app with pm2
+pm2 start npm --name name_of_app -- start
+
+#Create SSL with letsencryot
+sudo certbot --nginx -d domainname.com
