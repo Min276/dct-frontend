@@ -6,7 +6,7 @@ import { FiSend } from "react-icons/fi";
 import Link from "next/link";
 
 const Footer: FunctionComponent = () => {
-  const { t } = useTranslation();
+  const { t }:any = useTranslation();
   return (
     <Box className="px-6 pt-14 pb-10 md:px-24 md:pt-20 md:py-12 bg-[#0C2E5C]">
       <Box className="flex flex-col md:flex-row justify-evenly md:items-center mb-20 gap-y-8">
@@ -18,11 +18,11 @@ const Footer: FunctionComponent = () => {
         </Box>
         <Box className="flex flex-col md:w-3/5 md:mx-32">
           <Typography className="!text-lg text-white !font-semibold">
-            {t("landing:footer.email")}
+            {t("landing:footer.email.title")}
           </Typography>
           <Box className="flex items-center py-4 mb-2">
             <input
-              placeholder="Enter your email address"
+              placeholder={t("landing:footer.email.placeholder")}
               className="px-4 py-3 bg-white text-[#1E1D1D] rounded-l-md w-2/3"
             />
             <Box
