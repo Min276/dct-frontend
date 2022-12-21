@@ -9,7 +9,7 @@ const Footer: FunctionComponent = () => {
   const { t } = useTranslation();
   return (
     <Box className="px-6 pt-14 pb-10 md:px-24 md:pt-20 md:py-12 bg-[#0C2E5C]">
-      <Box className="flex flex-col md:flex-row justify-evenly mb-20 gap-y-8">
+      <Box className="flex flex-col md:flex-row justify-evenly md:items-center mb-20 gap-y-8">
         <Box className="flex flex-col md:w-4/5">
           <Image width={100} height={100} src="/assets/logo.svg" alt="logo" />
           <Typography className="text-white pt-4 !leading-7">
