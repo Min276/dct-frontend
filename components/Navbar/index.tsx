@@ -29,7 +29,7 @@ const Navbar: FunctionComponent = () => {
       </Link>
       <Box className="flex gap-x-4 md:gap-x-8 items-center">
         <select
-          className="select p-[5px] rounded-md"
+          className="select p-[5px] rounded-md bg-white text-[#0C2E5C]"
           value={language}
           onChange={changeLanguageHandler}
         >

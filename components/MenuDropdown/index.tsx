@@ -1,8 +1,11 @@
 import { Box, Button, Menu, MenuItem } from "@mui/material";
+import { useState } from "react";
 import PopupState, { bindTrigger, bindMenu } from "material-ui-popup-state";
 import { FaFacebook, FaViber, FaTiktok, FaYoutube } from "react-icons/fa";
 import { FiMenu } from "react-icons/fi";
+import { MdClose } from "react-icons/md";
 import Link from "next/link";
+import { HiBars3BottomRight } from "react-icons/hi2";
 
 const MenuDropdown = () => {
   return (
@@ -10,8 +13,8 @@ const MenuDropdown = () => {
       <PopupState variant="popover" popupId="demo-popup-menu">
         {(popupState) => (
           <>
-            <Button variant="contained" {...bindTrigger(popupState)}>
-              <FiMenu className="text-3xl" />
+            <Button className="text-white" {...bindTrigger(popupState)}>
+              <FiMenu className="text-4xl" />
             </Button>
             <Menu {...bindMenu(popupState)}>
               <MenuItem onClick={popupState.close}>

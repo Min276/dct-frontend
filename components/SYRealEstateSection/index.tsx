@@ -36,6 +36,7 @@ const SYRealEstateSection: FunctionComponent = () => {
               height={500}
               src="/assets/syImage.svg"
               alt="sy real estate company"
+              className="shadow-xl rounded-lg"
             />
           </motion.div>
         </Box>
