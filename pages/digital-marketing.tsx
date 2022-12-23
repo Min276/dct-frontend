@@ -37,7 +37,7 @@ const DigitalMarketing:FunctionComponent = () => {
         <DMBannerSection />
         <FacebookPackages />
       </Layout>
-    )};
+    )}
     </>
     );
 }
