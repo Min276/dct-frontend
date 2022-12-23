@@ -63,5 +63,12 @@
       "tiktok": "Tiktok",
       "youtube": "Youtube"
     }
+  },
+
+  "digitalMarketing": {
+     "title": "We offer Digital Marketing Service",
+     "facebookMarketing": {
+       "title": "Facebook Management Packages"
+     }
   }
 }
