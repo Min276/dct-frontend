@@ -23,7 +23,7 @@ const FacebookPackages: FunctionComponent = () => {
           {t("landing:digitalMarketing.facebookMarketing.title")}
         </Typography>
       </motion.div>
-      <Box className="flex flex-wrap justify-center md:justify-between gap-y-8 mt-2">
+      <Box className="flex flex-col md:flex-row justify-center md:justify-between gap-y-8 mt-2">
         {FacebookPackagesData.map((data: any, index: number) => (
           <CardComponent
             key={index}
