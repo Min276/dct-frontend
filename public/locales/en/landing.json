@@ -63,5 +63,18 @@
       "tiktok": "Tiktok",
       "youtube": "Youtube"
     }
+  },
+
+  "digitalMarketing": {
+     "title": "We offer Digital Marketing Service",
+     "facebookMarketing": {
+       "title": "Facebook Management Packages"
+     },
+     "facebookPageLike": {
+      "title": "Facebook Page Like Advertising"
+     },
+     "servicesStepByStep": {
+      "title": "How we serve you in step by step"
+     }
   }
 }
