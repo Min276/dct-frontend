@@ -151,3 +151,46 @@ export const FacebookPackagesData = [
     backgroundColor: "white",
   },
 ];
+
+export const PageLikeViewCardData = [
+    {
+        plan: "Basic Plan",
+        pricing: "$200",
+        pageLikeRange: "3000 - 5000",
+        duration: "Desire Duration",
+        report: "Yes",
+        target: "Yes",
+        textColor: "#0C2E5C",
+        backgroundColor: "white",
+    },
+    {
+        plan: "Standard",
+        pricing: "$300",
+        pageLikeRange: "7000 - 10000",
+        duration: "Desire Duration",
+        report: "Yes",
+        target: "Yes",
+        textColor: "#0C2E5C",
+        backgroundColor: "white",
+    },
+    {
+        plan: "Premium",
+        pricing: "$400",
+        pageLikeRange: "10000 - 13000",
+        duration: "Desire Duration",
+        report: "Yes",
+        target: "Yes",
+        textColor: "#0C2E5C",
+        backgroundColor: "white",
+    },
+    {
+        plan: "Premium +",
+        pricing: "$500",
+        pageLikeRange: "14000 - 20000",
+        duration: "Desire Duration",
+        report: "Yes",
+        target: "Yes",
+        textColor: "#0C2E5C",
+        backgroundColor: "white",
+    }
+]

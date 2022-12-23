@@ -6,6 +6,7 @@ import DMBannerSection from "../components/DigitalMarketingBanner";
 import Layout from "../components/Layout";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import FacebookPackages from "../components/FacebookPackages";
+import PageLikeViewCard from "../components/PageLikeViewCard";
 
 const DigitalMarketing:FunctionComponent = () => {
   const [loading, setLoading] = useState(true);
@@ -36,6 +37,7 @@ const DigitalMarketing:FunctionComponent = () => {
       <Layout>
         <DMBannerSection />
         <FacebookPackages />
+        <PageLikeViewCard />
       </Layout>
     )}
     </>
