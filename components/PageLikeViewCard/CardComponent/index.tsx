@@ -54,7 +54,7 @@ const CardComponent: FunctionComponent<CardProps> = ({
              sx={{ color: textColor }}>
               {title}
             </Typography>
-            <Typography className="!text-lg !font-semibold mb-2"
+            <Typography className="!text-[1.17rem] text-[#1E1D1D] !font-semibold mb-2"
              sx={{ color: textColor }}>
               Approximate Page Like
             </Typography>
