@@ -1,12 +1,16 @@
 import { Box, Typography } from "@mui/material";
 import { useTranslation } from "next-i18next";
-import { FunctionComponent } from "react";
+import { FunctionComponent, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import QRCodeModal from "../DialogComponent";
 
 const SYRealEstateSection: FunctionComponent = () => {
   const { t } = useTranslation();
+  const [openModalOne, setOpenModalOne] = useState(false);
+  const [openModalTwo, setOpenModalTwo] = useState(false);
+
   return (
     <Box className="px-6 pt-10 pb-14 md:px-32 md:pt-14 md:py-20 bg-white">
       <motion.div
@@ -78,8 +82,16 @@ const SYRealEstateSection: FunctionComponent = () => {
                   </Link>
                 </Typography>
               </Box>
+              {openModalOne && (
+                <QRCodeModal image="/assets/weChatQR/qrone.svg" onClickHandler={() => setOpenModalOne(false)} />
+              )}
+               {openModalTwo && (
+                <QRCodeModal image="/assets/weChatQR/qrtwo.svg" onClickHandler={() => setOpenModalTwo(false)} />
+              )}
+              
               <Box className="flex items-center gap-x-8">
                 <Image
+                  onClick={() => setOpenModalOne(true)}
                   width={100}
                   height={100}
                   src="/assets/weChatQR/qrone.svg"
@@ -87,6 +99,7 @@ const SYRealEstateSection: FunctionComponent = () => {
                   className="shadow-xl"
                 />
                 <Image
+                  onClick={() => setOpenModalTwo(true)}
                   width={100}
                   height={100}
                   src="/assets/weChatQR/qrtwo.svg"
