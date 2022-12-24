@@ -2,8 +2,8 @@
   "title": "歡迎來到數雲科技",
   "searchPlaceholder": "在這裡搜索你想要的",
   "filterText": "篩選",
-  "mostSearchCategories": "大多數搜索類別",
   "ourServicesTitle": "DCT 提供的服務",
+  "ourProductsTitle": "我們正在進行的項目",
   "dctSection": {
     "title": "讓我們看一下DCT",
     "subTitle": "數字云技術",
@@ -33,10 +33,10 @@
     "button": "探索 SY 機構"
   },
   "dctLotterySection": {
-    "title": "DCT活動抽獎",
+    "title": "關於幸運星彩票",
     "subTitle": "我們的彩票系統如何運作",
     "description": "我們的彩票無處不在，當您從與我們合作的商店購買商品時，您將獲得一張免費彩票來贏得彩票。您收集的彩票越多，贏得大獎的機會就越大。",
-    "button": "探索 DCT 應用程序"
+    "button": "探索幸運之星"
   },
   "dctAppSection": {
     "title": "使用 DCT App 輕鬆掃描和購買",

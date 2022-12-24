@@ -10,7 +10,7 @@ const CardComponent = dynamic(import("./CardComponent"), { ssr: false });
 const FacebookPackages: FunctionComponent = () => {
   const { t } = useTranslation();
   return (
-    <Box className="px-6 py-10 md:px-24 md:pt-14 md:pb-20 bg-white">
+    <Box className="px-6 py-16 md:px-24 md:pt-14 md:pb-20 bg-white">
       <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
         whileInView={{

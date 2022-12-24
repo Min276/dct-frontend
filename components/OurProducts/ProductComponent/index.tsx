@@ -5,7 +5,7 @@ import { useRouter } from "next/router";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
-interface ServiceProps {
+interface ProductProps {
   title: string;
   icon: string;
   textColor?: string;
@@ -16,7 +16,7 @@ interface ServiceProps {
   directory?: any;
 }
 
-const ServiceComponent: FunctionComponent<ServiceProps> = ({
+const ProductComponent: FunctionComponent<ProductProps> = ({
   title,
   icon,
   textColor,
@@ -26,7 +26,7 @@ const ServiceComponent: FunctionComponent<ServiceProps> = ({
   iconHeight,
   directory,
 }) => {
-  const router = useRouter();
+  // const router = useRouter();
   return (
     <Link
       className="w-2/5 md:w-1/5 flex flex-col justify-center items-center"
@@ -64,9 +64,9 @@ const ServiceComponent: FunctionComponent<ServiceProps> = ({
   );
 };
 
-ServiceComponent.defaultProps = {
+ProductComponent.defaultProps = {
   iconWidth: 100,
   iconHeight: 100,
 };
 
-export default ServiceComponent;
+export default ProductComponent;

@@ -6,13 +6,13 @@ import { Box, Skeleton } from "@mui/material";
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 const Layout = dynamic(import("../components/Layout"), { ssr: false });
-const MostSearchCards = dynamic(import("../components/MostSearchCards"), {
+const OurServices = dynamic(import("../components/OurServices"), {
   ssr: false,
 });
 const BannerSection = dynamic(import("../components/BannerSection"), {
   ssr: false,
 });
-const OurServices = dynamic(import("../components/OurServices"), {
+const OurProducts = dynamic(import("../components/OurProducts"), {
   ssr: false,
 });
 const DCTSection = dynamic(import("../components/DCTSection"), { ssr: false });
@@ -60,8 +60,8 @@ const Home: FunctionComponent = () => {
       ) : (
         <Layout>
           <BannerSection />
-          <MostSearchCards />
           <OurServices />
+          <OurProducts />
           <DCTSection />
           <AsxoxShopAppSection />
           <SYRealEstateSection />

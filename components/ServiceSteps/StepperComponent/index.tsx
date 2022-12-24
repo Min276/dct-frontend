@@ -13,7 +13,7 @@ import {
 
 const steps = [
   {
-    label: "Initial Page Stepup",
+    label: "Initial Page Setup",
     description: [
       "If the plan is started, we will make initial setup for pages",
       "Facebook Cover Design",
@@ -29,7 +29,7 @@ const steps = [
   },
   {
     label: "Content",
-    description: ["We are writing effective content"],
+    description: ["We are writing effective contents for your facebook page"],
   },
   {
     label: "Promotion Campaign Idea",
@@ -81,15 +81,15 @@ const StepperComponent: FunctionComponent = () => {
     setActiveStep(0);
   };
   //   class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiStepIcon-root Mui-active css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root"
-  //   const BootstrapStepper = styled(Stepper)({
-  //       "&  .MuiStepIcon-root.active": { color: "#0C2E5C" },
-  //       "& .MuiStepIcon-root-completed": { background: "#0C2E5C" },
-  //       "& .Mui-disabled .MuiStepIcon-root": { background: "#0C2E5C" }
-  //   });
+  const BootstrapStepper = styled(Stepper)({
+    "& .Mui-active .MuiStepIcon-root": { color: "#0C2E5C" },
+    "& .Mui-completed .MuiStepIcon-root": { color: "#0C2E5C" },
+    "& .Mui-disabled .MuiStepIcon-root": { color: "#0C2E5C" },
+  });
 
   return (
     <Box sx={{ maxWidth: 400 }} className="py-1">
-      <Stepper activeStep={activeStep} orientation="vertical">
+      <BootstrapStepper activeStep={activeStep} orientation="vertical">
         {steps.map((step, index) => (
           <Step key={step.label} className="!font-semibold">
             <StepLabel
@@ -105,38 +105,49 @@ const StepperComponent: FunctionComponent = () => {
               </Typography>
             </StepLabel>
             <StepContent>
-              <ul className="list-disc pl-4 pb-8 text-[#0C2E5C] !leading-10">
+              <ul className="list-disc pl-4 text-[#0C2E5C]">
                 {step.description.map((item, index) => (
-                  <li key={index}>{item}</li>
+                  <li
+                    className="mb-3 !leading-7 !text-[1.04rem] font-normal text-[#1E1D1D]"
+                    key={index}
+                  >
+                    {item}
+                  </li>
                 ))}
               </ul>
               <Box sx={{ mb: 2 }}>
                 <div>
                   <Button
-                    className="bg-[#0C2E5C] text-white !font-semibold !text-lg capitalize"
+                    className="bg-[#0C2E5C] text-white !text-[1rem] capitalize"
                     onClick={handleNext}
-                    sx={{ mt: 1, mr: 1 }}
+                    sx={{ mt: 1, mr: 1, px: 2 }}
                   >
                     {index === steps.length - 1 ? "Finish" : "Next Step"}
                   </Button>
-                  <Button
-                    disabled={index === 0}
-                    className="bg-white !text-[#0C2E5C]  !font-semibold !text-lg capitalize"
-                    onClick={handleBack}
-                    sx={{ mt: 1, mr: 1 }}
-                  >
-                    Previous Step
-                  </Button>
+                  {index >= 1 && (
+                    <Button
+                      // disabled={index === 0}
+                      className="bg-white !text-[#0C2E5C]  !font-semibold !text-[1rem] capitalize"
+                      onClick={handleBack}
+                      sx={{ mt: 1, mr: 1 }}
+                    >
+                      Back
+                    </Button>
+                  )}
                 </div>
               </Box>
             </StepContent>
           </Step>
         ))}
-      </Stepper>
+      </BootstrapStepper>
       {activeStep === steps.length && (
         <Paper square elevation={0} sx={{ p: 3 }}>
           {/* <Typography>All steps completed - you&apos;re finished</Typography> */}
-          <Button onClick={handleReset} sx={{ mt: 1, mr: 1 }}>
+          <Button
+            onClick={handleReset}
+            sx={{ mt: 1, mr: 1 }}
+            className="!text-lg !font-semibold text-[#1E1D1D] capitalize"
+          >
             Reset all
           </Button>
         </Paper>
