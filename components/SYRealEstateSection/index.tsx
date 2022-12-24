@@ -45,12 +45,12 @@ const SYRealEstateSection: FunctionComponent = () => {
             {t("landing:sySection.subTitle")}
           </Typography>
           <Typography className="text-[#0C2E5C] !font-medium py-4 !leading-7">
-           {t("landing:sySection.description")}
+            {t("landing:sySection.description")}
           </Typography>
           <ul className="list-disc pl-4 pb-6 text-[#0C2E5C] !leading-10">
             <li>{t("landing:sySection.list.listItemOne")}</li>
-            <li>{t("landing:sySection.list.listItemTwo")}</li>
-            <li>{t("landing:sySection.list.listItemThree")}</li>
+            {/* <li>{t("landing:sySection.list.listItemTwo")}</li>
+            <li>{t("landing:sySection.list.listItemThree")}</li> */}
           </ul>
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
@@ -60,13 +60,41 @@ const SYRealEstateSection: FunctionComponent = () => {
               transition: { delay: 0.4, duration: 0.5 },
             }}
           >
-            <Link
+            {/* <Link
               target="_blank"
               href="#"
               className="px-4 py-3 w-fit rounded-md bg-[#0C2E5C] text-white cursor-pointer !font-semibold"
             >
               {t("landing:sySection.button")}
-            </Link>
+            </Link> */}
+            <Box className="flex flex-col md:flex-row md:items-center justify-between gap-y-6">
+              <Box className="flex flex-col gap-y-3">
+                <Typography className=" text-[#0C2E5C] !font-semibold">
+                  You can contact us via these:
+                </Typography>
+                <Typography className="text-[#0C2E5C] !font-semibold">
+                  <Link href="tel:09941181188" className="cursor-pointer">
+                    09 941181188
+                  </Link>
+                </Typography>
+              </Box>
+              <Box className="flex items-center gap-x-8">
+                <Image
+                  width={100}
+                  height={100}
+                  src="/assets/weChatQR/qrone.svg"
+                  alt="sy real estate company qr code"
+                  className="shadow-xl"
+                />
+                <Image
+                  width={100}
+                  height={100}
+                  src="/assets/weChatQR/qrtwo.svg"
+                  alt="sy real estate company qr code"
+                  className="shadow-xl"
+                />
+              </Box>
+            </Box>
           </motion.div>
         </Box>
       </Box>
