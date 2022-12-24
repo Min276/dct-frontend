@@ -2,8 +2,8 @@
   "title": "Welcome to Digital Cloud Technology",
   "searchPlaceholder": "Search what you want here",
   "filterText": "Filter",
-  "mostSearchCategories": "Most Search Categories",
   "ourServicesTitle": "Services DCT is offering",
+  "ourProductsTitle": "Products we are working on",
   "dctSection": {
     "title": "Let's take a glance at DCT",
     "subTitle": "Digital Cloud Technology",
@@ -33,10 +33,10 @@
     "button": "Explore SY Agency"
   },
   "dctLotterySection": {
-    "title": "DCT Event Lottery",
+    "title": "About Lucky Star Lottery",
     "subTitle": "How our lottery system works",
     "description": "Our lottery tickets are everywhere you go, and when you buy something from the shops in partnership with us, you will get a free ticket to win the lottery. The more ticket you collect, the higher chance to win the big prizes.",
-    "button": "Explore DCT App"
+    "button": "Explore Lucky Star"
   },
   "dctAppSection": {
     "title": "Easy scan & buy with DCT App",
