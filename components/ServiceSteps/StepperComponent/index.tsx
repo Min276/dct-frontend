@@ -13,7 +13,7 @@ import {
 
 const steps = [
   {
-    label: "Initial Page Stepup",
+    label: "Initial Page Setup",
     description: [
       "If the plan is started, we will make initial setup for pages",
       "Facebook Cover Design",
@@ -81,11 +81,11 @@ const StepperComponent: FunctionComponent = () => {
     setActiveStep(0);
   };
   //   class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiStepIcon-root Mui-active css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root"
-    const BootstrapStepper = styled(Stepper)({
-        "& .Mui-active .MuiStepIcon-root": { color: "#0C2E5C" },
-        "& .Mui-completed .MuiStepIcon-root": { color: "#0C2E5C" },
-        "& .Mui-disabled .MuiStepIcon-root": { color: "#0C2E5C" }
-    });
+  const BootstrapStepper = styled(Stepper)({
+    "& .Mui-active .MuiStepIcon-root": { color: "#0C2E5C" },
+    "& .Mui-completed .MuiStepIcon-root": { color: "#0C2E5C" },
+    "& .Mui-disabled .MuiStepIcon-root": { color: "#0C2E5C" },
+  });
 
   return (
     <Box sx={{ maxWidth: 400 }} className="py-1">
@@ -107,7 +107,12 @@ const StepperComponent: FunctionComponent = () => {
             <StepContent>
               <ul className="list-disc pl-4 text-[#0C2E5C]">
                 {step.description.map((item, index) => (
-                  <li className="mb-3 !leading-7 !text-[1.04rem] font-normal text-[#1E1D1D]" key={index}>{item}</li>
+                  <li
+                    className="mb-3 !leading-7 !text-[1.04rem] font-normal text-[#1E1D1D]"
+                    key={index}
+                  >
+                    {item}
+                  </li>
                 ))}
               </ul>
               <Box sx={{ mb: 2 }}>
@@ -119,15 +124,15 @@ const StepperComponent: FunctionComponent = () => {
                   >
                     {index === steps.length - 1 ? "Finish" : "Next Step"}
                   </Button>
-                  {index >= 1 &&(
-                  <Button
-                    // disabled={index === 0}
-                    className="bg-white !text-[#0C2E5C]  !font-semibold !text-[1rem] capitalize"
-                    onClick={handleBack}
-                    sx={{ mt: 1, mr: 1 }}
-                  >
-                    Back
-                  </Button>
+                  {index >= 1 && (
+                    <Button
+                      // disabled={index === 0}
+                      className="bg-white !text-[#0C2E5C]  !font-semibold !text-[1rem] capitalize"
+                      onClick={handleBack}
+                      sx={{ mt: 1, mr: 1 }}
+                    >
+                      Back
+                    </Button>
                   )}
                 </div>
               </Box>
@@ -138,7 +143,11 @@ const StepperComponent: FunctionComponent = () => {
       {activeStep === steps.length && (
         <Paper square elevation={0} sx={{ p: 3 }}>
           {/* <Typography>All steps completed - you&apos;re finished</Typography> */}
-          <Button onClick={handleReset} sx={{ mt: 1, mr: 1 }} className="!text-lg !font-semibold text-[#1E1D1D] capitalize">
+          <Button
+            onClick={handleReset}
+            sx={{ mt: 1, mr: 1 }}
+            className="!text-lg !font-semibold text-[#1E1D1D] capitalize"
+          >
             Reset all
           </Button>
         </Paper>

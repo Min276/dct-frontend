@@ -21,7 +21,9 @@ const CardComponent: FunctionComponent<CardProps> = ({
   restData,
 }) => {
   return (
+    // -mr-16
     <motion.div
+      className="w-full sm:w-auto sm:odd:!-mr-16 md:odd:!mr-0 md:even:!-mr-16 md:last:!mr-0 lg:last:!-mr-16 lg:even:!mr-0"
       initial={{ scale: 0.8, opacity: 0 }}
       whileInView={{
         scale: 1,
@@ -31,7 +33,7 @@ const CardComponent: FunctionComponent<CardProps> = ({
     >
       <Box
         key={key}
-        className="relative w-4/5 h-[468px] px-16 py-10 rounded-md cursor-pointer"
+        className="!w-full relative sm:!w-4/5 h-[480px] px-16 py-10 rounded-md cursor-pointer !ml-0 !mr-0"
         sx={{
           backgroundColor: backgroundColor,
           boxShadow: "0px 1px 10px rgba(0, 0, 0, 0.25);",
