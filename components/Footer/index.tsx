@@ -34,9 +34,9 @@ const Footer: FunctionComponent = () => {
           </Box>
           <Typography className="text-white">
             {t("landing:footer.reachout")}
-            <Link href="tel:+959968358888">+95 9968358888</Link>
+            <Link href="tel:+959963809262"> &nbsp; +95 9963809262</Link>
           </Typography>
-        </Box>
+        </Box> 
         <Box className="flex flex-col md:w-1/5 mt-2 md:mt-0">
           <Typography className="!text-lg text-white !font-semibold pb-4">
             {t("landing:footer.followus.title")}
