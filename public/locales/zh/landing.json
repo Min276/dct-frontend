@@ -1,42 +1,42 @@
 {
-  "title": "歡迎來到數雲科技",
-  "searchPlaceholder": "在這裡搜索你想要的",
-  "filterText": "篩選",
-  "ourServicesTitle": "DCT 提供的服務",
-  "ourProductsTitle": "我們正在進行的項目",
+  "title": "欢迎来到数字云科技",
+  "searchPlaceholder": "在这里搜索您想要的",
+  "filterText": "筛选",
+  "ourServicesTitle": "DCT 提供的服务",
+  "ourProductsTitle": "数据云科技运行项目",
   "dctSection": {
-    "title": "讓我們看一下DCT",
-    "subTitle": "數字云技術",
-    "description": "我們是一家提供多種服務的公司集團，例如 Asxox Shop & App、數字營銷、倉儲物流、軟件開發、SY 房地產代理和 DCT 活動彩票。",
-    "location": "我們的位置",
-    "button": "在谷歌地圖中查看"
+    "title": "让您了解DCT",
+    "subTitle": "数字云技术",
+    "description": "我們是一家提供多種服務的科技公司，例如 Asxox Shop & App、数字营销、仓储物流、软件开发、思源房地產代理和 DCT 活動彩票。",
+    "location": "我们的位置",
+    "button": "在谷歌地图中查看"
   },
   "asxoxSection": {
-    "title": "關於我們的 Asxox 商店和應用程序",
-    "subTitle": "Asxox 商店和應用功能",
-    "description": "我們是緬甸最好的在線購物平台之一，為我們的客戶提供最好的服務。我們提供 24/7 全天候客戶服務，以幫助和解決客戶的問題。",
+    "title": "关于我們的 Asxox 商店和应用程序",
+    "subTitle": "Asxox 商店和应用功能",
+    "description": "Asxox是緬甸在线购物平台之一，为我們的客戶提供最好的服務。我們提供 24/7 全天候客戶服务，以帮助和解决存在的问题。",
     "list": {
-      "listItemOne": "全面的質量控制和實惠的價格",
-      "listItemTwo": "快捷方便的送貨上門"
+      "listItemOne": "全面的质量控制和优惠的价格",
+      "listItemTwo": "快捷的送货上门"
     },
-    "button": "探索 Asxox 應用"
+    "button": "探索 Asxox 应用"
   },
   "sySection": {
-    "title": "關於盛業地產",
-    "subTitle": "我們的機構背景和服務",
-    "description": "我們是緬甸的房地產中介之一，通過最合適和負擔得起的住房、公寓等讓人們的生活變得順暢和方便。如果您要租房或買房子或公寓，不要三思而後行，只要馬上聯繫我們。",
+    "title": "关于思源房地产",
+    "subTitle": "我們的机构背景和服务",
+    "description": "我們是緬甸的房地产中介之一，通過我们专业的团队和众多的房源，为您提供便捷和合适的租房、买卖、土地买卖。如果您要租房、购房、公寓、土地交易，请联系我们。",
     "list": {
-      "listItemOne": "方便、順暢的流程和實惠的價格",
-      "listItemTwo": "優質的住宿，價格公道",
-      "listItemThree": "快速、可靠和 24/7 全天候客戶服務"
+      "listItemOne": "方便、顺畅的流程和实惠的价格",
+      "listItemTwo": "优质的资源，合理的价格",
+      "listItemThree": "快速、可靠和 24/7 全天候客戶服务"
     },
-    "button": "探索 SY 機構"
+    "button": "了解 思源房地产"
   },
   "dctLotterySection": {
-    "title": "關於幸運星彩票",
-    "subTitle": "我們的彩票系統如何運作",
-    "description": "我們的彩票無處不在，當您從與我們合作的商店購買商品時，您將獲得一張免費彩票來贏得彩票。您收集的彩票越多，贏得大獎的機會就越大。",
-    "button": "探索幸運之星"
+    "title": "关于幸运星的活动",
+    "subTitle": "幸运星活动运作模式",
+    "description": "幸运星无处不在，当您在DCT合作的商家消费的时候，您将会获得一次或者多次抽奖机会。您收集的抽奖卷越多，赢取的奖品机率越多。",
+    "button": "了解 幸运之星"
   },
   "dctAppSection": {
     "title": "使用 DCT App 輕鬆掃描和購買",
@@ -62,6 +62,18 @@
       "facebook": "Facebook",
       "tiktok": "Tiktok",
       "youtube": "Youtube"
+    }
+  },
+  "digitalMarketing": {
+    "title": "我们提供数字营销",
+    "facebookMarketing": {
+      "title": "Facebook、Tiktok 运营管理"
+    },
+    "facebookPageLike": {
+      "title": "Facebook 主页 点赞 广告"
+    },
+    "servicesStepByStep": {
+      "title": "我们如何一步步为您服务"
     }
   }
 }
