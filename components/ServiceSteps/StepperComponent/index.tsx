@@ -118,7 +118,7 @@ const StepperComponent: FunctionComponent = () => {
               <Box sx={{ mb: 2 }}>
                 <div>
                   <Button
-                    className="bg-[#0C2E5C] text-white !text-[1rem] capitalize"
+                    className="!bg-[#0C2E5C] !text-white !text-[1rem] capitalize"
                     onClick={handleNext}
                     sx={{ mt: 1, mr: 1, px: 2 }}
                   >
@@ -127,7 +127,7 @@ const StepperComponent: FunctionComponent = () => {
                   {index >= 1 && (
                     <Button
                       // disabled={index === 0}
-                      className="bg-white !text-[#0C2E5C]  !font-semibold !text-[1rem] capitalize"
+                      className="bg-white !text-[#0C2E5C] !font-semibold !text-[1rem] capitalize"
                       onClick={handleBack}
                       sx={{ mt: 1, mr: 1 }}
                     >
