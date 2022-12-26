@@ -5,6 +5,7 @@ import { PageLikeViewCardData } from "../../data/testData";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useTranslation } from "next-i18next";
+import styles from "./card.module.css";
 
 const CardComponent = dynamic(import("./CardComponent"), { ssr: false });
 
@@ -25,15 +26,16 @@ const PageLikeViewCard: FunctionComponent = () => {
         </Typography>
       </motion.div>
       <Box className="flex justify-center items-center">
-        <Box className="hidden xl:flex xl:w-1/3 h-[710px]">
+        <Box className="hidden xl:flex h-[710px] justify-end items-center">
           <Image
-            width={400}
-            height={300}
+            width={550}
+            height={650}
             src="/assets/digitalMarketing/pageLikeVector.svg"
             alt="page like vector"
+            className={styles.page_like_image}
           />
         </Box>
-        <Box className="xl:w-2/3 flex flex-wrap justify-center items-center gap-y-8 mt-2">
+        <Box className="flex flex-wrap justify-center items-center gap-y-8 md:gap-x-8 xl:gap-x-0 mt-2">
           {PageLikeViewCardData.map((data: any, index: number) => (
             <CardComponent
               key={index}

@@ -63,5 +63,18 @@
       "tiktok": "Tiktok",
       "youtube": "Youtube"
     }
-  }
+  },
+
+  "digitalMarketing": {
+    "title": "ကျွန်ုပ်တို့သည် ဒစ်ဂျစ်တယ် စျေးကွက်ရှာဖွေရေး ဝန်ဆောင်မှုများ ပေးပါသည်။",
+    "facebookMarketing": {
+      "title": "Facebook စီမံခန့်ခွဲမှုဆိုင်ရာ ၀န်ဆောင်မှု ပက်ကေ့ချ်များ"
+    },
+    "facebookPageLike": {
+     "title": "Facebook Page Like များများဖြင့် ကြော်ငြာခြင်း"
+    },
+    "servicesStepByStep": {
+     "title": "ကျွန်ုပ်တို့ တစ်ဆင့်ချင်းစီ ဘယ်လိုမျိုး ၀န်ဆောင်မှုပေးနေတာလဲ"
+    }
+ }
 }
