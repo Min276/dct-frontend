@@ -4,12 +4,13 @@ import { FunctionComponent, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import QRCodeModal from "../DialogComponent";
+import QRCodeDialog from "../DialogComponent";
 
 const SYRealEstateSection: FunctionComponent = () => {
   const { t } = useTranslation();
   const [openModalOne, setOpenModalOne] = useState(false);
   const [openModalTwo, setOpenModalTwo] = useState(false);
+  const [open, setOpen] = useState(false);
 
   return (
     <Box className="px-6 pt-10 pb-14 md:px-32 md:pt-14 md:py-20 bg-white">
@@ -82,30 +83,51 @@ const SYRealEstateSection: FunctionComponent = () => {
                   </Link>
                 </Typography>
               </Box>
-              {openModalOne && (
-                <QRCodeModal image="/assets/weChatQR/qrone.svg" onClickHandler={() => setOpenModalOne(false)} />
-              )}
-               {openModalTwo && (
-                <QRCodeModal image="/assets/weChatQR/qrtwo.svg" onClickHandler={() => setOpenModalTwo(false)} />
-              )}
-              
               <Box className="flex items-center gap-x-8">
                 <Image
-                  onClick={() => setOpenModalOne(true)}
+                  onClick={() => {
+                    setOpenModalOne(true);
+                    setOpen(true);
+                  }}
                   width={100}
                   height={100}
                   src="/assets/weChatQR/qrone.svg"
                   alt="sy real estate company qr code"
-                  className="shadow-xl"
+                  className="shadow-xl cursor-pointer"
                 />
                 <Image
-                  onClick={() => setOpenModalTwo(true)}
+                  onClick={() => {
+                    setOpenModalTwo(true);
+                    setOpen(true);
+                  }}
                   width={100}
                   height={100}
                   src="/assets/weChatQR/qrtwo.svg"
                   alt="sy real estate company qr code"
-                  className="shadow-xl"
+                  className="shadow-xl cursor-pointer"
                 />
+                {openModalOne && (
+                  <QRCodeDialog
+                    {...{
+                      open,
+                      setOpen,
+                      handleClose: () => setOpen(false),
+                      dialogTitle: "Scan SY WeChat 1 here",
+                      image: "/assets/weChatQR/qrone.svg",
+                    }}
+                  />
+                )}
+                {openModalTwo && (
+                  <QRCodeDialog
+                    {...{
+                      open,
+                      setOpen,
+                      handleClose: () => setOpen(false),
+                      dialogTitle: "Scan SY WeChat 2 here",
+                      image: "/assets/weChatQR/qrtwo.svg",
+                    }}
+                  />
+                )}
               </Box>
             </Box>
           </motion.div>

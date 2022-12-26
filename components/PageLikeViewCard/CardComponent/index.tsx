@@ -39,7 +39,7 @@ const CardComponent: FunctionComponent<CardProps> = ({
     >
       <Box
         key={key}
-        className="relative w-4/5  px-12 py-10 rounded-md cursor-pointer"
+        className="relative w-4/5  px-12 py-10 rounded-md"
         sx={{
           backgroundColor: backgroundColor,
           boxShadow: "0px 1px 10px rgba(0, 0, 0, 0.25);",
