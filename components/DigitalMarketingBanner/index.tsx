@@ -3,6 +3,7 @@ import { useTranslation } from "next-i18next";
 import { FunctionComponent } from "react";
 import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
+import BreadcrumbsComponent from "../Breadcrumbs";
 
 const DMBannerSection: FunctionComponent= () => {
   const {t} = useTranslation();
@@ -15,6 +16,7 @@ const DMBannerSection: FunctionComponent= () => {
         <Typography className="px-8 text-center text-white !text-2xl md:!text-4xl !font-semibold !leading-10">
         {t("landing:digitalMarketing.title")}
         </Typography>
+        <BreadcrumbsComponent />
       </motion.div>
     </Box>
   );

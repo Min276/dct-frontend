@@ -13,7 +13,7 @@ const MenuDropdown = () => {
       <PopupState variant="popover" popupId="demo-popup-menu">
         {(popupState) => (
           <>
-            <Button className="text-white" {...bindTrigger(popupState)}>
+            <Button className="!text-white" {...bindTrigger(popupState)}>
               <FiMenu className="text-4xl" />
             </Button>
             <Menu {...bindMenu(popupState)}>
