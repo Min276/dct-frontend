@@ -30,6 +30,8 @@
       "listItemTwo": "优质的资源，合理的价格",
       "listItemThree": "快速、可靠和 24/7 全天候客戶服务"
     },
+    "contactUs": "您可以通过以下方式联系我们：",
+    "qrCodeTitle": "扫描SY微信二维码",
     "button": "了解 思源房地产"
   },
   "dctLotterySection": {
@@ -47,7 +49,8 @@
       "listItemThree": "驚人的功能可增強您的用戶體驗"
     },
     "downloadTitle": "下載我們的應用程序",
-    "scanQRTitle": "掃描此處二維碼："
+    "scanQRTitle": "掃描此處二維碼：",
+    "qrCodeTitle": "在这里扫描DCT二维码"
   },
   "footer": {
     "description": "DCT是一組公司，包括許多功能和服務，使人們的生活更加方便和舒適。我們一直在努力成為緬甸最著名的公司集團之一，建立公司形象",

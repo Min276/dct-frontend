@@ -27,8 +27,18 @@ const QRCodeDialog: FunctionComponent<IProps> = ({
     >
       <DialogTitle sx={{ paddingY: "20px" }} id="alert-dialog-title">
         <Box className="flex items-center justify-between gap-4">
-          <Typography fontSize="20px" className="!font-semibold !text-[#0C2E5C]">{dialogTitle}</Typography>
-          <IoCloseCircleSharp fontSize="34px" onClick={handleClose} color="#0C2E5C"/>
+          <Typography
+            fontSize="20px"
+            className="!font-semibold !text-[#0C2E5C]"
+          >
+            {dialogTitle}
+          </Typography>
+          <IoCloseCircleSharp
+            fontSize="34px"
+            onClick={handleClose}
+            color="#0C2E5C"
+            className="cursor-pointer"
+          />
         </Box>
       </DialogTitle>
       <DialogContent sx={{ maxWidth: "500px" }}>
