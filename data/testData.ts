@@ -7,7 +7,7 @@ export const servicesData = [
     backgroundColor: "white",
     iconWidth: 40,
     iconHeight: 40,
-    directory: "#",
+    directory: "/software-development",
   },
   {
     title: "Digital Marketing",

@@ -22,7 +22,7 @@ const AsxoxShopAppSection: FunctionComponent = () => {
         </Typography>
       </motion.div>
       <Box className="flex flex-col xl:flex-row items-center">
-        <Box className="w-full xl:w-1/2 md:flex justify-center xl:justify-start">
+        <Box className="w-full xl:w-1/2 flex justify-center xl:justify-start">
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
             whileInView={{
@@ -46,7 +46,7 @@ const AsxoxShopAppSection: FunctionComponent = () => {
           <Typography className="text-white !font-medium py-4 !leading-7">
             {t("landing:asxoxSection.description")}
           </Typography>
-          <ul className="list-disc pl-4 pb-8 text-white !leading-10">
+          <ul className="list-disc pl-4 pb-8 text-white !leading-10 md:m-auto xl:m-0">
             <li>{t("landing:asxoxSection.list.listItemOne")}</li>
             <li>{t("landing:asxoxSection.list.listItemTwo")}</li>
           </ul>

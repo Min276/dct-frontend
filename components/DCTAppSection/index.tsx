@@ -30,7 +30,7 @@ const DCTAppSection: FunctionComponent = () => {
           <Typography className="!text-lg md:!text-xl !font-semibold text-[#0C2E5C] pb-4">
             {t("landing:dctAppSection.subTitle")}
           </Typography>
-          <ul className="list-disc pl-4 pb-8 text-[#1E1D1D] !leading-10">
+          <ul className="list-disc pl-4 pb-8 text-[#1E1D1D] !leading-10 md:w-fit md:m-auto xl:m-0">
             <li>{t("landing:dctAppSection.list.listItemOne")}</li>
             <li>{t("landing:dctAppSection.list.listItemTwo")}</li>
             <li>{t("landing:dctAppSection.list.listItemThree")}</li>
