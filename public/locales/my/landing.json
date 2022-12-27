@@ -79,5 +79,12 @@
     "servicesStepByStep": {
      "title": "ကျွန်ုပ်တို့ တစ်ဆင့်ချင်းစီ ဘယ်လိုမျိုး ၀န်ဆောင်မှုပေးနေတာလဲ"
     }
- }
+ },
+
+ "softwareDevelopment": {
+  "title": "ကျွန်ုပ်တို့သည် Software Development Service ကို ပေးပါသည်။",
+  "servicePackages": {
+    "title": "ကျွန်ုပ်တို့ဆီမှ လူကြီးမင်း ရွေးချယ်နိုင်သော Software Packages များ"
+  }
+}
 }

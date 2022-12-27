@@ -193,4 +193,72 @@ export const PageLikeViewCardData = [
         textColor: "#0C2E5C",
         backgroundColor: "white",
     }
-]
+];
+
+export const ServicePackagesData = [
+  {
+    plan: "Standard Plan",
+    pricing: "500K",
+    restData: [
+      "Admin Panel does not include *",
+      "1 year web hosting",
+      "200K Annual Hosting Fee",
+      "1 year own domain",
+      "maximum 10 pages",
+      "3 email accounts",
+      "10K File Usage Data",
+      "100 MB File Storage",
+      "Premium Support & SEO",
+      "Visitor Counter & User Training",
+      "Responsive & Enhance Security",
+      "Monthly Backup",
+      "Social Network Embedded"
+    ],
+    textColor: "#0C2E5C",
+    backgroundColor: "white",
+  },
+  {
+    plan: "High Performance",
+    pricing: "700K",
+    restData: [
+      "Admin Panel includes *",
+      "1 year web hosting",
+      "350K Annual Hosting Fee",
+      "1 year own domain",
+      "maximum 15 pages",
+      "5 email accounts",
+      "10K File Usage Data",
+      "200 MB File Storage",
+      "Premium Support & SEO",
+      "Visitor Counter & User Training",
+      "Responsive & Enhance Security",
+      "Google Analytic Support",
+      "Monthly Backup",
+      "Social Network Embedded"
+    ],
+    textColor: "#0C2E5C",
+    backgroundColor: "white",
+  },
+  {
+    plan: "Enhancement",
+    pricing: "1300K",
+    restData: [
+      "Admin Panel includes *",
+      "1 year web hosting",
+      "700K Annual Hosting Fee",
+      "1 year own domain",
+      "maximum 25 pages",
+      "10 email accounts",
+      "10K File Usage Data",
+      "500 MB File Storage",
+      "Premium Support & SEO",
+      "Visitor Counter & User Training",
+      "Responsive & Enhance Security",
+      "Google Analytic & Bi-Language",
+      "Monthly Backup",
+      "Social Network Embedded"
+    ],
+    textColor: "#0C2E5C",
+    backgroundColor: "white",
+  },
+];

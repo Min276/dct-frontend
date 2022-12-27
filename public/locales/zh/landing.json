@@ -78,5 +78,12 @@
     "servicesStepByStep": {
       "title": "我们如何一步步为您服务"
     }
+  },
+
+  "softwareDevelopment": {
+    "title": "我们提供软件开发服务",
+    "servicePackages": {
+      "title": "您可以从我们这里选择的软件包"
+    }
   }
 }
