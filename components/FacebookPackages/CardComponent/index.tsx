@@ -23,7 +23,7 @@ const CardComponent: FunctionComponent<CardProps> = ({
   return (
     // -mr-16
     <motion.div
-      className="w-full sm:w-auto sm:odd:!-mr-16 md:odd:!mr-0 md:even:!-mr-16 md:last:!mr-0 lg:last:!-mr-16 lg:even:!mr-0"
+      className="w-full sm:w-auto sm:odd:!-mr-16 sm:even:!-mr-16  md:even:!-mr-16  lg:first:!mr-0 lg:last:!-mr-16 lg:last:!ml-0 xl:even:!mr-0"
       initial={{ scale: 0.8, opacity: 0 }}
       whileInView={{
         scale: 1,

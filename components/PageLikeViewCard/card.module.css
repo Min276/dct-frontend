@@ -2,7 +2,7 @@
     .page_like_image {
         width: 500px;
         height: 700px;
-        margin-left: 12rem;
+        margin-left: 20rem;
     }
 }
 
@@ -18,5 +18,13 @@
         width: 500px;
         height: 680px;
         margin-left: 7rem;
+    } 
+}
+
+@media (min-width: 1500px) and (max-width: 1599px) {
+    .page_like_image {
+        width: 500px;
+        height: 680px;
+        margin-left: 16rem;
     }
 }
