@@ -1,11 +1,16 @@
 import { Box, Typography } from "@mui/material";
 import { useTranslation } from "next-i18next";
-import { FunctionComponent } from "react";
+import { FunctionComponent, useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import dynamic from "next/dynamic";
+
+const QRCodeDialog = dynamic(import("../DialogComponent"), { ssr: false });
 
 const DCTAppSection: FunctionComponent = () => {
   const { t } = useTranslation();
+  const [open, setOpen] = useState(false);
+
   return (
     <Box className="px-6 pt-10 pb-14 md:px-24 md:pt-14 md:py-20 bg-white">
       <motion.div
@@ -26,15 +31,9 @@ const DCTAppSection: FunctionComponent = () => {
             {t("landing:dctAppSection.subTitle")}
           </Typography>
           <ul className="list-disc pl-4 pb-8 text-[#1E1D1D] !leading-10">
-            <li>
-              {t("landing:dctAppSection.list.listItemOne")}
-            </li>
-            <li>
-             {t("landing:dctAppSection.list.listItemTwo")}
-            </li>
-            <li>
-             {t("landing:dctAppSection.list.listItemThree")}
-            </li>
+            <li>{t("landing:dctAppSection.list.listItemOne")}</li>
+            <li>{t("landing:dctAppSection.list.listItemTwo")}</li>
+            <li>{t("landing:dctAppSection.list.listItemThree")}</li>
           </ul>
           <Box className="flex flex-col md:flex-row justify-center md:justify-start items-center">
             <Image
@@ -55,11 +54,24 @@ const DCTAppSection: FunctionComponent = () => {
                 </Typography>
               </Box>
               <Image
+                onClick={() => setOpen(true)}
                 width={100}
                 height={100}
                 src="/assets/dctAppSection/dctQRCode.svg"
                 alt="dct qr code"
+                className="shadow-xl cursor-pointer"
               />
+              {open && (
+                <QRCodeDialog
+                  {...{
+                    open,
+                    setOpen,
+                    handleClose: () => setOpen(false),
+                    dialogTitle: t("landing:dctAppSection.qrCodeTitle"),
+                    image: "/assets/dctAppSection/dctQRCode.svg",
+                  }}
+                />
+              )}
             </Box>
           </Box>
         </Box>

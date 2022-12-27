@@ -30,6 +30,8 @@
       "listItemTwo": "Good quality accomodations with fair prices",
       "listItemThree": "Fast, reliable and 24/7 customer services"
     },
+    "contactUs": "You can contact us via these: ",
+    "qrCodeTitle": "Scan SY WeChat here",
     "button": "Explore SY Agency"
   },
   "dctLotterySection": {
@@ -47,7 +49,8 @@
       "listItemThree": "Amazing features to enhance your user experiences"
     },
     "downloadTitle": "To download our App",
-    "scanQRTitle": "Scan QR code here:"
+    "scanQRTitle": "Scan QR code here:",
+    "qrCodeTitle": "Scan DCT QR here"
   },
   "footer": {
     "description": "DCT is a group of companies which include many functionalities and services to make people lives convenient and comfortable. We are always thriving to be one of the most famous group of companies in Myanmar, building up company profile.",

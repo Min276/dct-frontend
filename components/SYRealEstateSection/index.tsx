@@ -4,7 +4,9 @@ import { FunctionComponent, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import QRCodeDialog from "../DialogComponent";
+import dynamic from "next/dynamic";
+
+const QRCodeDialog = dynamic(import("../DialogComponent"), { ssr: false });
 
 const SYRealEstateSection: FunctionComponent = () => {
   const { t } = useTranslation();
@@ -75,11 +77,11 @@ const SYRealEstateSection: FunctionComponent = () => {
             <Box className="flex flex-col md:flex-row md:items-center justify-between gap-y-6">
               <Box className="flex flex-col gap-y-3">
                 <Typography className=" text-[#0C2E5C] !font-semibold">
-                  You can contact us via these:
+                  {t("landing:sySection.contactUs")}
                 </Typography>
                 <Typography className="text-[#0C2E5C] !font-semibold">
                   <Link href="tel:09941181188" className="cursor-pointer">
-                    09 941181188
+                    +95 9941181188
                   </Link>
                 </Typography>
               </Box>
@@ -111,8 +113,11 @@ const SYRealEstateSection: FunctionComponent = () => {
                     {...{
                       open,
                       setOpen,
-                      handleClose: () => setOpen(false),
-                      dialogTitle: "Scan SY WeChat 1 here",
+                      handleClose: () => {
+                        setOpen(false);
+                        setOpenModalOne(false);
+                      },
+                      dialogTitle: t("landing:sySection.qrCodeTitle"),
                       image: "/assets/weChatQR/qrone.svg",
                     }}
                   />
@@ -122,8 +127,11 @@ const SYRealEstateSection: FunctionComponent = () => {
                     {...{
                       open,
                       setOpen,
-                      handleClose: () => setOpen(false),
-                      dialogTitle: "Scan SY WeChat 2 here",
+                      handleClose: () => {
+                        setOpen(false);
+                        setOpenModalTwo(false);
+                      },
+                      dialogTitle: t("landing:sySection.qrCodeTitle"),
                       image: "/assets/weChatQR/qrtwo.svg",
                     }}
                   />

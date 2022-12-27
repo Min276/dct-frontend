@@ -44,15 +44,15 @@ const CardComponent: FunctionComponent<CardProps> = ({
           <Box className="absolute left-0 top-6 px-4 py-2 rounded-r-full bg-[#0C2E5C] text-white">
             <Typography className=" !font-medium !text-lg">{tab}</Typography>
           </Box>
-          <Typography
-            className="flex !text-xl !font-semibold items-end gap-x-2 mb-6 pt-14"
+          <Box
+            className="flex !text-xl !font-semibold items-end gap-x-2 pb-6 pt-14"
             sx={{ color: textColor }}
           >
             <Typography className="!text-3xl !font-semibold">
-              {title}{" "}
-            </Typography>{" "}
+              {title}
+            </Typography>
             per month
-          </Typography>
+          </Box>
           <Box className="flex flex-col gap-y-4">
             {restData?.map((item: any, index: number) => (
               <Box className="flex" key={index}>
