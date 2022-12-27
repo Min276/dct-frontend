@@ -28,8 +28,8 @@ const SYRealEstateSection: FunctionComponent = () => {
           {t("landing:sySection.title")}
         </Typography>
       </motion.div>
-      <Box className="flex flex-col md:flex-row items-center">
-        <Box className="w-full md:w-1/2 flex justify-center md:justify-start">
+      <Box className="flex flex-col xl:flex-row items-center">
+        <Box className="w-full xl:w-1/2 md:flex justify-center xl:justify-start">
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
             whileInView={{
@@ -47,7 +47,7 @@ const SYRealEstateSection: FunctionComponent = () => {
             />
           </motion.div>
         </Box>
-        <Box className="w-full md:w-1/2 flex flex-col justify-end mt-8 md:mt-0">
+        <Box className="w-full xl:w-1/2 md:text-center xl:text-left flex flex-col justify-end mt-8 xl:mt-0">
           <Typography className="!text-lg md:!text-xl !font-semibold text-[#0C2E5C]">
             {t("landing:sySection.subTitle")}
           </Typography>

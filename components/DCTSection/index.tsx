@@ -34,8 +34,8 @@ const DCTSection: FunctionComponent = () => {
           {t("landing:dctSection.title")}
         </Typography>
       </motion.div>
-      <Box className="flex flex-col md:flex-row items-center">
-        <Box className="w-full md:w-1/2">
+      <Box className="flex flex-col xl:flex-row items-center">
+        <Box className="w-full xl:w-1/2 md:text-center xl:text-left">
           <Typography className="!text-lg md:!text-xl !font-semibold text-[#0C2E5C]">
             {t("landing:dctSection.subTitle")}
           </Typography>
@@ -43,7 +43,7 @@ const DCTSection: FunctionComponent = () => {
             {t("landing:dctSection.description")}
           </Typography>
           <Box>
-            <Box className="flex items-center">
+            <Box className="flex items-center md:justify-center xl:justify-start">
               <FaMapMarkerAlt className="text-[#EF5353] !text-xl" />
               <Typography className="pl-2 text-[#0C2E5C] !font-semibold">
                 {t("landing:dctSection.location")}
@@ -72,7 +72,7 @@ const DCTSection: FunctionComponent = () => {
             </Link>
           </motion.div>
         </Box>
-        <Box className="w-full md:w-1/2 md:flex justify-center md:justify-end py-12 md:py-0">
+        <Box className="w-full xl:w-1/2 md:flex justify-center xl:justify-end py-12 xl:py-0">
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
             whileInView={{

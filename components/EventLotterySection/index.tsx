@@ -21,8 +21,8 @@ const EventLotterySection: FunctionComponent = () => {
           {t("landing:dctLotterySection.title")}
         </Typography>
       </motion.div>
-      <Box className="flex flex-col md:flex-row items-center">
-        <Box className="w-full md:w-1/2">
+      <Box className="flex flex-col xl:flex-row items-center">
+        <Box className="w-full xl:w-1/2 md:text-center xl:text-left">
           <Typography className="!text-lg md:!text-xl !font-semibold text-white">
             {t("landing:dctLotterySection.subTitle")}
           </Typography>
@@ -46,7 +46,7 @@ const EventLotterySection: FunctionComponent = () => {
             </Link>
           </motion.div>
         </Box>
-        <Box className="w-full md:w-1/2 flex justify-center md:justify-end mt-16 md:mt-0">
+        <Box className="w-full xl:w-1/2 flex justify-center xl:justify-end mt-16 xl:mt-0">
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
             whileInView={{

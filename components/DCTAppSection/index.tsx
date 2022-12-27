@@ -25,8 +25,8 @@ const DCTAppSection: FunctionComponent = () => {
           {t("landing:dctAppSection.title")}
         </Typography>
       </motion.div>
-      <Box className="flex flex-col md:flex-row items-center">
-        <Box className="w-full md:w-1/2">
+      <Box className="flex flex-col xl:flex-row items-center">
+        <Box className="w-full xl:w-1/2 md:text-center xl:text-left">
           <Typography className="!text-lg md:!text-xl !font-semibold text-[#0C2E5C] pb-4">
             {t("landing:dctAppSection.subTitle")}
           </Typography>
@@ -35,7 +35,7 @@ const DCTAppSection: FunctionComponent = () => {
             <li>{t("landing:dctAppSection.list.listItemTwo")}</li>
             <li>{t("landing:dctAppSection.list.listItemThree")}</li>
           </ul>
-          <Box className="flex flex-col md:flex-row justify-center md:justify-start items-center">
+          <Box className="flex flex-col md:flex-row justify-center xl:justify-start items-center">
             <Image
               width={100}
               height={100}
@@ -75,7 +75,7 @@ const DCTAppSection: FunctionComponent = () => {
             </Box>
           </Box>
         </Box>
-        <Box className="w-full md:w-1/2 flex justify-center md:justify-end">
+        <Box className="w-full xl:w-1/2 flex justify-center xl:justify-end md:pt-12 xl:pt-0">
           <motion.div
             initial={{ scale: 0.8, opacity: 0 }}
             whileInView={{
