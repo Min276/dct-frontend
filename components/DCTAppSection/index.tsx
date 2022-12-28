@@ -2,10 +2,10 @@ import { Box, Typography } from "@mui/material";
 import { useTranslation } from "next-i18next";
 import { FunctionComponent, useState } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import dynamic from "next/dynamic";
 
 const QRCodeDialog = dynamic(import("../DialogComponent"), { ssr: false });
+const AnimationFrame = dynamic(import("../AnimationFrame"), { ssr: false });
 
 const DCTAppSection: FunctionComponent = () => {
   const { t } = useTranslation();
@@ -13,18 +13,11 @@ const DCTAppSection: FunctionComponent = () => {
 
   return (
     <Box className="px-6 pt-10 pb-14 md:px-24 md:pt-14 md:py-20 bg-white">
-      <motion.div
-        initial={{ scale: 0.8, opacity: 0 }}
-        whileInView={{
-          scale: 1,
-          opacity: 1,
-          transition: { delay: 0.4, duration: 0.5 },
-        }}
-      >
+      <AnimationFrame>
         <Typography className="!text-xl md:!text-2xl !font-semibold text-[#0C2E5C] text-center py-8 md:pb-14">
           {t("landing:dctAppSection.title")}
         </Typography>
-      </motion.div>
+        </AnimationFrame>
       <Box className="flex flex-col xl:flex-row items-center">
         <Box className="w-full xl:w-1/2 md:text-center xl:text-left">
           <Typography className="!text-lg md:!text-xl !font-semibold text-[#0C2E5C] pb-4">
@@ -49,7 +42,6 @@ const DCTAppSection: FunctionComponent = () => {
                   {t("landing:dctAppSection.downloadTitle")}
                 </Typography>
                 <Typography className="text-[#1E1D1D] !font-semibold">
-                  {" "}
                   {t("landing:dctAppSection.scanQRTitle")}
                 </Typography>
               </Box>
@@ -76,21 +68,14 @@ const DCTAppSection: FunctionComponent = () => {
           </Box>
         </Box>
         <Box className="w-full xl:w-1/2 flex justify-center xl:justify-end md:pt-12 xl:pt-0">
-          <motion.div
-            initial={{ scale: 0.8, opacity: 0 }}
-            whileInView={{
-              scale: 1,
-              opacity: 1,
-              transition: { delay: 0.4, duration: 0.5 },
-            }}
-          >
+          <AnimationFrame>
             <Image
               width={500}
               height={500}
               src="/assets/dctAppSection/dctAppMockup.svg"
               alt="dct app mockup"
             />
-          </motion.div>
+          </AnimationFrame>
         </Box>
       </Box>
     </Box>
