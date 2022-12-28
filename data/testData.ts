@@ -86,7 +86,7 @@ export const productsData = [
     textColor: "white",
     iconWidth: 37,
     iconHeight: 37,
-    directory: "#",
+    directory: "https://play.google.com/store/apps/details?id=com.dct.live",
   },
   {
     title: "Job Seeker",
