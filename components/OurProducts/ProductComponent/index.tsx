@@ -1,7 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import { FunctionComponent } from "react";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import Link from "next/link";
 import AnimationFrame from "../../AnimationFrame";
 
@@ -27,9 +26,10 @@ const ProductComponent: FunctionComponent<ProductProps> = ({
   directory,
 }) => {
   return (
-    <Link
+    <a
       className="w-2/5 md:w-1/5 flex flex-col justify-center items-center"
       href={directory}
+      rel="noreferrer"
       target={directory.includes("http") ? "_blank" : ""}
     >
       <AnimationFrame className="flex flex-col justify-center items-center">
@@ -49,7 +49,7 @@ const ProductComponent: FunctionComponent<ProductProps> = ({
           {title}
         </Typography>
       </AnimationFrame>
-    </Link>
+    </a>
   );
 };
 
