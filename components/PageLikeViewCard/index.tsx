@@ -35,7 +35,7 @@ const PageLikeViewCard: FunctionComponent = () => {
             className={styles.page_like_image}
           />
         </Box>
-        <Box className="flex flex-wrap justify-center items-center gap-y-8 md:gap-x-8 xl:gap-x-0 mt-2">
+        <Box className="flex flex-wrap justify-center items-center gap-y-8 md:gap-x-8 xl:gap-x-0 mt-2 2xl:justify-start 2xl:pl-12 3xl:pl-0">
           {PageLikeViewCardData.map((data: any, index: number) => (
             <CardComponent
               key={index}

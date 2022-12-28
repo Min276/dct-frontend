@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const EventLotterySection: FunctionComponent = () => {
   const { t } = useTranslation();
   return (
-    <Box className="px-6 pt-10 pb-14 md:px-24 md:pt-14 md:py-20 bg-[#0C2E5C]">
+    <Box className="px-6 pt-10 pb-14 md:px-24 md:pt-14 md:py-20 bg-[#0C2E5C]" id="luckyStarSection">
       <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
         whileInView={{
@@ -40,7 +40,7 @@ const EventLotterySection: FunctionComponent = () => {
             <Link
               target="_blank"
               href="#"
-              className="px-5 py-3 w-fit rounded-md text-[#0C2E5C] bg-white cursor-pointer !font-semibold"
+              className="px-5 py-3 w-fit rounded-md text-[#0C2E5C] bg-white cursor-pointer !font-semibold hover:opacity-75"
             >
               {t("landing:dctLotterySection.button")}
             </Link>

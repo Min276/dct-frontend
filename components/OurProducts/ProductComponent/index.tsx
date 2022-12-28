@@ -32,7 +32,7 @@ const ProductComponent: FunctionComponent<ProductProps> = ({
       className="w-2/5 md:w-1/5 flex flex-col justify-center items-center"
       // onClick={() => router.push(`${directory}`)}
       href={directory}
-      target="_blank"
+      target={directory.includes("http") ? "_blank" : ""}
     >
       <motion.div
         style={{
