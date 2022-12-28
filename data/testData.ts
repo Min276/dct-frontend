@@ -37,7 +37,7 @@ export const servicesData = [
     backgroundColor: "white",
     iconWidth: 40,
     iconHeight: 40,
-    directory: "#syAgencySection",
+    directory: "#",
   },
 ];
 
