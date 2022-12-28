@@ -25,17 +25,17 @@ const PageLikeViewCard: FunctionComponent = () => {
           {t("landing:digitalMarketing.facebookPageLike.title")}
         </Typography>
       </motion.div>
-      <Box className="flex justify-end items-center">
-        <Box className="hidden xl:flex justiy-end items-center xl:grow-0 xl:shrink-0 xl:basis-auto">
+      <Box className="flex justify-center items-center">
+        <Box className="hidden xl:flex h-[710px] justify-end items-center">
           <Image
-            width={500}
-            height={500}
+            width={550}
+            height={650}
             src="/assets/digitalMarketing/pageLikeVector.svg"
             alt="page like vector"
-            className="w-full h-[42rem]"
+            className={styles.page_like_image}
           />
         </Box>
-        <Box className="flex flex-wrap justify-center items-center gap-y-8 mt-2 xl:w-[66.666%] xl:grow-0 xl:shrink-0 xl:basis-auto xl:justify-start xl:pl-12">
+        <Box className="flex flex-wrap justify-center items-center gap-y-8 md:gap-x-8 xl:gap-x-0 mt-2 2xl:justify-start 2xl:pl-12 3xl:pl-0">
           {PageLikeViewCardData.map((data: any, index: number) => (
             <CardComponent
               key={index}
