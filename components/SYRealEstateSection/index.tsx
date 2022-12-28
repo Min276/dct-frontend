@@ -15,7 +15,7 @@ const SYRealEstateSection: FunctionComponent = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <Box className="px-6 pt-10 pb-14 md:px-32 md:pt-14 md:py-20 bg-white">
+    <Box className="px-6 pt-10 pb-14 md:px-32 md:pt-14 md:py-20 bg-white" id="syAgencySection">
       <motion.div
         initial={{ scale: 0.8, opacity: 0 }}
         whileInView={{

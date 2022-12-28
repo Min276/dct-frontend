@@ -61,7 +61,7 @@ const AsxoxShopAppSection: FunctionComponent = () => {
             <Link
               href="https://play.google.com/store/apps/details?id=com.asxox.mkza&hl=en&gl=US"
               target="_blank"
-              className="px-4 py-3 w-fit rounded-md text-[#0C2E5C] bg-white cursor-pointer !font-semibold"
+              className="px-4 py-3 w-fit rounded-md text-[#0C2E5C] bg-white cursor-pointer !font-semibold hover:opacity-75"
             >
               {t("landing:asxoxSection.button")}
             </Link>

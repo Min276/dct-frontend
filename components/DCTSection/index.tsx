@@ -65,7 +65,7 @@ const DCTSection: FunctionComponent = () => {
           >
             <Link
               target="_blank"
-              className="px-5 py-3 w-fit rounded-md text-white bg-[#0C2E5C] cursor-pointer !font-semibold"
+              className="px-5 py-3 w-fit rounded-md text-white bg-[#0C2E5C] cursor-pointer !font-semibold hover:opacity-75"
               href="https://goo.gl/maps/WxThXFRDcAw1rKqBA"
             >
               {t("landing:dctSection.button")}

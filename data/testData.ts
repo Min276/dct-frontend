@@ -37,7 +37,7 @@ export const servicesData = [
     backgroundColor: "white",
     iconWidth: 40,
     iconHeight: 40,
-    directory: "#",
+    directory: "#syAgencySection",
   },
 ];
 
@@ -68,7 +68,7 @@ export const productsData = [
     textColor: "white",
     iconWidth: 40,
     iconHeight: 40,
-    directory: "#",
+    directory: "#syAgencySection",
   },
   {
     title: "Lucky Star Lottery",
@@ -77,7 +77,7 @@ export const productsData = [
     textColor: "white",
     iconWidth: 40,
     iconHeight: 40,
-    directory: "#",
+    directory: "#luckyStarSection",
   },
   {
     title: "DCT Live App",
