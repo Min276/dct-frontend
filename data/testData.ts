@@ -108,6 +108,37 @@ export const productsData = [
   },
 ];
 
+export const DownloadLinkData = [
+  {
+    directory: "https://play.google.com/store/apps/details?id=com.asxox.mkza&pli=1",
+    width: 240,
+    height: 240,
+    image: "/assets/dctAppSection/appstore.svg",
+    altText: "appstore",
+  },
+  {
+    directory: "https://apps.apple.com/us/app/asxox/id1590791745",
+    width: 240,
+    height: 240,
+    image: "/assets/dctAppSection/playstore.svg",
+    altText: "playstore"
+  },
+  {
+    directory: "https://appgallery.huawei.com/app/C105045159",
+    width: 240,
+    height: 240,
+    image: "/assets/dctAppSection/appgallery.svg",
+    altText: "appgallery"
+  },
+  {
+    directory: "https://www.mediafire.com/error.php?errno=320&origin=download",
+    width: 240,
+    height: 240,
+    image: "/assets/dctAppSection/directlink.svg",
+    altText: "directlink"
+  },
+];
+
 export const FacebookPackagesData = [
   {
     plan: "Standard",
@@ -193,6 +224,61 @@ export const PageLikeViewCardData = [
         textColor: "#0C2E5C",
         backgroundColor: "white",
     }
+];
+
+export const stepsData = [
+  {
+    label: "Initial Page Setup",
+    description: [
+      "If the plan is started, we will make initial setup for pages",
+      "Facebook Cover Design",
+    ],
+  },
+  {
+    label: "Photo",
+    description: [
+      "DSLR Camer photo will support",
+      "Photo Retouch",
+      "Design with Professional Designer per post",
+    ],
+  },
+  {
+    label: "Content",
+    description: ["We are writing effective contents for your facebook page"],
+  },
+  {
+    label: "Promotion Campaign Idea",
+    description: [
+      "We can support idea for customer as special promotion with creative.",
+    ],
+  },
+  {
+    label: "Video",
+    description: [
+      "Creative Video for customer services or products",
+      "Can Professional Camera team",
+      "Editing 3 minutes to 5 minutes",
+      "Video with animation",
+    ],
+  },
+  {
+    label: "Message",
+    description: [
+      "Effective message response",
+      "Reply can supoort within 9 am to 10 pm.",
+    ],
+  },
+  {
+    label: "Boost",
+    description: [
+      "Can choose Audience, Regional, Business Field for each post",
+      "Effective boost for your products or services",
+    ],
+  },
+  {
+    label: "Payment method",
+    description: ["Initial: 50%", "During services within 10 days : 50%"],
+  },
 ];
 
 export const ServicePackagesData = [
