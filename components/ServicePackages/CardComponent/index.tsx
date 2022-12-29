@@ -6,6 +6,7 @@ import AnimationFrame from "../../AnimationFrame";
 interface CardProps {
   key: number;
   title: string;
+  sideText: string;
   tab: string;
   textColor?: string;
   backgroundColor?: string;
@@ -15,6 +16,7 @@ interface CardProps {
 const CardComponent: FunctionComponent<CardProps> = ({
   key,
   title,
+  sideText,
   tab,
   textColor,
   backgroundColor,
@@ -42,7 +44,7 @@ const CardComponent: FunctionComponent<CardProps> = ({
             <Typography className="!text-3xl !font-semibold">
               {title}
             </Typography>
-            per year
+            {sideText}
           </Box>
           <Box className="flex flex-col gap-y-4">
             {restData?.map((item: any, index: number) => (
