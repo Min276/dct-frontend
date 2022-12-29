@@ -27,7 +27,7 @@ const ServicePackages: FunctionComponent = () => {
             tab={zhLang ? data.plan.zh : data.plan.en}
             textColor={data.textColor}
             backgroundColor={data.backgroundColor}
-            restData={zhLang ? data.restData.zh : data.plan.en}
+            restData={zhLang ? data.restData.zh : data.restData.en}
           />
         ))}
       </Box>
