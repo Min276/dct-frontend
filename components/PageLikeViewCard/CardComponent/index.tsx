@@ -2,6 +2,7 @@ import { Box, Typography } from "@mui/material";
 import { FunctionComponent } from "react";
 import { BsFillCheckCircleFill } from "react-icons/bs";
 import AnimationFrame from "../../AnimationFrame";
+import { useTranslation } from "next-i18next";
 
 interface CardProps {
   key: number;
@@ -13,7 +14,6 @@ interface CardProps {
   target: string;
   textColor?: string;
   backgroundColor?: string;
-  restData?: any;
 }
 
 const CardComponent: FunctionComponent<CardProps> = ({
@@ -26,8 +26,8 @@ const CardComponent: FunctionComponent<CardProps> = ({
   target,
   textColor,
   backgroundColor,
-  restData,
 }) => {
+  const { t } = useTranslation();
   return (
     <AnimationFrame>
       <Box
@@ -53,7 +53,7 @@ const CardComponent: FunctionComponent<CardProps> = ({
             className="!text-[1.17rem] text-[#1E1D1D] !font-semibold mb-2"
             sx={{ color: textColor }}
           >
-            Approximate Page Like
+            {t("landing:digitalMarketing.facebookPageLike.card.title")}
           </Typography>
           <Typography
             className="!text-2xl !font-semibold"
@@ -65,17 +65,26 @@ const CardComponent: FunctionComponent<CardProps> = ({
             <Box className="flex">
               <BsFillCheckCircleFill className="!text-xl w-8 text-[#0C2E5C]" />
               <Typography className="pl-2 text-base w-[17rem] text-[#1E1D1D]">
-                Duration: {duration}
+                {t(
+                  "landing:digitalMarketing.facebookPageLike.card.tickTitleOne"
+                )}
+                {duration}
               </Typography>
             </Box>
             <Box className="flex">
               <BsFillCheckCircleFill className="!text-xl w-8 text-[#0C2E5C]" />
               <Box className="flex justify-between w-[17rem]">
                 <Typography className="pl-2 text-base text-[#1E1D1D]">
-                  Report: {report}
+                  {t(
+                    "landing:digitalMarketing.facebookPageLike.card.tickTitleTwo"
+                  )}
+                  {report}
                 </Typography>
                 <Typography className="pl-2 text-base text-[#1E1D1D]">
-                  Target: {target}
+                  {t(
+                    "landing:digitalMarketing.facebookPageLike.card.tickTitleThree"
+                  )}
+                  {target}
                 </Typography>
               </Box>
             </Box>

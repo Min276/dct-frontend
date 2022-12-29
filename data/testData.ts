@@ -269,42 +269,90 @@ export const FacebookPackagesData = [
 
 export const PageLikeViewCardData = [
   {
-    plan: "Basic Plan",
+    plan: {
+      en: "Basic Plan",
+      zh: "基本计划"
+    },
     pricing: "$200",
     pageLikeRange: "3000 - 5000",
-    duration: "Desire Duration",
-    report: "Yes",
-    target: "Yes",
+    duration: {
+      en: "Desire Duration",
+      zh: "欲望持续时间"
+    },
+    report: {
+      en: "Yes",
+      zh: "是的"
+    },
+    target: {
+      en: "Yes",
+      zh: "是的"
+    },
     textColor: "#0C2E5C",
     backgroundColor: "white",
   },
   {
-    plan: "Standard",
+    plan: {
+      en: "Standard",
+      zh: "标准计划"
+    },
     pricing: "$300",
     pageLikeRange: "7000 - 10000",
-    duration: "Desire Duration",
-    report: "Yes",
-    target: "Yes",
+    duration: {
+      en: "Desire Duration",
+      zh: "欲望持续时间"
+    },
+    report: {
+      en: "Yes",
+      zh: "是的"
+    },
+    target: {
+      en: "Yes",
+      zh: "是的"
+    },
     textColor: "#0C2E5C",
     backgroundColor: "white",
   },
   {
-    plan: "Premium",
+    plan: {
+      en: "Premium",
+      zh: "保费计划"
+    },
     pricing: "$400",
     pageLikeRange: "10000 - 13000",
-    duration: "Desire Duration",
-    report: "Yes",
-    target: "Yes",
+    duration: {
+      en: "Desire Duration",
+      zh: "欲望持续时间"
+    },
+    report: {
+      en: "Yes",
+      zh: "是的"
+    },
+    target: {
+      en: "Yes",
+      zh: "是的"
+    },
     textColor: "#0C2E5C",
     backgroundColor: "white",
   },
   {
-    plan: "Premium +",
+    plan: {
+      en: "Premium +",
+      zh: "保费加计划"
+    },
     pricing: "$500",
     pageLikeRange: "14000 - 20000",
-    duration: "Desire Duration",
-    report: "Yes",
-    target: "Yes",
+    duration: {
+      en: "Desire Duration",
+      zh: "欲望持续时间"
+    },
+    report: {
+      en: "Yes",
+      zh: "是的"
+    },
+    target: {
+      en: "Yes",
+      zh: "是的"
+    },
     textColor: "#0C2E5C",
     backgroundColor: "white",
   },
