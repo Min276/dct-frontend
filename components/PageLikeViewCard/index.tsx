@@ -11,6 +11,8 @@ const AnimationFrame = dynamic(import("../AnimationFrame"), { ssr: false });
 
 const PageLikeViewCard: FunctionComponent = () => {
   const { t } = useTranslation();
+  const { i18n } = useTranslation("landing");
+  const zhLang = i18n.language === "zh";
   return (
     <Box className="px-6 py-16 md:px-24 md:pt-14 md:pb-20 bg-[#0C2E5C]">
       <AnimationFrame>
@@ -33,11 +35,11 @@ const PageLikeViewCard: FunctionComponent = () => {
             <CardComponent
               key={index}
               title={data.pricing}
-              tab={data.plan}
+              tab={zhLang ? data.plan.zh : data.plan.en}
               pageLike={data.pageLikeRange}
-              duration={data.duration}
-              report={data.report}
-              target={data.target}
+              duration={zhLang ? data.duration.zh : data.duration.en}
+              report={zhLang ? data.report.zh : data.report.en}
+              target={zhLang ? data.target.zh : data.target.en}
               textColor={data.textColor}
               backgroundColor={data.backgroundColor}
             />

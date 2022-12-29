@@ -70,7 +70,13 @@
        "title": "Facebook Management Packages"
      },
      "facebookPageLike": {
-      "title": "Facebook Page Like Advertising"
+      "title": "Facebook Page Like Advertising",
+      "card": {
+        "title": "Approximate Page Like",
+        "tickTitleOne": "Duration: ",
+        "tickTitleTwo": "Report: ",
+        "tickTitleThree": "Target: "
+      }
      },
      "servicesStepByStep": {
       "title": "How we serve you in step by step"

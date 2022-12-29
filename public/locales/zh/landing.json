@@ -69,7 +69,13 @@
       "title": "Facebook 管理包"
     },
     "facebookPageLike": {
-      "title": "Facebook 主页 点赞 广告"
+      "title": "Facebook 主页 点赞 广告",
+      "card": {
+        "title": "近似页面喜欢",
+        "tickTitleOne": "期间: ",
+        "tickTitleTwo": "报告: ",
+        "tickTitleThree": "目标: "
+      }
     },
     "servicesStepByStep": {
       "title": "我们如何一步步为您服务"
