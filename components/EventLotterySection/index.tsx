@@ -29,6 +29,8 @@ const EventLotterySection: FunctionComponent = () => {
           </Typography>
           <AnimationFrame>
             <ActionButton
+              background="white"
+              textColor="#0C2E5C"
               directory="#"
               translatedText={t("landing:dctLotterySection.button")}
             />
