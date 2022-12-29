@@ -43,6 +43,8 @@ const AsxoxShopAppSection: FunctionComponent = () => {
           </ul>
           <AnimationFrame>
             <ActionButton
+              background="white"
+              textColor="#0C2E5C"
               directory="https://play.google.com/store/apps/details?id=com.asxox.mkza&hl=en&gl=US"
               translatedText={t("landing:asxoxSection.button")}
             />
