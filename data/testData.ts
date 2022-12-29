@@ -271,21 +271,21 @@ export const PageLikeViewCardData = [
   {
     plan: {
       en: "Basic Plan",
-      zh: "基本计划"
+      zh: "基本计划",
     },
     pricing: "$200",
     pageLikeRange: "3000 - 5000",
     duration: {
       en: "Desire Duration",
-      zh: "欲望持续时间"
+      zh: "欲望持续时间",
     },
     report: {
       en: "Yes",
-      zh: "是的"
+      zh: "是的",
     },
     target: {
       en: "Yes",
-      zh: "是的"
+      zh: "是的",
     },
     textColor: "#0C2E5C",
     backgroundColor: "white",
@@ -293,21 +293,21 @@ export const PageLikeViewCardData = [
   {
     plan: {
       en: "Standard",
-      zh: "标准计划"
+      zh: "标准计划",
     },
     pricing: "$300",
     pageLikeRange: "7000 - 10000",
     duration: {
       en: "Desire Duration",
-      zh: "欲望持续时间"
+      zh: "欲望持续时间",
     },
     report: {
       en: "Yes",
-      zh: "是的"
+      zh: "是的",
     },
     target: {
       en: "Yes",
-      zh: "是的"
+      zh: "是的",
     },
     textColor: "#0C2E5C",
     backgroundColor: "white",
@@ -315,21 +315,21 @@ export const PageLikeViewCardData = [
   {
     plan: {
       en: "Premium",
-      zh: "保费计划"
+      zh: "保费计划",
     },
     pricing: "$400",
     pageLikeRange: "10000 - 13000",
     duration: {
       en: "Desire Duration",
-      zh: "欲望持续时间"
+      zh: "欲望持续时间",
     },
     report: {
       en: "Yes",
-      zh: "是的"
+      zh: "是的",
     },
     target: {
       en: "Yes",
-      zh: "是的"
+      zh: "是的",
     },
     textColor: "#0C2E5C",
     backgroundColor: "white",
@@ -337,21 +337,21 @@ export const PageLikeViewCardData = [
   {
     plan: {
       en: "Premium +",
-      zh: "保费加计划"
+      zh: "保费加计划",
     },
     pricing: "$500",
     pageLikeRange: "14000 - 20000",
     duration: {
       en: "Desire Duration",
-      zh: "欲望持续时间"
+      zh: "欲望持续时间",
     },
     report: {
       en: "Yes",
-      zh: "是的"
+      zh: "是的",
     },
     target: {
       en: "Yes",
-      zh: "是的"
+      zh: "是的",
     },
     textColor: "#0C2E5C",
     backgroundColor: "white",
@@ -360,56 +360,113 @@ export const PageLikeViewCardData = [
 
 export const stepsData = [
   {
-    label: "Initial Page Setup",
-    description: [
-      "If the plan is started, we will make initial setup for pages",
-      "Facebook Cover Design",
-    ],
+    label: {
+      en: "Initial Page Setup",
+      zh: "初始页面设置",
+    },
+    description: {
+      en: [
+        "If the plan is started, we will make initial setup for pages",
+        "Facebook Cover Design",
+      ],
+      zh: ["如果计划开始，我们将对页面进行初始设置", "脸书封面设计"],
+    },
   },
   {
-    label: "Photo",
-    description: [
-      "DSLR Camer photo will support",
-      "Photo Retouch",
-      "Design with Professional Designer per post",
-    ],
+    label: {
+      en: "Photo",
+      zh: "照片",
+    },
+    description: {
+      en: [
+        "DSLR Camera photo will support",
+        "Photo Retouch",
+        "Design with Professional Designer per post",
+      ],
+      zh: [
+        "数码单反相机照片将支持",
+        "照片润饰",
+        "每个职位与专业设计师一起设计",
+      ],
+    },
   },
   {
-    label: "Content",
-    description: ["We are writing effective contents for your facebook page"],
+    label: {
+      en: "Content",
+      zh: "内容",
+    },
+    description: {
+      en: ["We are writing effective contents for your facebook page"],
+      zh: ["我们正在为您的 Facebook 页面编写有效的内容"],
+    },
   },
   {
-    label: "Promotion Campaign Idea",
-    description: [
-      "We can support idea for customer as special promotion with creative.",
-    ],
+    label: {
+      en: "Promotion Campaign Idea",
+      zh: "促销活动理念",
+    },
+    description: {
+      en: [
+        "We can support idea for customer as special promotion with creative.",
+      ],
+      zh: ["我们可以支持客户的想法作为具有创意的特别促销。"],
+    },
   },
   {
-    label: "Video",
-    description: [
-      "Creative Video for customer services or products",
-      "Can Professional Camera team",
-      "Editing 3 minutes to 5 minutes",
-      "Video with animation",
-    ],
+    label: {
+      en: "Video",
+      zh: "视频",
+    },
+    description: {
+      en: [
+        "Creative Video for customer services or products",
+        "Can Professional Camera team",
+        "Editing 3 minutes to 5 minutes",
+        "Video with animation",
+      ],
+      zh: [
+        "客户服务或产品的创意视频",
+        "可以专业摄像团队",
+        "编辑 3 分钟到 5 分钟",
+        "带动画的视频",
+      ],
+    },
   },
   {
-    label: "Message",
-    description: [
-      "Effective message response",
-      "Reply can supoort within 9 am to 10 pm.",
-    ],
+    label: {
+      en: "Message",
+      zh: "信息",
+    },
+    description: {
+      en: [
+        "Effective message response",
+        "Reply can supoort within 9 am to 10 pm.",
+      ],
+      zh: ["有效的消息响应", "上午9点到晚上10点回复可以支持"],
+    },
   },
   {
-    label: "Boost",
-    description: [
-      "Can choose Audience, Regional, Business Field for each post",
-      "Effective boost for your products or services",
-    ],
+    label: {
+      en: "Boost",
+      zh: "促进",
+    },
+    description: {
+      en: [
+        "Can choose Audience, Regional, Business Field for each post",
+        "Effective boost for your products or services",
+      ],
+      zh: ["可以为每个帖子选择受众、区域、业务领域", "有效提升您的产品或服务"],
+    },
   },
   {
-    label: "Payment method",
-    description: ["Initial: 50%", "During services within 10 days : 50%"],
+    label: {
+      en: "Payment method",
+      zh: "付款方式",
+    },
+    description: {
+      en: ["Initial: 50%", "During services within 10 days : 50%"],
+      zh: ["初始：50%", "服务期间 10 天内：50%"],
+    },
   },
 ];
 

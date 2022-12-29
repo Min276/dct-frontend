@@ -63,6 +63,7 @@
       "youtube": "Youtube"
     }
   },
+  
   "digitalMarketing": {
     "title": "我们提供数字营销",
     "facebookMarketing": {
@@ -78,7 +79,13 @@
       }
     },
     "servicesStepByStep": {
-      "title": "我们如何一步步为您服务"
+      "title": "我们如何一步步为您服务",
+      "services": {
+        "nextButton": "下一步",
+        "backButton": "后退",
+        "finishButton": "结束",
+        "resetButton": "重置所有"
+      }
     }
   },
 
