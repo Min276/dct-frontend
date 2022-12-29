@@ -79,7 +79,13 @@
       }
      },
      "servicesStepByStep": {
-      "title": "How we serve you in step by step"
+      "title": "How we serve you in step by step",
+      "services": {
+        "nextButton": "Next Step",
+        "backButton": "Back",
+        "finishButton": "Finish",
+        "resetButton": "Reset All"
+      }
      }
   },
 
