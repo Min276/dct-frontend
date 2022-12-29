@@ -14,7 +14,7 @@ const PageLikeViewCard: FunctionComponent = () => {
   return (
     <Box className="px-6 py-16 md:px-24 md:pt-14 md:pb-20 bg-[#0C2E5C]">
       <AnimationFrame>
-        <Typography className="!text-[1.3rem] md:!text-2xl !font-semibold text-white text-center py-8">
+        <Typography className="!text-[1.3rem] md:!text-2xl !font-semibold text-white text-center pt-8 md:pb-8 pb-10">
           {t("landing:digitalMarketing.facebookPageLike.title")}
         </Typography>
       </AnimationFrame>
@@ -28,7 +28,7 @@ const PageLikeViewCard: FunctionComponent = () => {
             className={styles.page_like_image}
           />
         </Box>
-        <Box className="flex flex-wrap justify-center items-center gap-y-8 md:gap-x-8 xl:gap-x-0 mt-2 2xl:justify-start 2xl:pl-12 3xl:pl-0">
+        <Box className="flex flex-wrap justify-center items-center gap-y-8 md:gap-x-8 xl:gap-x-0 2xl:justify-start 2xl:pl-12 3xl:pl-0">
           {PageLikeViewCardData.map((data: any, index: number) => (
             <CardComponent
               key={index}

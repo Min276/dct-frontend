@@ -24,7 +24,7 @@ const CardComponent: FunctionComponent<CardProps> = ({
     <AnimationFrame className="w-full sm:w-auto sm:odd:!-mr-16 sm:even:!-mr-16  md:even:!-mr-16  lg:first:!mr-0 lg:last:!-mr-16 lg:last:!ml-0 xl:even:!mr-0">
       <Box
         key={key}
-        className="!w-full relative sm:!w-4/5 h-[740px] px-16 py-10 rounded-md !ml-0 !mr-0"
+        className="!w-full relative sm:!w-5/6 h-[740px] px-16 py-10 rounded-md !ml-0 !mr-0"
         sx={{
           backgroundColor: backgroundColor,
           boxShadow: "0px 1px 10px rgba(0, 0, 0, 0.25);",
