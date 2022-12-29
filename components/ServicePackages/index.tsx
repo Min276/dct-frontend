@@ -9,6 +9,8 @@ const AnimationFrame = dynamic(import("../AnimationFrame"), { ssr: false });
 
 const ServicePackages: FunctionComponent = () => {
   const { t } = useTranslation();
+  const { i18n } = useTranslation("landing");
+  const zhLang = i18n.language === "zh";
   return (
     <Box className="px-6 py-16 md:px-24 md:pt-14 md:pb-20 bg-white">
       <AnimationFrame>
@@ -21,10 +23,11 @@ const ServicePackages: FunctionComponent = () => {
           <CardComponent
             key={index}
             title={data.pricing}
-            tab={data.plan}
+            sideText={zhLang ? data.sideText.zh : data.sideText.en}
+            tab={zhLang ? data.plan.zh : data.plan.en}
             textColor={data.textColor}
             backgroundColor={data.backgroundColor}
-            restData={data.restData}
+            restData={zhLang ? data.restData.zh : data.plan.en}
           />
         ))}
       </Box>
