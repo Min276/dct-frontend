@@ -1,6 +1,9 @@
 export const servicesData = [
   {
-    title: "Software Development",
+    title: {
+      en: "Software Development",
+      zh: "软件开发",
+    },
     icon: "/assets/servicesIcons/software.svg",
     textColor: "#0C2E5C",
     sideColor: "#0C2E5C",
@@ -10,7 +13,10 @@ export const servicesData = [
     directory: "/software-development",
   },
   {
-    title: "Digital Marketing",
+    title: {
+      en: "Digital Marketing",
+      zh: "数字营销",
+    },
     icon: "/assets/servicesIcons/loudspeaker.svg",
     textColor: "#0C2E5C",
     sideColor: "#0C2E5C",
@@ -20,7 +26,10 @@ export const servicesData = [
     directory: "/digital-marketing",
   },
   {
-    title: "Warehouse Logistics",
+    title: {
+      en: "Warehouse Logistics",
+      zh: "仓储物流",
+    },
     icon: "/assets/servicesIcons/store.svg",
     textColor: "#0C2E5C",
     sideColor: "#0C2E5C",
@@ -30,7 +39,10 @@ export const servicesData = [
     directory: "#",
   },
   {
-    title: "Real Estate Agency",
+    title: {
+      en: "Real Estate Agency",
+      zh: "房地产中介",
+    },
     icon: "/assets/servicesIcons/housing.svg",
     textColor: "#0C2E5C",
     sideColor: "#0C2E5C",
@@ -43,7 +55,10 @@ export const servicesData = [
 
 export const productsData = [
   {
-    title: "Asxox Shop",
+    title: {
+      en: "Asxox Shop",
+      zh: "阿索克斯商店",
+    },
     icon: "/assets/productsIcons/shop.svg",
     backgroundColor: "white",
     textColor: "white",
@@ -52,7 +67,10 @@ export const productsData = [
     directory: "https://asxox.com.mm",
   },
   {
-    title: "Asxox App",
+    title: {
+      en: "Asxox App",
+      zh: "阿索克斯应用程序",
+    },
     icon: "/assets/productsIcons/app.svg",
     backgroundColor: "white",
     textColor: "white",
@@ -62,7 +80,10 @@ export const productsData = [
       "https://play.google.com/store/apps/details?id=com.asxox.mkza&hl=en&gl=US",
   },
   {
-    title: "S.Y Real Estate Agency",
+    title: {
+      en: "S.Y Real Estate Agency",
+      zh: "盛业地产",
+    },
     icon: "/assets/productsIcons/housing.svg",
     backgroundColor: "white",
     textColor: "white",
@@ -71,7 +92,10 @@ export const productsData = [
     directory: "#syAgencySection",
   },
   {
-    title: "Lucky Star Lottery",
+    title: {
+      en: "Lucky Star Lottery",
+      zh: "幸运星彩票",
+    },
     icon: "/assets/productsIcons/lottery.svg",
     backgroundColor: "white",
     textColor: "white",
@@ -80,7 +104,10 @@ export const productsData = [
     directory: "#luckyStarSection",
   },
   {
-    title: "DCT Live App",
+    title: {
+      en: "DCT Live App",
+      zh: "DCT直播应用",
+    },
     icon: "/assets/productsIcons/live.svg",
     backgroundColor: "white",
     textColor: "white",
@@ -89,7 +116,10 @@ export const productsData = [
     directory: "https://play.google.com/store/apps/details?id=com.dct.live",
   },
   {
-    title: "Job Seeker",
+    title: {
+      en: "Job Seeker",
+      zh: "求职者",
+    },
     icon: "/assets/productsIcons/job.svg",
     backgroundColor: "white",
     textColor: "white",
@@ -98,7 +128,10 @@ export const productsData = [
     directory: "#",
   },
   {
-    title: "Find You Want",
+    title: {
+      en: "Find You Want",
+      zh: "找到你想要的",
+    },
     icon: "/assets/productsIcons/search.svg",
     backgroundColor: "white",
     textColor: "white",
@@ -110,7 +143,8 @@ export const productsData = [
 
 export const DownloadLinkData = [
   {
-    directory: "https://play.google.com/store/apps/details?id=com.asxox.mkza&pli=1",
+    directory:
+      "https://play.google.com/store/apps/details?id=com.asxox.mkza&pli=1",
     width: 240,
     height: 240,
     image: "/assets/dctAppSection/appstore.svg",
@@ -121,21 +155,21 @@ export const DownloadLinkData = [
     width: 240,
     height: 240,
     image: "/assets/dctAppSection/playstore.svg",
-    altText: "playstore"
+    altText: "playstore",
   },
   {
     directory: "https://appgallery.huawei.com/app/C105045159",
     width: 240,
     height: 240,
     image: "/assets/dctAppSection/appgallery.svg",
-    altText: "appgallery"
+    altText: "appgallery",
   },
   {
     directory: "https://www.mediafire.com/error.php?errno=320&origin=download",
     width: 240,
     height: 240,
     image: "/assets/dctAppSection/directlink.svg",
-    altText: "directlink"
+    altText: "directlink",
   },
 ];
 
@@ -184,46 +218,46 @@ export const FacebookPackagesData = [
 ];
 
 export const PageLikeViewCardData = [
-    {
-        plan: "Basic Plan",
-        pricing: "$200",
-        pageLikeRange: "3000 - 5000",
-        duration: "Desire Duration",
-        report: "Yes",
-        target: "Yes",
-        textColor: "#0C2E5C",
-        backgroundColor: "white",
-    },
-    {
-        plan: "Standard",
-        pricing: "$300",
-        pageLikeRange: "7000 - 10000",
-        duration: "Desire Duration",
-        report: "Yes",
-        target: "Yes",
-        textColor: "#0C2E5C",
-        backgroundColor: "white",
-    },
-    {
-        plan: "Premium",
-        pricing: "$400",
-        pageLikeRange: "10000 - 13000",
-        duration: "Desire Duration",
-        report: "Yes",
-        target: "Yes",
-        textColor: "#0C2E5C",
-        backgroundColor: "white",
-    },
-    {
-        plan: "Premium +",
-        pricing: "$500",
-        pageLikeRange: "14000 - 20000",
-        duration: "Desire Duration",
-        report: "Yes",
-        target: "Yes",
-        textColor: "#0C2E5C",
-        backgroundColor: "white",
-    }
+  {
+    plan: "Basic Plan",
+    pricing: "$200",
+    pageLikeRange: "3000 - 5000",
+    duration: "Desire Duration",
+    report: "Yes",
+    target: "Yes",
+    textColor: "#0C2E5C",
+    backgroundColor: "white",
+  },
+  {
+    plan: "Standard",
+    pricing: "$300",
+    pageLikeRange: "7000 - 10000",
+    duration: "Desire Duration",
+    report: "Yes",
+    target: "Yes",
+    textColor: "#0C2E5C",
+    backgroundColor: "white",
+  },
+  {
+    plan: "Premium",
+    pricing: "$400",
+    pageLikeRange: "10000 - 13000",
+    duration: "Desire Duration",
+    report: "Yes",
+    target: "Yes",
+    textColor: "#0C2E5C",
+    backgroundColor: "white",
+  },
+  {
+    plan: "Premium +",
+    pricing: "$500",
+    pageLikeRange: "14000 - 20000",
+    duration: "Desire Duration",
+    report: "Yes",
+    target: "Yes",
+    textColor: "#0C2E5C",
+    backgroundColor: "white",
+  },
 ];
 
 export const stepsData = [
@@ -298,7 +332,7 @@ export const ServicePackagesData = [
       "Visitor Counter & User Training",
       "Responsive & Enhance Security",
       "Monthly Backup",
-      "Social Network Embedded"
+      "Social Network Embedded",
     ],
     textColor: "#0C2E5C",
     backgroundColor: "white",
@@ -320,7 +354,7 @@ export const ServicePackagesData = [
       "Responsive & Enhance Security",
       "Google Analytic Support",
       "Monthly Backup",
-      "Social Network Embedded"
+      "Social Network Embedded",
     ],
     textColor: "#0C2E5C",
     backgroundColor: "white",
@@ -342,7 +376,7 @@ export const ServicePackagesData = [
       "Responsive & Enhance Security",
       "Google Analytic & Bi-Language",
       "Monthly Backup",
-      "Social Network Embedded"
+      "Social Network Embedded",
     ],
     textColor: "#0C2E5C",
     backgroundColor: "white",

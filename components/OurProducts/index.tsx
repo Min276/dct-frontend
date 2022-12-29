@@ -9,6 +9,7 @@ const AnimationFrame = dynamic(import("../AnimationFrame"), { ssr: false });
 
 const OurProducts: FunctionComponent = () => {
   const { t } = useTranslation();
+  const { i18n } = useTranslation("landing");
   return (
     <Box className="px-6 pt-10 pb-14 md:px-24 md:pt-12 md:pb-24 bg-[#0C2E5C]">
       <AnimationFrame>
@@ -20,7 +21,7 @@ const OurProducts: FunctionComponent = () => {
         {productsData.map((data, index: number) => (
           <ProductComponent
             key={index}
-            title={data.title}
+            title={i18n.language === "zh" ? data.title.zh : data.title.en}
             icon={data.icon}
             textColor={data.textColor}
             backgroundColor={data.backgroundColor}
