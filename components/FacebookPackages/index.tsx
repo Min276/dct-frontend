@@ -2,7 +2,6 @@ import { Box, Typography } from "@mui/material";
 import { FunctionComponent } from "react";
 import dynamic from "next/dynamic";
 import { FacebookPackagesData } from "../../data/testData";
-import { motion } from "framer-motion";
 import { useTranslation } from "next-i18next";
 
 const CardComponent = dynamic(import("./CardComponent"), { ssr: false });
@@ -10,6 +9,8 @@ const AnimationFrame = dynamic(import("../AnimationFrame"), { ssr: false });
 
 const FacebookPackages: FunctionComponent = () => {
   const { t } = useTranslation();
+  const { i18n } = useTranslation("landing");
+  const zhLang = i18n.language === "zh";
   return (
     <Box className="px-6 py-16 md:px-24 md:pt-14 md:pb-20 bg-white">
       <AnimationFrame>
@@ -22,10 +23,11 @@ const FacebookPackages: FunctionComponent = () => {
           <CardComponent
             key={index}
             title={data.pricing}
-            tab={data.plan}
+            sideText={zhLang ? data.sideText.zh : data.sideText.en}
+            tab={zhLang ? data.plan.zh : data.plan.en}
             textColor={data.textColor}
             backgroundColor={data.backgroundColor}
-            restData={data.restData}
+            restData={zhLang ? data.restData.zh : data.restData.en}
           />
         ))}
       </Box>

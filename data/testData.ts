@@ -175,43 +175,93 @@ export const DownloadLinkData = [
 
 export const FacebookPackagesData = [
   {
-    plan: "Standard",
+    plan: {
+      en: "Standard",
+      zh: "标准计划",
+    },
     pricing: "650K",
-    restData: [
-      "8 facebook posts per month",
-      "8 creative posts (photo retouch) photo does not support *",
-      "promotion idea (optional)",
-      "message reply/ comment within 9 am to 11 pm",
-      "boosting fee $300 included",
-    ],
+    sideText: {
+      en: "per month",
+      zh: "每月",
+    },
+    restData: {
+      en: [
+        "8 facebook posts per month",
+        "8 creative posts (photo retouch) photo does not support *",
+        "promotion idea (optional)",
+        "message reply/ comment within 9 am to 11 pm",
+        "boosting fee $300 included",
+      ],
+      zh: [
+        "每月 8 个 Facebook 帖子",
+        "8 创意帖（修图）照片不支持 *",
+        "促销创意（可选）",
+        "上午9点至晚上11点消息回复/评论",
+        "包括提升费 $300",
+      ],
+    },
     textColor: "#0C2E5C",
     backgroundColor: "white",
   },
   {
-    plan: "Premium",
+    plan: {
+      en: "Premium",
+      zh: "保费计划",
+    },
     pricing: "1100K",
-    restData: [
-      "10 facebook posts per month",
-      "10 creative posts (photo retouch) photo support *",
-      "promotion idea support",
-      "message reply/ comment within 9 am to 11 pm",
-      "1 creative video provided",
-      "boosting fee $500 included",
-    ],
+    sideText: {
+      en: "per month",
+      zh: "每月",
+    },
+    restData: {
+      en: [
+        "10 facebook posts per month",
+        "10 creative posts (photo retouch) photo support *",
+        "promotion idea support",
+        "message reply/ comment within 9 am to 11 pm",
+        "1 creative video provided",
+        "boosting fee $500 included",
+      ],
+      zh: [
+        "每月 10 个 Facebook 帖子",
+        "10个创意贴（照片润饰）照片支持",
+        "推广创意支持",
+        "上午9点至晚上11点消息回复/评论",
+        "提供 1 个创意视频",
+        "包括提升费 $500",
+      ],
+    },
     textColor: "#0C2E5C",
     backgroundColor: "white",
   },
   {
-    plan: "Premium +",
+    plan: {
+      en: "Premium +",
+      zh: "高级计划",
+    },
     pricing: "1500K",
-    restData: [
-      "12 facebook posts per month",
-      "12 creative posts (photo retouch) photo support *",
-      "promotion idea support",
-      "message reply/ comment within 9 am to 11 pm",
-      "1 animated video provided",
-      "boosting fee $700 included",
-    ],
+    sideText: {
+      en: "per month",
+      zh: "每月",
+    },
+    restData: {
+      en: [
+        "12 facebook posts per month",
+        "12 creative posts (photo retouch) photo support *",
+        "promotion idea support",
+        "message reply/ comment within 9 am to 11 pm",
+        "1 animated video provided",
+        "boosting fee $700 included",
+      ],
+      zh: [
+        "每月 12 个 Facebook 帖子",
+        "12个创意贴（照片润饰）照片支持",
+        "推广创意支持",
+        "上午9点至晚上11点消息回复/评论",
+        "提供 1 个动画视频",
+        "包括提升费 $700",
+      ],
+    },
     textColor: "#0C2E5C",
     backgroundColor: "white",
   },
@@ -324,7 +374,7 @@ export const ServicePackagesData = [
     pricing: "500K",
     sideText: {
       en: "per year",
-      zh: "每年"
+      zh: "每年",
     },
     restData: {
       en: [
@@ -369,7 +419,7 @@ export const ServicePackagesData = [
     pricing: "700K",
     sideText: {
       en: "per year",
-      zh: "每年"
+      zh: "每年",
     },
     restData: {
       en: [
@@ -416,7 +466,7 @@ export const ServicePackagesData = [
     pricing: "1300K",
     sideText: {
       en: "per year",
-      zh: "每年"
+      zh: "每年",
     },
     restData: {
       en: [
