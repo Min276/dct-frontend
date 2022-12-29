@@ -10,7 +10,6 @@ const AnimationFrame = dynamic(import("../AnimationFrame"), { ssr: false });
 const OurServices: FunctionComponent = () => {
   const { t } = useTranslation();
   const { i18n } = useTranslation("landing");
-  console.log(i18n.language);
   return (
     <Box className="px-6 py-10 md:px-24 md:pt-14 md:pb-20 bg-white">
       <AnimationFrame>
