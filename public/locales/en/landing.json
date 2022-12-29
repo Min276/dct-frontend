@@ -22,16 +22,12 @@
     "button": "Explore Asxox App"
   },
   "sySection": {
-    "title": "About SY Real Estate Agency",
+    "title": "About S.Y Real Estate Agency",
     "subTitle": "Our Agency Background & Services",
-    "description": "We are one of the real estate agencies in Myanmar which is making people lives smooth and convenient with the most suitable and affordable housings, apartments, and etc. If you are to rent or buy a house or apartment, don't think twice, just contact us right away.",
-    "list": {
-      "listItemOne": "Convienent, smooth process and affordable prices",
-      "listItemTwo": "Good quality accomodations with fair prices",
-      "listItemThree": "Fast, reliable and 24/7 customer services"
-    },
-    "contactUs": "You can contact us via these: ",
-    "qrCodeTitle": "Scan SY WeChat here",
+    "description": "S.Y Myanmar Real Estate Company was established in 2015 and it is an officially registered real estate company in Myanmar. Primarily, we provide the best service for real estate leases, real estate sales, home ownership transfers, consulting and discussing bank loan business and related information. S.Y Myanmar Company is ready to provide customized services for customers and business partners with sincere attention. For real estate sales, rental inquiries and consultations, the company warmly welcomes you to call us.",
+    "contactUs": "You can contact us via this number: ",
+    "phoneNumber": "+95 9941181188",
+    "qrCodeTitle": "Scan S.Y WeChat here",
     "button": "Explore SY Agency"
   },
   "dctLotterySection": {

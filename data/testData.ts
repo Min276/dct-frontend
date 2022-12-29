@@ -62,7 +62,7 @@ export const productsData = [
       "https://play.google.com/store/apps/details?id=com.asxox.mkza&hl=en&gl=US",
   },
   {
-    title: "SY Real Estate Agency",
+    title: "S.Y Real Estate Agency",
     icon: "/assets/productsIcons/housing.svg",
     backgroundColor: "white",
     textColor: "white",

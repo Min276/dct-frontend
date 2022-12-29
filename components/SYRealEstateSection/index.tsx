@@ -43,11 +43,6 @@ const SYRealEstateSection: FunctionComponent = () => {
           <Typography className="text-[#0C2E5C] !font-medium py-4 !leading-7">
             {t("landing:sySection.description")}
           </Typography>
-          <ul className="list-disc pl-4 pb-6 text-[#0C2E5C] !leading-10 md:m-auto xl:m-0">
-            <li>{t("landing:sySection.list.listItemOne")}</li>
-            {/* <li>{t("landing:sySection.list.listItemTwo")}</li>
-            <li>{t("landing:sySection.list.listItemThree")}</li> */}
-          </ul>
           <AnimationFrame>
             <Box className="flex flex-col md:flex-row md:items-center justify-between gap-y-6">
               <Box className="flex flex-col gap-y-3">
@@ -56,7 +51,7 @@ const SYRealEstateSection: FunctionComponent = () => {
                 </Typography>
                 <Typography className="text-[#0C2E5C] !font-semibold">
                   <Link href="tel:09941181188" className="cursor-pointer">
-                    +95 9941181188
+                    {t("landing:sySection.phoneNumber")}
                   </Link>
                 </Typography>
               </Box>
