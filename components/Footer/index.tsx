@@ -48,7 +48,7 @@ const Footer: FunctionComponent = () => {
               <Link href="https://www.facebook.com/DataCloudTechnologyCoLtd/">
                 {t("landing:footer.followus.facebook")}
               </Link>
-              <Link href="https://www.tiktok.com/@asxoxecommerce">
+              <Link href="https://www.tiktok.com/@asxoxonlineshopping?lang=en">
                 {t("landing:footer.followus.tiktok")}
               </Link>
               <Link href="https://www.youtube.com/channel/UCnXbJ5K2pmBIh_HJaUuh9kg">
