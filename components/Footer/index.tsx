@@ -10,14 +10,14 @@ const Footer: FunctionComponent = () => {
   return (
     <Box className="px-6 pt-14 pb-10 md:px-24 md:pt-20 md:py-12 bg-[#0C2E5C]">
       <Box className="flex flex-col xl:flex-row justify-evenly md:items-center mb-20 gap-y-8">
-        <Box className="flex flex-col lg:w-4/5">
+        <Box className="flex flex-col lg:w-4/5 xl:w-3/5 2xl:w-4/5">
           <Image width={100} height={100} src="/assets/logo.svg" alt="logo" />
           <Typography className="text-white pt-4 !leading-7">
             {t("landing:footer.description")}
           </Typography>
         </Box>
         <Box className="md:flex w-full">
-          <Box className="flex flex-col lg:w-3/5 md:mr-32 lg:ml-24 xl:mx-32">
+          <Box className="flex flex-col md:w-3/5 md:mr-32 lg:ml-24 xl:mx-32">
             <Typography className="!text-lg text-white !font-semibold">
               {t("landing:footer.email.title")}
             </Typography>
