@@ -3,11 +3,11 @@
   "searchPlaceholder": "在这里搜索您想要的",
   "filterText": "筛选",
   "ourServicesTitle": "DCT 提供的服务",
-  "ourProductsTitle": "数据云科技运行项目",
+  "ourProductsTitle": "数字云科技运行项目",
   "dctSection": {
     "title": "让您了解DCT",
     "subTitle": "数字云技术",
-    "description": "我們是一家提供多種服務的科技公司，例如 Asxox Shop & App、数字营销、仓储物流、软件开发、思源房地產代理和 DCT 活動彩票。",
+    "description": "我們是一家提供多種服務的科技公司，例如 Asxox Shop & App、数字营销、仓储物流、软件开发、房地產代理和 DCT 活動彩票。",
     "location": "我们的位置",
     "button": "在谷歌地图中查看"
   },
@@ -37,33 +37,33 @@
     "button": "了解 幸运之星"
   },
   "dctAppSection": {
-    "title": "使用 DCT App 輕鬆掃描和購買",
-    "subTitle": "我們的應用程序功能包括：",
+    "title": "使用 DCT App 轻松扫描与购买",
+    "subTitle": "我們的应用程序功能包括：",
     "list": {
-      "listItemOne": "具有簡單掃描和購買功能的快速、安全的移動應用程序",
-      "listItemTwo": "簡潔且以用戶為中心的設計，易於訪問",
-      "listItemThree": "驚人的功能可增強您的用戶體驗"
+      "listItemOne": "给您体验搜索、购物的快速、安全移动应用程序",
+      "listItemTwo": "简洁且以用戶为中心的设计，易于访问",
+      "listItemThree": "驚人的功能可增強您的用戶体验"
     },
-    "downloadTitle": "下載我們的應用程序",
-    "scanQRTitle": "掃描此處二維碼：",
+    "downloadTitle": "下载应用程序",
+    "scanQRTitle": "扫描此处二维码：",
     "qrCodeTitle": "在这里扫描DCT二维码"
   },
   "footer": {
-    "description": "DCT是一組公司，包括許多功能和服務，使人們的生活更加方便和舒適。我們一直在努力成為緬甸最著名的公司集團之一，建立公司形象",
+    "description": "DCT是一組公司，包括許多功能和服务，使人们的生活更加方便和舒适。我們一直在努力成为緬甸最著名的公司集團之一，建立公司形象",
     "email": {
-      "title": "訂閱我們的電子郵件地址",
-      "placeholder": "輸入你的電子郵箱地址"
+      "title": "订阅我们的电子邮箱地址",
+      "placeholder": "输入您的邮箱"
     },
     "submit": "提交",
-    "reachout": "通過以下方式聯繫我們：",
+    "reachout": "通过以下方式联系我们：",
     "followus": {
-      "title": "跟著我們",
+      "title": "其他方式",
       "facebook": "Facebook",
       "tiktok": "Tiktok",
       "youtube": "Youtube"
     }
   },
-  
+
   "digitalMarketing": {
     "title": "我们提供数字营销",
     "facebookMarketing": {
