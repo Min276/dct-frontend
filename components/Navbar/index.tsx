@@ -48,7 +48,7 @@ const Navbar: FunctionComponent = () => {
           <Link target="_blank" href="viber://chat?number=959961558491/">
             <FaViber className="text-2xl text-white" />
           </Link>
-          <Link target="_blank" href="https://www.tiktok.com/@asxoxecommerce">
+          <Link target="_blank" href="https://www.tiktok.com/@asxoxonlineshopping?lang=en">
             <FaTiktok className="text-2xl text-white" />
           </Link>
           <Link
