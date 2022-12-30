@@ -179,7 +179,7 @@ export const FacebookPackagesData = [
       en: "Standard",
       zh: "标准计划",
     },
-    pricing: "650K",
+    pricing: "1.58 M",
     sideText: {
       en: "per month",
       zh: "每月",
@@ -208,7 +208,7 @@ export const FacebookPackagesData = [
       en: "Premium",
       zh: "保费计划",
     },
-    pricing: "1100K",
+    pricing: "2.36 M",
     sideText: {
       en: "per month",
       zh: "每月",
@@ -236,10 +236,10 @@ export const FacebookPackagesData = [
   },
   {
     plan: {
-      en: "Premium +",
+      en: "VIP Package",
       zh: "高级计划",
     },
-    pricing: "1500K",
+    pricing: "3.25 M",
     sideText: {
       en: "per month",
       zh: "每月",
@@ -273,7 +273,7 @@ export const PageLikeViewCardData = [
       en: "Basic Plan",
       zh: "基本计划",
     },
-    pricing: "$200",
+    pricing: "$400",
     pageLikeRange: "3000 - 5000",
     duration: {
       en: "Desire Duration",
@@ -295,8 +295,8 @@ export const PageLikeViewCardData = [
       en: "Standard",
       zh: "标准计划",
     },
-    pricing: "$300",
-    pageLikeRange: "7000 - 10000",
+    pricing: "$600",
+    pageLikeRange: "5000 - 8000",
     duration: {
       en: "Desire Duration",
       zh: "欲望持续时间",
@@ -317,8 +317,8 @@ export const PageLikeViewCardData = [
       en: "Premium",
       zh: "保费计划",
     },
-    pricing: "$400",
-    pageLikeRange: "10000 - 13000",
+    pricing: "$900",
+    pageLikeRange: "8000 - 10000",
     duration: {
       en: "Desire Duration",
       zh: "欲望持续时间",
@@ -336,11 +336,11 @@ export const PageLikeViewCardData = [
   },
   {
     plan: {
-      en: "Premium +",
+      en: "VIP Package",
       zh: "保费加计划",
     },
-    pricing: "$500",
-    pageLikeRange: "14000 - 20000",
+    pricing: "$2000",
+    pageLikeRange: "12000 - 15000",
     duration: {
       en: "Desire Duration",
       zh: "欲望持续时间",
