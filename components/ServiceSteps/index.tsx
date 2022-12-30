@@ -4,7 +4,7 @@ import dynamic from "next/dynamic";
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
 
-const StepperComponent = dynamic(import("./StepperComponent"), { ssr: false });
+const StepAccordions = dynamic(import("./StepAccordions"), { ssr: false });
 const AnimationFrame = dynamic(import("../AnimationFrame"), { ssr: false });
 
 const ServiceSteps: FunctionComponent = () => {
@@ -16,8 +16,8 @@ const ServiceSteps: FunctionComponent = () => {
           {t("landing:digitalMarketing.servicesStepByStep.title")}
         </Typography>
       </AnimationFrame>
-      <Box className="flex flex-col-reverse justify-start items-start lg:flex-row flex-wrap md:!justify-around md:!items-center gap-y-8 mt-2">
-        <StepperComponent />
+      <Box className="flex flex-col-reverse justify-start items-start xl:flex-row flex-wrap md:!justify-around md:!items-center gap-y-8 mt-2">
+        <StepAccordions />
         <Box className="w-full md:w-1/2 flex justify-center md:justify-end">
           <AnimationFrame>
             <Image
