@@ -37,33 +37,35 @@ const FaqAccordions: FunctionComponent = () => {
     };
 
   return (
-      <Box my={2} mb={4} className="xl:max-w-[450px] 2xl:max-w-[600px]">
-        {stepsData?.map((data:any, index:number) => (
-          <BootstrapAccordion
-            key={index}
-            expanded={expanded === `panel${index + 1}`}
-            onChange={handleChange(`panel${index + 1}`)}
-          >
-            <AccordionSummary expandIcon={<MdExpandMore fontSize="24px" />}>
-              <Typography className="!text-lg !font-semibold  text-[#0C2E5C]">{index+1}. {zhLang ? data.label.zh : data.label.en}</Typography>
-            </AccordionSummary>
-            <AccordionDetails>
+    <Box my={2} mb={4} className="xl:max-w-[450px] 2xl:max-w-[600px]">
+      {stepsData?.map((data: any, index: number) => (
+        <BootstrapAccordion
+          key={index}
+          expanded={expanded === `panel${index + 1}`}
+          onChange={handleChange(`panel${index + 1}`)}
+        >
+          <AccordionSummary expandIcon={<MdExpandMore fontSize="24px" />}>
+            <Typography className="!text-lg !font-semibold  text-[#0C2E5C]">
+              {index + 1}. {zhLang ? data.label.zh : data.label.en}
+            </Typography>
+          </AccordionSummary>
+          <AccordionDetails>
             <ul className="list-disc pl-4 text-[#0C2E5C]">
-                {(zhLang ? data.description.zh : data.description.en).map(
-                  (item:any, index:number) => (
-                    <li
-                      className="mb-3 !leading-7 !text-[1.04rem] font-normal text-[#1E1D1D]"
-                      key={index}
-                    >
-                      {item}
-                    </li>
-                  )
-                )}
-              </ul>
-            </AccordionDetails>
-          </BootstrapAccordion>
-        ))}
-      </Box>
+              {(zhLang ? data.description.zh : data.description.en).map(
+                (item: any, index: number) => (
+                  <li
+                    className="mb-3 !leading-7 !text-[1.04rem] font-normal text-[#1E1D1D]"
+                    key={index}
+                  >
+                    {item}
+                  </li>
+                )
+              )}
+            </ul>
+          </AccordionDetails>
+        </BootstrapAccordion>
+      ))}
+    </Box>
   );
 };
 

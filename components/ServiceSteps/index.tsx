@@ -16,9 +16,9 @@ const ServiceSteps: FunctionComponent = () => {
           {t("landing:digitalMarketing.servicesStepByStep.title")}
         </Typography>
       </AnimationFrame>
-      <Box className="flex flex-col-reverse justify-start items-start xl:flex-row flex-wrap md:!justify-around md:!items-center gap-y-8 mt-2">
+      <Box className="flex flex-col-reverse justify-start items-start xl:flex-row flex-wrap md:!justify-around md:!items-center xl:!items-start gap-y-8 mt-2">
         <StepAccordions />
-        <Box className="w-full md:w-1/2 flex justify-center md:justify-end">
+        <Box className="w-full md:w-1/2 flex justify-center md:justify-end xl:!mt-16 2xl:!mt-0">
           <AnimationFrame>
             <Image
               width={800}
