@@ -10,64 +10,14 @@ import {
   Typography,
   styled,
 } from "@mui/material";
-
-const steps = [
-  {
-    label: "Initial Page Stepup",
-    description: [
-      "If the plan is started, we will make initial setup for pages",
-      "Facebook Cover Design",
-    ],
-  },
-  {
-    label: "Photo",
-    description: [
-      "DSLR Camer photo will support",
-      "Photo Retouch",
-      "Design with Professional Designer per post",
-    ],
-  },
-  {
-    label: "Content",
-    description: ["We are writing effective content"],
-  },
-  {
-    label: "Promotion Campaign Idea",
-    description: [
-      "We can support idea for customer as special promotion with creative.",
-    ],
-  },
-  {
-    label: "Video",
-    description: [
-      "Creative Video for customer services or products",
-      "Can Professional Camera team",
-      "Editing 3 minutes to 5 minutes",
-      "Video with animation",
-    ],
-  },
-  {
-    label: "Message",
-    description: [
-      "Effective message response",
-      "Reply can supoort within 9 am to 10 pm.",
-    ],
-  },
-  {
-    label: "Boost",
-    description: [
-      "Can choose Audience, Regional, Business Field for each post",
-      "Effective boost for your products or services",
-    ],
-  },
-  {
-    label: "Payment method",
-    description: ["Initial: 50%", "During services within 10 days : 50%"],
-  },
-];
+import { stepsData } from "../../../data/testData";
+import { useTranslation } from "next-i18next";
 
 const StepperComponent: FunctionComponent = () => {
   const [activeStep, setActiveStep] = useState(0);
+  const { t } = useTranslation();
+  const { i18n } = useTranslation("landing");
+  const zhLang = i18n.language === "zh";
 
   const handleNext = () => {
     setActiveStep((prevActiveStep) => prevActiveStep + 1);
@@ -80,64 +30,78 @@ const StepperComponent: FunctionComponent = () => {
   const handleReset = () => {
     setActiveStep(0);
   };
-  //   class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium MuiStepIcon-root Mui-active css-1u4zpwo-MuiSvgIcon-root-MuiStepIcon-root"
-  //   const BootstrapStepper = styled(Stepper)({
-  //       "&  .MuiStepIcon-root.active": { color: "#0C2E5C" },
-  //       "& .MuiStepIcon-root-completed": { background: "#0C2E5C" },
-  //       "& .Mui-disabled .MuiStepIcon-root": { background: "#0C2E5C" }
-  //   });
+
+  const BootstrapStepper = styled(Stepper)({
+    "& .Mui-active .MuiStepIcon-root": { color: "#0C2E5C" },
+    "& .Mui-completed .MuiStepIcon-root": { color: "#0C2E5C" },
+    "& .Mui-disabled .MuiStepIcon-root": { color: "#0C2E5C" },
+  });
 
   return (
     <Box sx={{ maxWidth: 400 }} className="py-1">
-      <Stepper activeStep={activeStep} orientation="vertical">
-        {steps.map((step, index) => (
-          <Step key={step.label} className="!font-semibold">
-            <StepLabel
-
-            //   optional={
-            //     index === 7 ? (
-            //       <Typography variant="caption">Last step</Typography>
-            //     ) : null
-            //   }
-            >
+      <BootstrapStepper activeStep={activeStep} orientation="vertical">
+        {stepsData.map((step, index) => (
+          <Step key={index} className="!font-semibold">
+            <StepLabel>
               <Typography className="!text-lg !font-semibold  text-[#0C2E5C]">
-                {step.label}
+                {zhLang ? step.label.zh : step.label.en}
               </Typography>
             </StepLabel>
             <StepContent>
-              <ul className="list-disc pl-4 pb-8 text-[#0C2E5C] !leading-10">
-                {step.description.map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))}
+              <ul className="list-disc pl-4 text-[#0C2E5C]">
+                {(zhLang ? step.description.zh : step.description.en).map(
+                  (item, index) => (
+                    <li
+                      className="mb-3 !leading-7 !text-[1.04rem] font-normal text-[#1E1D1D]"
+                      key={index}
+                    >
+                      {item}
+                    </li>
+                  )
+                )}
               </ul>
               <Box sx={{ mb: 2 }}>
                 <div>
                   <Button
-                    className="bg-[#0C2E5C] text-white !font-semibold !text-lg capitalize"
+                    className="!bg-[#0C2E5C] !text-white !text-[1rem] !capitalize"
                     onClick={handleNext}
-                    sx={{ mt: 1, mr: 1 }}
+                    sx={{ mt: 1, mr: 1, px: 2 }}
                   >
-                    {index === steps.length - 1 ? "Finish" : "Next Step"}
+                    {index === stepsData.length - 1
+                      ? t(
+                          "landing:digitalMarketing.servicesStepByStep.services.finishButton"
+                        )
+                      : t(
+                          "landing:digitalMarketing.servicesStepByStep.services.nextButton"
+                        )}
                   </Button>
-                  <Button
-                    disabled={index === 0}
-                    className="bg-white !text-[#0C2E5C]  !font-semibold !text-lg capitalize"
-                    onClick={handleBack}
-                    sx={{ mt: 1, mr: 1 }}
-                  >
-                    Previous Step
-                  </Button>
+                  {index >= 1 && (
+                    <Button
+                      className="bg-white !text-[#0C2E5C] !font-semibold !text-[1rem] !capitalize"
+                      onClick={handleBack}
+                      sx={{ mt: 1, mr: 1 }}
+                    >
+                      {t(
+                        "landing:digitalMarketing.servicesStepByStep.services.backButton"
+                      )}
+                    </Button>
+                  )}
                 </div>
               </Box>
             </StepContent>
           </Step>
         ))}
-      </Stepper>
-      {activeStep === steps.length && (
+      </BootstrapStepper>
+      {activeStep === stepsData.length && (
         <Paper square elevation={0} sx={{ p: 3 }}>
-          {/* <Typography>All steps completed - you&apos;re finished</Typography> */}
-          <Button onClick={handleReset} sx={{ mt: 1, mr: 1 }}>
-            Reset all
+          <Button
+            onClick={handleReset}
+            sx={{ mt: 1, mr: 1 }}
+            className="!text-lg !font-semibold !text-[#1E1D1D] !capitalize"
+          >
+            {t(
+              "landing:digitalMarketing.servicesStepByStep.services.resetButton"
+            )}
           </Button>
         </Paper>
       )}

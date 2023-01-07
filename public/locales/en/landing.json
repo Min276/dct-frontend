@@ -2,8 +2,8 @@
   "title": "Welcome to Digital Cloud Technology",
   "searchPlaceholder": "Search what you want here",
   "filterText": "Filter",
-  "mostSearchCategories": "Most Search Categories",
   "ourServicesTitle": "Services DCT is offering",
+  "ourProductsTitle": "Products we are working on",
   "dctSection": {
     "title": "Let's take a glance at DCT",
     "subTitle": "Digital Cloud Technology",
@@ -22,21 +22,19 @@
     "button": "Explore Asxox App"
   },
   "sySection": {
-    "title": "About SY Real Estate Agency",
+    "title": "About S.Y Real Estate Agency",
     "subTitle": "Our Agency Background & Services",
-    "description": "We are one of the real estate agencies in Myanmar which is making people lives smooth and convenient with the most suitable and affordable housings, apartments, and etc. If you are to rent or buy a house or apartment, don't think twice, just contact us right away.",
-    "list": {
-      "listItemOne": "Convienent, smooth process and affordable prices",
-      "listItemTwo": "Good quality accomodations with fair prices",
-      "listItemThree": "Fast, reliable and 24/7 customer services"
-    },
+    "description": "S.Y Myanmar Real Estate Company was established in 2015 and it is an officially registered real estate company in Myanmar. Primarily, we provide the best service for real estate leases, real estate sales, home ownership transfers, consulting and discussing bank loan business and related information. S.Y Myanmar Company is ready to provide customized services for customers and business partners with sincere attention. For real estate sales, rental inquiries and consultations, the company warmly welcomes you to call us.",
+    "contactUs": "You can contact us via this number: ",
+    "phoneNumber": "+95 9941181188",
+    "qrCodeTitle": "Scan S.Y WeChat here",
     "button": "Explore SY Agency"
   },
   "dctLotterySection": {
-    "title": "DCT Event Lottery",
+    "title": "About Lucky Star Lottery",
     "subTitle": "How our lottery system works",
     "description": "Our lottery tickets are everywhere you go, and when you buy something from the shops in partnership with us, you will get a free ticket to win the lottery. The more ticket you collect, the higher chance to win the big prizes.",
-    "button": "Explore DCT App"
+    "button": "Explore Lucky Star"
   },
   "dctAppSection": {
     "title": "Easy scan & buy with DCT App",
@@ -47,7 +45,8 @@
       "listItemThree": "Amazing features to enhance your user experiences"
     },
     "downloadTitle": "To download our App",
-    "scanQRTitle": "Scan QR code here:"
+    "scanQRTitle": "Scan QR code here:",
+    "qrCodeTitle": "Scan DCT QR here"
   },
   "footer": {
     "description": "DCT is a group of companies which include many functionalities and services to make people lives convenient and comfortable. We are always thriving to be one of the most famous group of companies in Myanmar, building up company profile.",
@@ -71,10 +70,29 @@
        "title": "Facebook Management Packages"
      },
      "facebookPageLike": {
-      "title": "Facebook Page Like Advertising"
+      "title": "Facebook Page Like Advertising",
+      "card": {
+        "title": "Approximate Page Like",
+        "tickTitleOne": "Duration: ",
+        "tickTitleTwo": "Report: ",
+        "tickTitleThree": "Target: "
+      }
      },
      "servicesStepByStep": {
-      "title": "How we serve you in step by step"
+      "title": "How we serve you in step by step",
+      "services": {
+        "nextButton": "Next Step",
+        "backButton": "Back",
+        "finishButton": "Finish",
+        "resetButton": "Reset All"
+      }
      }
+  },
+
+  "softwareDevelopment": {
+    "title": "We offer Software Development Service",
+    "servicePackages": {
+      "title": "Software Packages You Can Choose From Us"
+    }
   }
 }

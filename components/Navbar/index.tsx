@@ -17,7 +17,7 @@ const Navbar: FunctionComponent = () => {
   };
   return (
     <Box className="flex px-6 py-2 md:px-24 md:py-0 bg-[#0C2E5C] w-full justify-between items-center">
-      <Link href="#">
+      <Link href="/">
         <Image
           width={100}
           height={100}
@@ -48,7 +48,7 @@ const Navbar: FunctionComponent = () => {
           <Link target="_blank" href="viber://chat?number=959961558491/">
             <FaViber className="text-2xl text-white" />
           </Link>
-          <Link target="_blank" href="https://www.tiktok.com/@asxoxecommerce">
+          <Link target="_blank" href="https://www.tiktok.com/@asxoxonlineshopping?lang=en">
             <FaTiktok className="text-2xl text-white" />
           </Link>
           <Link

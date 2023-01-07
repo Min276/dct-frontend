@@ -1,67 +1,98 @@
 {
-  "title": "歡迎來到數雲科技",
-  "searchPlaceholder": "在這裡搜索你想要的",
-  "filterText": "篩選",
-  "mostSearchCategories": "大多數搜索類別",
-  "ourServicesTitle": "DCT 提供的服務",
+  "title": "欢迎来到数字云科技",
+  "searchPlaceholder": "在这里搜索您想要的",
+  "filterText": "筛选",
+  "ourServicesTitle": "DCT 提供的服务",
+  "ourProductsTitle": "数字云科技运行项目",
   "dctSection": {
-    "title": "讓我們看一下DCT",
-    "subTitle": "數字云技術",
-    "description": "我們是一家提供多種服務的公司集團，例如 Asxox Shop & App、數字營銷、倉儲物流、軟件開發、SY 房地產代理和 DCT 活動彩票。",
-    "location": "我們的位置",
-    "button": "在谷歌地圖中查看"
+    "title": "让您了解DCT",
+    "subTitle": "数字云技术",
+    "description": "我們是一家提供多種服務的科技公司，例如 Asxox Shop & App、数字营销、仓储物流、软件开发、房地產代理和 DCT 活動彩票。",
+    "location": "我们的位置",
+    "button": "在谷歌地图中查看"
   },
   "asxoxSection": {
-    "title": "關於我們的 Asxox 商店和應用程序",
-    "subTitle": "Asxox 商店和應用功能",
-    "description": "我們是緬甸最好的在線購物平台之一，為我們的客戶提供最好的服務。我們提供 24/7 全天候客戶服務，以幫助和解決客戶的問題。",
+    "title": "关于我們的 Asxox 商店和应用程序",
+    "subTitle": "Asxox 商店和应用功能",
+    "description": "Asxox是緬甸在线购物平台之一，为我們的客戶提供最好的服務。我們提供 24/7 全天候客戶服务，以帮助和解决存在的问题。",
     "list": {
-      "listItemOne": "全面的質量控制和實惠的價格",
-      "listItemTwo": "快捷方便的送貨上門"
+      "listItemOne": "全面的质量控制和优惠的价格",
+      "listItemTwo": "快捷的送货上门"
     },
-    "button": "探索 Asxox 應用"
+    "button": "探索 Asxox 应用"
   },
   "sySection": {
-    "title": "關於盛業地產",
-    "subTitle": "我們的機構背景和服務",
-    "description": "我們是緬甸的房地產中介之一，通過最合適和負擔得起的住房、公寓等讓人們的生活變得順暢和方便。如果您要租房或買房子或公寓，不要三思而後行，只要馬上聯繫我們。",
-    "list": {
-      "listItemOne": "方便、順暢的流程和實惠的價格",
-      "listItemTwo": "優質的住宿，價格公道",
-      "listItemThree": "快速、可靠和 24/7 全天候客戶服務"
-    },
-    "button": "探索 SY 機構"
+    "title": "关于思源房地产",
+    "subTitle": "我們的机构背景和服务",
+    "description": "缅甸思远房地产中介服务公司成立于2015年，是经缅甸投资与公司管理局注册，缅甸房产中介协会备案的中介机构，是一家专业的房产服务公司。主要从事房地产买卖中介，（房屋-厂房-别墅）租赁中介，及房产信息咨询等业务。公司本着“诚信为本，客户第一”的宗旨及“公正，专业”的服务理念，为广大客户，各界朋友提供完善，周到，贴心，放心的服务。欢迎来电或到门店登记出售，出租房源信息及进行相关咨询。",
+    "contactUs": "联系方式：",
+    "phoneNumber": "+95 9941181188",
+    "qrCodeTitle": "扫描SY微信二维码",
+    "button": "了解 思源房地产"
   },
   "dctLotterySection": {
-    "title": "DCT活動抽獎",
-    "subTitle": "我們的彩票系統如何運作",
-    "description": "我們的彩票無處不在，當您從與我們合作的商店購買商品時，您將獲得一張免費彩票來贏得彩票。您收集的彩票越多，贏得大獎的機會就越大。",
-    "button": "探索 DCT 應用程序"
+    "title": "关于幸运星的活动",
+    "subTitle": "幸运星活动运作模式",
+    "description": "幸运星无处不在，当您在DCT合作的商家消费的时候，您将会获得一次或者多次抽奖机会。您收集的抽奖卷越多，赢取的奖品机率越多。",
+    "button": "了解 幸运之星"
   },
   "dctAppSection": {
-    "title": "使用 DCT App 輕鬆掃描和購買",
-    "subTitle": "我們的應用程序功能包括：",
+    "title": "使用 DCT App 轻松扫描与购买",
+    "subTitle": "我們的应用程序功能包括：",
     "list": {
-      "listItemOne": "具有簡單掃描和購買功能的快速、安全的移動應用程序",
-      "listItemTwo": "簡潔且以用戶為中心的設計，易於訪問",
-      "listItemThree": "驚人的功能可增強您的用戶體驗"
+      "listItemOne": "给您体验搜索、购物的快速、安全移动应用程序",
+      "listItemTwo": "简洁且以用戶为中心的设计，易于访问",
+      "listItemThree": "驚人的功能可增強您的用戶体验"
     },
-    "downloadTitle": "下載我們的應用程序",
-    "scanQRTitle": "掃描此處二維碼："
+    "downloadTitle": "下载应用程序",
+    "scanQRTitle": "扫描此处二维码：",
+    "qrCodeTitle": "在这里扫描DCT二维码"
   },
   "footer": {
-    "description": "DCT是一組公司，包括許多功能和服務，使人們的生活更加方便和舒適。我們一直在努力成為緬甸最著名的公司集團之一，建立公司形象",
+    "description": "DCT是一組公司，包括許多功能和服务，使人们的生活更加方便和舒适。我們一直在努力成为緬甸最著名的公司集團之一，建立公司形象",
     "email": {
-      "title": "訂閱我們的電子郵件地址",
-      "placeholder": "輸入你的電子郵箱地址"
+      "title": "订阅我们的电子邮箱地址",
+      "placeholder": "输入您的邮箱"
     },
     "submit": "提交",
-    "reachout": "通過以下方式聯繫我們：",
+    "reachout": "通过以下方式联系我们：",
     "followus": {
-      "title": "跟著我們",
+      "title": "其他方式",
       "facebook": "Facebook",
       "tiktok": "Tiktok",
       "youtube": "Youtube"
+    }
+  },
+
+  "digitalMarketing": {
+    "title": "我们提供数字营销",
+    "facebookMarketing": {
+      "title": "Facebook 管理包"
+    },
+    "facebookPageLike": {
+      "title": "Facebook 主页 点赞 广告",
+      "card": {
+        "title": "近似页面喜欢",
+        "tickTitleOne": "期间: ",
+        "tickTitleTwo": "报告: ",
+        "tickTitleThree": "目标: "
+      }
+    },
+    "servicesStepByStep": {
+      "title": "我们如何一步步为您服务",
+      "services": {
+        "nextButton": "下一步",
+        "backButton": "后退",
+        "finishButton": "结束",
+        "resetButton": "重置所有"
+      }
+    }
+  },
+
+  "softwareDevelopment": {
+    "title": "我们提供软件开发服务",
+    "servicePackages": {
+      "title": "您可以从我们这里选择的软件包"
     }
   }
 }

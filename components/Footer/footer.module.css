@@ -1,0 +1,28 @@
+.footer_description {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 1024px){
+    .footer_description{
+        width: 80%;
+    }
+}
+
+@media (min-width: 1355px) {
+    .footer_description{
+        width: 60%;
+    }
+}
+
+@media (min-width: 1280px) and (max-width: 1354px) {
+    .footer_description {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1536px) {
+    .footer_description{
+        width: 80%;
+    }
+}

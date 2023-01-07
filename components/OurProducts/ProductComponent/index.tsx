@@ -1,11 +1,10 @@
 import { Box, Typography } from "@mui/material";
 import { FunctionComponent } from "react";
 import Image from "next/image";
-import { useRouter } from "next/router";
-import { motion } from "framer-motion";
 import Link from "next/link";
+import AnimationFrame from "../../AnimationFrame";
 
-interface ServiceProps {
+interface ProductProps {
   title: string;
   icon: string;
   textColor?: string;
@@ -16,7 +15,7 @@ interface ServiceProps {
   directory?: any;
 }
 
-const ServiceComponent: FunctionComponent<ServiceProps> = ({
+const ProductComponent: FunctionComponent<ProductProps> = ({
   title,
   icon,
   textColor,
@@ -26,24 +25,14 @@ const ServiceComponent: FunctionComponent<ServiceProps> = ({
   iconHeight,
   directory,
 }) => {
-  const router = useRouter();
   return (
-    <Link
+    <a
       className="w-2/5 md:w-1/5 flex flex-col justify-center items-center"
-      // onClick={() => router.push(`${directory}`)}
       href={directory}
-      target="_blank"
+      rel="noreferrer"
+      target={directory.includes("http") ? "_blank" : ""}
     >
-      <motion.div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-        initial={{ scale: 0.8, opacity: 0 }}
-        whileInView={{ scale: 1, opacity: 1, transition: { delay: 0.4, duration: 0.5 } }}
-      >
+      <AnimationFrame className="flex flex-col justify-center items-center">
         <Box
           className="cursor-pointer w-24 h-24 flex flex-col justify-center items-center rounded-full hover:ring-4 ring-[#94B8EA]"
           sx={{
@@ -59,14 +48,14 @@ const ServiceComponent: FunctionComponent<ServiceProps> = ({
         >
           {title}
         </Typography>
-      </motion.div>
-    </Link>
+      </AnimationFrame>
+    </a>
   );
 };
 
-ServiceComponent.defaultProps = {
+ProductComponent.defaultProps = {
   iconWidth: 100,
   iconHeight: 100,
 };
 
-export default ServiceComponent;
+export default ProductComponent;
