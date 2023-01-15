@@ -18,7 +18,7 @@ const SearchFeature: FunctionComponent = () => {
           className="!text-xl md:!text-[1.4rem] !font-medium w-full pl-3 p-2 outline-0	bg-white text-[#0C2E5C]"
         />
       </Box>
-      <Box className="sm:w-[35%] md:w-[24%] cursor-pointer flex items-center pl-6 border-l-[0.2rem] border-[#0C2E5C]">
+      <Box className="sm:w-[35%] md:w-[24%] xl:w-[17%] cursor-pointer flex items-center pl-6 border-l-[0.2rem] border-[#0C2E5C]">
         <FaFilter className="!text-xl md:!text-2xl text-[#0C2E5C]" />
         <Typography className="!text-lg md:!text-xl !pl-2 !font-semibold !text-[#0C2E5C] hidden sm:block">
           {t("landing:filterText")}
