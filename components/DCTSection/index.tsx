@@ -58,7 +58,7 @@ const DCTSection: FunctionComponent = () => {
         <Box className="w-full xl:w-1/2 md:flex justify-center xl:justify-end py-12 xl:py-0">
           <AnimationFrame>
             <YouTube
-              videoId="eYUTFblwdwA"
+              videoId="r8AZSmhhghs"
               opts={opts}
               onReady={onPlayerReady}
               iframeClassName="w-full h-[300px] sm:h-[400px] md:w-[500px] rounded-md"
